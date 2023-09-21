@@ -1,0 +1,59 @@
+h2 {
+  text-transform: capitalize;
+}
+
+table {
+  border-collapse: collapse;
+  width          : 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding   : 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #a59f9f;
+}
+
+tr:nth-child(odd) {
+  background-color: #ccc;
+}
+
+
+th {
+  background-color: #04AA6D;
+  color           : white;
+}
+
+table,
+td,
+th {
+  border    : 1px solid #ddd;
+  text-align: center;
+}
+
+.red-border,
+.orange-border,
+.yellow-border,
+.green-border {
+  border : 2px solid #000;
+  padding: 4px 32px;
+}
+
+.red-border {
+  background-color: #FF0000;
+}
+
+.orange-border {
+  background-color: #FFA500;
+}
+
+.yellow-border {
+  background-color: #FFFF00;
+}
+
+.green-border {
+  background-color: #008000;
+}
