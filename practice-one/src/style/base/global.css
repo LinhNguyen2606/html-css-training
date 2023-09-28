@@ -12,18 +12,18 @@ body {
 }
 
 .container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin   : 0 auto;
-  padding  : 0 15px;
 }
 
 .btn {
-  display    : inline-block;
-  padding    : 13px 45px;
-  font-family: var(--primary-font);
-  font-size  : var(--fs-small);
-  outline    : none;
-  border     : none;
+  display       : inline-block;
+  padding       : 13px 45px;
+  font-family   : var(--primary-font);
+  font-size     : var(--fs-small);
+  outline       : none;
+  border        : none;
+  text-transform: capitalize;
 }
 
 .btn--outline {
@@ -32,4 +32,35 @@ body {
   color           : var(--btn-secondary-color);
   border          : 1px solid;
   font-weight     : var(--fw-medium);
+}
+
+.btn--primary {
+  font-weight     : var(--fw-bold);
+  background-color: var(--btn-secondary-color);
+  color           : var(--btn-primary-color);
+}
+
+.btn--rounded {
+  border-radius: 10px;
+  padding      : 17px 77px;
+  line-height  : calc(25/16);
+  box-shadow   : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+}
+
+.text {
+  color      : var(--text-secondary-color);
+  font-size  : var(--fs-x-huge);
+  font-weight: var(--fw-medium);
+  line-height: calc(70/50);
+}
+
+.subtext {
+  color      : var(--text-primary-color);
+  font-size  : var(--fs-small);
+  font-weight: var(--fw-normal);
+  line-height: calc(30/16);
+}
+
+.text--semi-bold {
+  font-weight: 600;
 }
