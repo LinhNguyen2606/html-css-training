@@ -1,0 +1,7 @@
+body {
+  color           : var(--text-primary-color);
+  font-weight     : var(--fw-normal);
+  background-color: #ffffff;
+  word-wrap       : break-word;
+  font-family     : var(--primary-font);
+}
