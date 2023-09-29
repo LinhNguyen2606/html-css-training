@@ -3,13 +3,13 @@
   padding-bottom: 90px;
 }
 
-.header__container {
+.navbar {
   display        : flex;
   justify-content: space-between;
   align-items    : center;
 }
 
-.header__menu {
+.navbar__menu {
   display    : flex;
   align-items: center;
   gap        : 40px;
@@ -21,14 +21,14 @@
   font-weight: var(--fw-normal);
 }
 
-.header__auth {
+.navbar__auth {
   display       : flex;
   align-items   : center;
   gap           : 30px;
   text-transform: capitalize;
 }
 
-.header__auth--signin {
+.navbar__auth--signin {
   color      : var(--text-secondary-color);
   font-weight: var(--fw-medium);
   font-size  : var(--fs-small);
