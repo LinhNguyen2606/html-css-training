@@ -8,64 +8,59 @@
     <link rel="stylesheet" href="./style/index.css" />
   </head>
   <body>
-    <div class="wrapper">
-      <!-- Start header -->
-      <header class="header">
-        <div class="container">
-          <nav class="navbar">
-            <img
-              src="./assets/images/Logo.svg"
-              alt="logo"
-              class="header__logo"
-            />
-            <ul class="navbar__menu">
-              <li class="navbar__menu--item">
-                <a href="#" class="menu__link">About</a>
-              </li>
-              <li class="navbar__menu--item">
-                <a href="#" class="menu__link">Features</a>
-              </li>
-              <li class="navbar__menu--item">
-                <a href="#" class="menu__link">Pricing</a>
-              </li>
-              <li class="navbar__menu--item">
-                <a href="#" class="menu__link">Testimonials</a>
-              </li>
-              <li class="navbar__menu--item">
-                <a href="#" class="menu__link">Help</a>
-              </li>
-            </ul>
-            <div class="navbar__auth">
-              <a href="#" class="navbar__auth--signin">Sign in</a>
-              <button class="btn btn--outline">Sign up</button>
-            </div>
-          </nav>
-        </div>
-      </header>
-      <!-- End header -->
-
-      <!-- Start hero section -->
-      <main>
-        <section class="hero">
-          <div class="container hero__container">
-            <div class="hero__content">
-              <h1 class="text hero__heading">
-                Want anything to be easy with
-                <span class="text--semi-bold">LaslesVPN</span>.
-              </h1>
-              <p class="subtext hero__desc">
-                Provide a network for all your needs with ease and fun using
-                <span class="text--semi-bold">LaslesVPN</span> discover
-                interesting features from us.
-              </p>
-              <a href="" class="btn btn--primary btn--rounded">Get started</a>
-            </div>
-            <div class="hero__img">
-              <img src="./assets/images/Illustration 1.svg" alt="hero image" />
-            </div>
+    <wrapper>
+    <!-- Start header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <img src="./assets/images/Logo.svg" alt="logo" class="header__logo" />
+          <ul class="navbar__menu">
+            <li class="navbar__menu--item">
+              <a href="#" class="menu__link">About</a>
+            </li>
+            <li class="navbar__menu--item">
+              <a href="#" class="menu__link">Features</a>
+            </li>
+            <li class="navbar__menu--item">
+              <a href="#" class="menu__link">Pricing</a>
+            </li>
+            <li class="navbar__menu--item">
+              <a href="#" class="menu__link">Testimonials</a>
+            </li>
+            <li class="navbar__menu--item">
+              <a href="#" class="menu__link">Help</a>
+            </li>
+          </ul>
+          <div class="navbar__auth">
+            <a href="#" class="navbar__auth--signin">Sign in</a>
+            <button class="btn btn--outline">Sign up</button>
           </div>
-        </section>
-      </main>
+        </nav>
+      </div>
+    </header>
+    <!-- End header -->
+
+    <main>
+      <!-- Start hero section -->
+      <section class="hero">
+        <div class="container hero__container">
+          <div class="hero__content">
+            <h1 class="text hero__heading">
+              Want anything to be easy with
+              <span class="text--semi-bold">LaslesVPN</span>.
+            </h1>
+            <p class="subtext hero__desc">
+              Provide a network for all your needs with ease and fun using
+              <span class="text--semi-bold">LaslesVPN</span> discover
+              interesting features from us.
+            </p>
+            <a href="" class="btn btn--primary btn--rounded">Get started</a>
+          </div>
+          <div class="hero__img">
+            <img src="./assets/images/Illustration 1.svg" alt="hero image" />
+          </div>
+        </div>
+      </section>
       <!-- End hero section -->
 
       <!-- Start intro section -->
@@ -156,6 +151,124 @@
         </div>
       </section>
       <!-- End feature section -->
-    </div>
+
+      <!-- Start plan section -->
+      <section class="plan">
+        <div class="container">
+          <div class="plan__header">
+            <h2 class="text plan__heading">Choose Your Plan</h2>
+            <p class="subtext">
+              Let's choose the package that is best for you and explore it
+              happily and cheerfully.
+            </p>
+          </div>
+          <div class="plan__list">
+            <div class="plan__item">
+              <div class="plan__img">
+                <img
+                  class="card__img"
+                  alt="free plan package"
+                  src="./assets/images/Free.svg"
+                />
+              </div>
+              <h3 class="plan__title">Free Plan</h3>
+              <div class="plan__details plan__details--first">
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Unlimited Bandwitch</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Encrypted Connection</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>No Traffic Logs</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Works on All Devices</span>
+                </div>
+              </div>
+              <h4 class="plan__price">Free</h4>
+              <a href="#" class="btn btn--outline">Select</a>
+            </div>
+            <div class="plan__item">
+              <div class="plan__img">
+                <img
+                  class="card__img"
+                  alt="Standard plan package"
+                  src="./assets/images/Standard.svg"
+                />
+              </div>
+              <h3 class="plan__title">Standard Plan</h3>
+              <div class="plan__details plan__details--second">
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Unlimited Bandwitch</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Encrypted Connection</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Yes Traffic Logs</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Works on All Devices</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Connect Anyware</span>
+                </div>
+              </div>
+              <h4 class="plan__price">$9 / <span>mo</span></h4>
+              <a href="#" class="btn btn--outline">Select</a>
+            </div>
+            <div class="plan__item plan__item--active">
+              <div class="plan__img">
+                <img
+                  class="card__img"
+                  alt="Premium plan package"
+                  src="./assets/images/Premium.svg"
+                />
+              </div>
+              <h3 class="plan__title">Premium Plan</h3>
+              <div class="plan__details">
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Unlimited Bandwitch</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Encrypted Connection</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Yes Traffic Logs</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Works on All Devices</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Connect Anyware</span>
+                </div>
+                <div class="plan__infor">
+                  <img src="./assets/images/check.svg" alt="check" />
+                  <span>Get New Features</span>
+                </div>
+              </div>
+              <h4 class="plan__price">$12 / <span>mo</span></h4>
+              <a href="#" class="btn btn--outline">Select</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End plan section -->
+    </main>
   </body>
 </html>
