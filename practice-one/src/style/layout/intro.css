@@ -9,7 +9,7 @@
   box-shadow      : 0 50px 114px 0 rgba(13, 16, 37, 0.068);
   display         : flex;
   justify-content : space-evenly;
-  min-height      : 180px;
+  min-height      : 200px;
 }
 
 .intro--item {

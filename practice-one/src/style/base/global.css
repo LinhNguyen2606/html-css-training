@@ -6,11 +6,6 @@ body {
   font-family     : var(--primary-font);
 }
 
-.wrapper {
-  max-width: 1440px;
-  margin   : 0 auto;
-}
-
 .container {
   max-width: 1140px;
   margin   : 0 auto;
