@@ -1,0 +1,31 @@
+.subscribe {
+  margin-bottom: 67px;
+}
+
+.subscribe-container {
+  border          : 2px solid var(--btn-primary-color);
+  background-color: var(--btn-primary-color);
+  border-radius   : 10px;
+  padding         : 58px 70px;
+  height          : 233px;
+  box-shadow      : 0 30px 114px 0 rgba(13, 16, 37, 0.06);
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+}
+
+.subscribe-container a {
+  padding: 17px 66px;
+}
+
+.subscribe__content {
+  max-width: 410px;
+  width    : 100%;
+}
+
+.subscribe__title {
+  font-size    : var(--fs-large);
+  line-height  : calc(45/35);
+  max-width    : 370px;
+  margin-bottom: 10px;
+}
