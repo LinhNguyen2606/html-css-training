@@ -10,3 +10,7 @@
   max-width      : 1136px;
   max-height     : 208px;
 }
+
+.sponsor__item:nth-child(3) {
+  margin: 0 -48px;
+}
