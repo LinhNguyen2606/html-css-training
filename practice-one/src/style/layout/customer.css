@@ -34,7 +34,7 @@
 .customer__item:hover {
   border-color : var(--btn-secondary-color);
   border-radius: 10px;
-  box-shadow   : 0 50px 114px 0 rgb(13, 16, 37, 0.06);
+  box-shadow   : 0 50px 114px 0 rgba(13, 16, 37, 0.06);
 }
 
 .customer__top {
