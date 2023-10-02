@@ -1,0 +1,12 @@
+.sponsor {
+  margin-bottom: 50px;
+}
+
+.sponsor__container {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  gap            : 48px;
+  max-width      : 1136px;
+  max-height     : 208px;
+}
