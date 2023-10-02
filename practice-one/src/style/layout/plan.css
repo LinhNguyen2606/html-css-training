@@ -44,12 +44,10 @@
   font-weight: var(--fw-bold);
 }
 
-.plan__item--active,
 .plan__item:hover {
   border-color: var(--btn-secondary-color);
 }
 
-.plan__item:last-child a,
 .plan__item:hover a {
   background-color: var(--btn-secondary-color);
   font-weight     : var(--fw-bold);
