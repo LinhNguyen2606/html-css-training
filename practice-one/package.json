@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "rm -rf build && rm -rf .parcel-cache && parcel build ./src/pages/*.html --no-cache --no-source-maps --dist-dir dist"
+    "build": "rm -rf build && rm -rf .parcel-cache && parcel build ./src/*.html --no-cache --no-source-maps --dist-dir dist"
   },
   "repository": {
     "type": "git",
