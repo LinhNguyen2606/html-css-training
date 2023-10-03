@@ -1,9 +1,8 @@
+@import './container.css';
 @import './header.css';
 @import './hero.css';
-@import './intro.css';
 @import './feature.css';
 @import './plan.css';
 @import './network.css';
-@import './sponsor.css';
-@import './customer.css';
-@import './subscribe.css';
+@import './footer.css';
+@import './respone.css';

@@ -1,7 +1,7 @@
 .plan {
   padding: 80px 0 150px;
   background: linear-gradient(180deg,
-      #f8f8f8 -45.04%,
+      var(--bg-gray-light-color) -45.04%,
       rgba(248, 248, 248, 0) 88.56%);
 }
 
@@ -27,42 +27,6 @@
   justify-content: space-between;
   align-items    : center;
   gap            : 0 50px;
-}
-
-.plan__item {
-  background-color: var(--btn-primary-color);
-  border-radius   : 10px;
-  border          : 2px solid #DDDDDD;
-  padding         : 80px 69px 50px;
-  display         : flex;
-  flex-direction  : column;
-  align-items     : center;
-}
-
-.plan__item a {
-  padding    : 13px 63px;
-  font-weight: var(--fw-bold);
-}
-
-.plan__item:hover {
-  border-color: var(--btn-secondary-color);
-}
-
-.plan__item:hover a {
-  background-color: var(--btn-secondary-color);
-  font-weight     : var(--fw-bold);
-  box-shadow      : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
-  color           : var(--btn-primary-color);
-}
-
-
-.plan__img {
-  height: 165px;
-  margin: 0 auto 30px;
-}
-
-.card__img {
-  height: 165px
 }
 
 .plan__title {

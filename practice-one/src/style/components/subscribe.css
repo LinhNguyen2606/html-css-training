@@ -1,17 +1,17 @@
 .subscribe {
-  margin-bottom: 67px;
+  transform: translateY(50%);
 }
 
 .subscribe-container {
-  border          : 2px solid var(--btn-primary-color);
   background-color: var(--btn-primary-color);
   border-radius   : 10px;
   padding         : 58px 70px;
-  height          : 233px;
-  box-shadow      : 0 30px 114px 0 rgba(13, 16, 37, 0.06);
   display         : flex;
   justify-content : space-between;
   align-items     : center;
+  height          : 233px;
+  border          : 2px solid var(--btn-primary-color);
+  box-shadow      : 0 30px 114px 0 rgba(13, 16, 37, 0.06);
 }
 
 .subscribe-container a {

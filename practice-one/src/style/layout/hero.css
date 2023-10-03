@@ -22,10 +22,3 @@
 .hero__desc {
   padding-bottom: 50px;
 }
-
-.hero__img {
-  position : absolute;
-  top      : 50%;
-  right    : 0;
-  transform: translate(40px, -50%);
-}

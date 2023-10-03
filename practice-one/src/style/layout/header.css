@@ -28,6 +28,11 @@
   text-transform: capitalize;
 }
 
+.navbar__auth:hover button {
+  background-color: var(--btn-secondary-color);
+  color           : var(--btn-primary-color);
+}
+
 .navbar__auth--signin {
   color      : var(--text-secondary-color);
   font-weight: var(--fw-medium);

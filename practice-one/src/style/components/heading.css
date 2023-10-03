@@ -1,0 +1,17 @@
+.text {
+  color      : var(--text-secondary-color);
+  font-size  : var(--fs-x-huge);
+  font-weight: var(--fw-medium);
+  line-height: calc(70/50);
+}
+
+.subtext {
+  color      : var(--text-primary-color);
+  font-size  : var(--fs-small);
+  font-weight: var(--fw-normal);
+  line-height: calc(30/16);
+}
+
+.text--bold {
+  font-weight: 500;
+}

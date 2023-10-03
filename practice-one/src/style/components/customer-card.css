@@ -1,0 +1,14 @@
+.customer__card {
+  border       : 2px solid var(--border-gray-light-color);
+  border-radius: 10px;
+  padding      : 30px;
+  max-width    : 400px;
+  height       : 230px;
+  margin-bottom: 83px;
+}
+
+.customer__card:hover {
+  border-color : var(--btn-secondary-color);
+  border-radius: 10px;
+  box-shadow   : 0 50px 114px 0 rgba(13, 16, 37, 0.06);
+}
