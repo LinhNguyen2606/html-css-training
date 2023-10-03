@@ -40,9 +40,14 @@
   /* Font family end*/
 
   /* Line height begin*/
-  --lh-x-medium: 25px;
-  --lh-medium  : 25px;
-  --lh-x-large : 50px;
-  --lh-large   : 70px;
+  --lh-x-small   : calc(25/16);
+  --lh-x-medium  : calc(30/25);
+  --lh-medium    : calc(30/20);
+  --lh-xs-medium : calc(30/18);
+  --lh-xl-medium : calc(30/16);
+  --lh-xxl-medium: calc(30/14);
+  --lh-x-large   : calc(45/35);
+  --lh-xl-huge   : calc(50/35);
+  --lh-xxl-huge  : calc(70/50);
   /* Line height end*/
 }

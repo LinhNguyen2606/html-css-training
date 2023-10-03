@@ -9,11 +9,6 @@
   justify-content: space-between;
 }
 
-.footer__logo {
-  display      : inline-block;
-  margin-bottom: 20px;
-}
-
 .footer__desc {
   margin-bottom: 20px;
   max-width    : 340px;
@@ -24,13 +19,12 @@
   color      : var(--text-gray-light-color);
   font-size  : var(--fs-small);
   font-weight: var(--fw-normal);
-  line-height: calc(30/16);
+  line-height: var(--lh-xl-medium);
 }
 
-.footer__heading {
+.footer__col .footer__heading {
   font-size    : var(--fs-x-medium);
-  font-weight  : (--fw-medium);
-  line-height  : calc(30/18);
+  line-height  : var(--lh-xs-medium);
   margin-bottom: 20px;
 }
 
@@ -47,21 +41,21 @@
 .social__fb,
 .social__twt,
 .social__insta {
-  background-position: center top;
-  background-size    : 60px;
+  display            : inline-block;
   width              : 33.6px;
   height             : 33.6px;
-  display            : inline-block;
+  background-size    : 60px;
+  background-position: center top;
 }
 
 .social__fb {
-  background-image: url(../../assets/images/Socmed\ 3/Facebook.svg);
+  background-image: url(../../assets/images/icons/facebook.svg);
 }
 
 .social__twt {
-  background-image: url(../../assets/images/Socmed/Twitter.svg);
+  background-image: url(../../assets/images/icons/twitter.svg);
 }
 
 .social__insta {
-  background-image: url(../../assets/images/Socmed\ 2/Instagram.svg);
+  background-image: url(../../assets/images/icons/instagram.svg);
 }

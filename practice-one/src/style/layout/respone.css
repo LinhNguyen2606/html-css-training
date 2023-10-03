@@ -5,9 +5,9 @@
   margin-bottom: 60px;
 }
 
-.customer__title {
+.customer__header .customer__title {
   font-size    : var(--fs-large);
-  line-height  : calc(50/35);
+  line-height  : var(--lh-xl-huge);
   margin-bottom: 20px;
 }
 
@@ -59,7 +59,7 @@
   color      : var(--text-secondary-color);
   font-size  : var(--fs-small);
   font-weight: var(--fw-normal);
-  line-height: calc(30/16);
+  line-height: var(--lh-xl-medium);
 }
 
 

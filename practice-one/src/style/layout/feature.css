@@ -5,18 +5,18 @@
 .feature__container {
   display        : flex;
   justify-content: space-between;
-  align-items    : center;
+  align-items    : flex-end;
   gap            : 170px;
 }
 
 .feature__content {
-  max-width: 430px;
+  max-width: 428px;
   width    : 100%;
 }
 
-.feature__heading {
+.feature__content .feature__heading {
   font-size     : var(--fs-large);
-  line-height   : calc(50/35);
+  line-height   : var(--lh-xl-huge);
   padding-bottom: 20px;
 }
 
@@ -28,7 +28,7 @@
   display        : flex;
   flex-direction : column;
   justify-content: center;
-  gap            : 21px;
+  gap            : 15px;
 }
 
 .feature__item {
@@ -39,5 +39,5 @@
 
 .feature__item>span {
   font-size  : var(--fs-x-small);
-  line-height: calc(30/14);
+  line-height: var(--lh-xxl-medium);
 }

@@ -12,9 +12,9 @@
   margin    : 0 auto;
 }
 
-.plan__heading {
+.plan__header .plan__heading {
   font-size     : var(--fs-large);
-  line-height   : calc(50/35);
+  line-height   : var(--lh-xl-huge);
   padding-bottom: 20px;
 }
 
