@@ -1,7 +1,8 @@
 /* Intro icon start */
 .intro__icon {
-  width : 55px;
-  height: 55px;
+  width    : 100%;
+  max-width: 55px;
+  height   : 55px;
 }
 
 /* Intro icon end */

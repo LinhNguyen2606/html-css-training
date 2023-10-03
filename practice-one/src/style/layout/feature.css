@@ -1,5 +1,5 @@
 .feature {
-  padding-bottom: 211px;
+  margin-bottom: 211px;
 }
 
 .feature__container {
@@ -15,13 +15,13 @@
 }
 
 .feature__content .feature__heading {
-  font-size     : var(--fs-large);
-  line-height   : var(--lh-xl-huge);
-  padding-bottom: 20px;
+  font-size    : var(--fs-large);
+  line-height  : var(--lh-xl-huge);
+  margin-bottom: 20px;
 }
 
 .feature__desc {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .feature__list {
