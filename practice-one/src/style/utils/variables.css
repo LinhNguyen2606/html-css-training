@@ -1,7 +1,8 @@
 :root {
   /* Text color begin*/
-  --text-primary-color  : #4F5665;
-  --text-secondary-color: #0B132A;
+  --text-primary-color   : #4F5665;
+  --text-secondary-color : #0B132A;
+  --text-gray-light-color: #AFB5C0;
   /* Text color end*/
 
   /* Button color begin*/
@@ -9,6 +10,14 @@
   --btn-secondary-color: #F53838;
   /* Button color end*/
 
+  /* Background color begin */
+  --bg-gray-light-color: #F8F8F8;
+  /* Background color end */
+
+  /* Border color begin*/
+  --border-gray-light-color  : #DDDDDD;
+  --border-gray-lighter-color: #EEEFF2;
+  /* Border color end*/
 
   /* Font size begin*/
   --fs-x-small : 14px;

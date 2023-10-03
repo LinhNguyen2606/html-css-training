@@ -1,0 +1,74 @@
+/* Hero img begin */
+.hero__img {
+  position : absolute;
+  top      : 50%;
+  right    : 0;
+  transform: translate(40px, -50%);
+  width    : 611px;
+  height   : 382px;
+}
+
+/* Hero img end */
+
+/* Intro img start */
+.intro__icon {
+  width : 55px;
+  height: 55px;
+}
+
+/* Intro img end */
+
+/* Feature img begin */
+.feature__img {
+  width : 508px;
+  height: 415px;
+}
+
+/* Feature img end */
+
+/* Plan img start */
+.plan__img {
+  height: 165px;
+  margin: 0 auto 30px;
+}
+
+.card__img {
+  width : 145px;
+  height: 165px
+}
+
+/* Plan img end */
+
+/* Network img start */
+.network__map {
+  width : 1060px;
+  height: 538px;
+}
+
+/* Network img end */
+
+/* Customer img begin */
+.customer__avatar img {
+  width        : 100%;
+  height       : 100%;
+  object-fit   : cover;
+  border-radius: 9999px;
+}
+
+.customer__rating>div,
+.customer__rating img {
+  width : 16px;
+  height: 16px;
+}
+
+.customer__avatar {
+  width : 50px;
+  height: 50px;
+}
+
+.transition__navigate img {
+  width : 135px;
+  height: 15px;
+}
+
+/* Customer img end */

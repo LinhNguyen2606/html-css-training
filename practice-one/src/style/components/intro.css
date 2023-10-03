@@ -19,8 +19,8 @@
 }
 
 .intro--item:nth-child(2) {
-  border-left : 2px solid #EEEFF2;
-  border-right: 2px solid #EEEFF2;
+  border-left : 2px solid var(--border-gray-lighter-color);
+  border-right: 2px solid var(--border-gray-lighter-color);
   padding     : 0 113px;
 }
 
