@@ -12,17 +12,17 @@
 
 - 1 Dev
 
-***Start date :*** 27/09/2023
+***Start date:*** 27/09/2023
 
 
-***Timeline:*** 5.5 days ( 27/9/2023-5/10/2023)
+***Timeline:*** 5.5 days ( 27/9/2023-3/10/2023)
 
 ***Actual:*** 5.5 days
 
-***Target :***
+***Target:***
 
 - Understand HTML/CSS properties and use them correctly
-- Slice from figma to HTML/CSS
+- Slice from Figma to HTML/CSS
 - Understand the concepts of Flex
     
 ## Documents
@@ -86,7 +86,7 @@ practice-one
 git clone https://github.com/LinhNguyen2606/html-css-training.git
 ~~~
 
-- Step 02: Move to folder which just cloned in your computer:
+- Step 02: Move to the folder that just cloned in your computer:
 ~~~
 cd html-css-training
 ~~~
@@ -96,12 +96,12 @@ cd html-css-training
 git checkout <feature/practice-one> 
 ~~~
 
-- Step 04: Next open folder practice-one
+- Step 04: Next open the folder practice-one
 ~~~
 cd practice-one
 ~~~
 
-- Step 05: Open terminal and type:
+- Step 05: Open the terminal and type:
 ~~~
 npm install
 ~~~
