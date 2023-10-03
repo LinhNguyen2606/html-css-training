@@ -13,13 +13,13 @@
 }
 
 .plan__header .plan__heading {
-  font-size     : var(--fs-large);
-  line-height   : var(--lh-xl-huge);
-  padding-bottom: 20px;
+  font-size    : var(--fs-large);
+  line-height  : var(--lh-xl-huge);
+  margin-bottom: 20px;
 }
 
 .plan__header p {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .plan__list {
@@ -30,11 +30,11 @@
 }
 
 .plan__title {
-  color         : var(--text-secondary-color);
-  font-size     : var(--fs-x-medium);
-  font-weight   : var(--fw-medium);
-  line-height   : calc(30/18);
-  padding-bottom: 30px;
+  color        : var(--text-secondary-color);
+  font-size    : var(--fs-x-medium);
+  font-weight  : var(--fw-medium);
+  line-height  : calc(30/18);
+  margin-bottom: 30px;
 }
 
 .plan__infor {
@@ -50,11 +50,11 @@
 }
 
 .plan__price {
-  padding-bottom: 20px;
-  color         : var(--text-secondary-color);
-  font-size     : var(--fs-x-large);
-  font-weight   : var(--fw-medium);
-  line-height   : calc(30/25);
+  margin-bottom: 20px;
+  color        : var(--text-secondary-color);
+  font-size    : var(--fs-x-large);
+  font-weight  : var(--fw-medium);
+  line-height  : calc(30/25);
 }
 
 .plan__price span {

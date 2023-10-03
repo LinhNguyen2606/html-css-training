@@ -13,8 +13,9 @@
 
 /* Feature img begin */
 .feature__img {
-  width : 508px;
-  height: 415px;
+  width    : 100%;
+  max-width: 508px;
+  height   : 415px;
 }
 
 /* Feature img end */
@@ -26,16 +27,18 @@
 }
 
 .card__img {
-  width : 145px;
-  height: 165px
+  width    : 100%;
+  max-width: 145px;
+  height   : 165px
 }
 
 /* Plan img end */
 
 /* Network img start */
 .network__map {
-  width : 1060px;
-  height: 538px;
+  width    : 100%;
+  max-width: 1060px;
+  height   : 538px;
 }
 
 /* Network img end */
@@ -50,18 +53,21 @@
 
 .customer__rating>div,
 .customer__rating img {
-  width : 16px;
-  height: 16px;
+  width    : 100%;
+  max-width: 16px;
+  height   : 16px;
 }
 
 .customer__avatar {
-  width : 50px;
-  height: 50px;
+  width    : 100%;
+  max-width: 50px;
+  height   : 50px;
 }
 
 .transition__navigate img {
-  width : 135px;
-  height: 15px;
+  width    : 100%;
+  max-width: 135px;
+  height   : 15px;
 }
 
 /* Customer img end */

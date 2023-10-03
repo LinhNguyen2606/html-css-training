@@ -1,5 +1,5 @@
 .hero {
-  padding-bottom: 102px;
+  margin-bottom: 102px;
 }
 
 .hero__container {
@@ -16,9 +16,9 @@
 }
 
 .hero__heading {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hero__desc {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
