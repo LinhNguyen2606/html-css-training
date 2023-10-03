@@ -26,7 +26,7 @@
 - Understand the concepts of Flex
     
 ## Documents
-- [Plan Training Flutter](https://docs.google.com/document/d/1rF_pSnwjAX5dB2eaw8pBNvZujXQC1Jk1/edit)
+- [Plan Training HTML/CSS](https://docs.google.com/document/d/1rF_pSnwjAX5dB2eaw8pBNvZujXQC1Jk1/edit)
 - [Estimate](https://docs.google.com/document/d/1r25Y-52ybHGXcYb1YIECYA6pyEwKcQb70rmLMt1G-eQ/edit)
 ​
 ## Deploy:
