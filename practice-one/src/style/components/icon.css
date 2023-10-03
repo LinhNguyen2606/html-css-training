@@ -1,0 +1,16 @@
+/* Intro icon start */
+.intro__icon {
+  width : 55px;
+  height: 55px;
+}
+
+/* Intro icon end */
+
+
+/* Footer start */
+.footer__logo {
+  display      : inline-block;
+  margin-bottom: 20px;
+}
+
+/* Footer end */

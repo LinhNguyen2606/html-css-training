@@ -25,7 +25,7 @@
 
 .subscribe__title {
   font-size    : var(--fs-large);
-  line-height  : calc(45/35);
+  line-height  : var(--lh-x-large);
   max-width    : 370px;
   margin-bottom: 10px;
 }
