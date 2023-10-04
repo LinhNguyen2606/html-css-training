@@ -1,5 +1,5 @@
 .feature {
-  margin-bottom: 211px;
+  margin-bottom: 131px;
 }
 
 .feature__container {
@@ -21,7 +21,8 @@
 }
 
 .feature__desc {
-  margin-bottom: 20px;
+  width        : 430px;
+  margin-bottom: 16px;
 }
 
 .feature__list {
@@ -33,11 +34,12 @@
 
 .feature__item {
   display    : flex;
-  align-items: center;
-  gap        : 10px;
+  align-items: flex-end;
+  gap        : 8px;
 }
 
 .feature__item>span {
   font-size  : var(--fs-x-small);
   line-height: var(--lh-xxl-medium);
+  transform  : translateY(5px);
 }

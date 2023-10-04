@@ -15,7 +15,7 @@
 .plan__header .plan__heading {
   font-size    : var(--fs-large);
   line-height  : var(--lh-xl-huge);
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .plan__header p {
@@ -24,7 +24,7 @@
 
 .plan__list {
   display        : flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items    : center;
   gap            : 0 50px;
 }

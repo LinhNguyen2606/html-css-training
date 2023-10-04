@@ -1,14 +1,17 @@
 .customer__header {
-  text-align   : center;
-  margin       : 0 auto;
-  max-width    : 555px;
-  margin-bottom: 60px;
+  text-align    : center;
+  max-width     : 555px;
+  margin        : 0px auto 60px;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
 }
 
 .customer__header .customer__title {
   font-size    : var(--fs-large);
   line-height  : var(--lh-xl-huge);
   margin-bottom: 20px;
+  width        : 448px;
 }
 
 .customer__list {
@@ -22,7 +25,7 @@
   display        : flex;
   justify-content: space-between;
   align-items    : center;
-  margin-bottom  : 20px;
+  margin-bottom  : 7px;
 }
 
 .customer__infor {
@@ -36,6 +39,8 @@
   font-size    : var(--fs-x-medium);
   font-weight  : var(--fw-medium);
   margin-bottom: 5px;
+  width        : 142px;
+  margin-right : 77px;
 
 }
 
@@ -67,7 +72,7 @@
   color      : var(--text-secondary-color);
   font-size  : var(--fs-small);
   font-weight: var(--fw-normal);
-  line-height: 1.6;
+  line-height: var(--lh-xl-medium);
 }
 
 .customer__describe {

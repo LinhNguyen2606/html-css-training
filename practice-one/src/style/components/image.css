@@ -3,7 +3,7 @@
   position : absolute;
   top      : 50%;
   right    : 0;
-  transform: translate(40px, -50%);
+  transform: translate(65px, -51%);
   width    : 611px;
   height   : 382px;
 }
@@ -13,9 +13,10 @@
 
 /* Feature img begin */
 .feature__img {
-  width    : 100%;
-  max-width: 508px;
-  height   : 415px;
+  width      : 100%;
+  max-width  : 508px;
+  height     : 415px;
+  margin-left: 33px;
 }
 
 /* Feature img end */
@@ -36,9 +37,10 @@
 
 /* Network img start */
 .network__map {
-  width    : 100%;
-  max-width: 1060px;
-  height   : 538px;
+  width      : 100%;
+  max-width  : 1060px;
+  height     : 538px;
+  margin-left: 40px;
 }
 
 /* Network img end */
