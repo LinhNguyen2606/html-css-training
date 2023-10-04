@@ -1,5 +1,7 @@
 .subscribe {
-  transform: translateY(50%);
+  position : relative;
+  transform: translateY(28%);
+  z-index  : 1;
 }
 
 .subscribe-container {
