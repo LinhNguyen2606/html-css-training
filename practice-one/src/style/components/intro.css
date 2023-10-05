@@ -6,7 +6,7 @@
   background-color: var(--btn-primary-color);
   border-radius   : 10px;
   min-height      : 200px;
-  padding         : 37px 91px;
+  padding         : 44px 91px;
   display         : flex;
   box-shadow      : 0 50px 114px #0d102511;
 }
@@ -15,7 +15,6 @@
   display    : flex;
   align-items: center;
   gap        : 36px;
-  margin-top : 7px;
 }
 
 .intro--item:nth-child(1) {
