@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--bg-gray-light-color);
+}
+
+.footer__copyright {
+  color      : var(--text-gray-light-color);
+  font-size  : var(--fs-small);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-xl-medium);
+}
+
+.footer__col .footer__heading {
+  font-size    : var(--fs-x-medium);
+  line-height  : var(--lh-xs-medium);
+  margin-bottom: 22px;
+}

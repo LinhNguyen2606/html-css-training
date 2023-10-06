@@ -15,8 +15,6 @@
 }
 
 .feature__content .feature__heading {
-  font-size    : var(--fs-large);
-  line-height  : var(--lh-xl-huge);
   margin-bottom: 20px;
 }
 
@@ -33,13 +31,19 @@
 }
 
 .feature__item {
-  display    : flex;
-  align-items: flex-end;
-  gap        : 8px;
+  background-image   : url(../../assets/images/icons/check-circle.svg);
+  background-repeat  : no-repeat;
+  background-position: 0 7px;
+  display            : flex;
+}
+
+.feature__img {
+  margin-left: 33px;
 }
 
 .feature__item>span {
   font-size  : var(--fs-x-small);
   line-height: var(--lh-xxl-medium);
   transform  : translateY(5px);
+  margin-left: 34px;
 }

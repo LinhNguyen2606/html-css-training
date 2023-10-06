@@ -1,5 +1,5 @@
 .plan__card {
-  background-color: var(--btn-primary-color);
+  background-color: var(--bg-white-color);
   border-radius   : 10px;
   border          : 2px solid var(--border-gray-light-color);
   padding         : 80px 69px 50px;
@@ -14,12 +14,12 @@
 }
 
 .plan__card:hover {
-  border-color: var(--btn-secondary-color);
+  border-color: var(--border-dark-red);
 }
 
 .plan__card:hover a {
-  background-color: var(--btn-secondary-color);
+  background-color: var(--bg-dark-red);
   font-weight     : var(--fw-bold);
   box-shadow      : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
-  color           : var(--btn-primary-color);
+  color           : var(--text-white-color);
 }

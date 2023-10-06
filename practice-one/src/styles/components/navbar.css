@@ -1,8 +1,3 @@
-.header {
-  margin-top   : 45px;
-  margin-bottom: 116px;
-}
-
 .navbar {
   display        : flex;
   justify-content: space-between;
@@ -15,10 +10,14 @@
   gap        : 40px;
 }
 
-.menu__link {
+.nav__menu-link {
   color      : var(--text-primary-color);
   font-size  : var(--fs-small);
   font-weight: var(--fw-normal);
+}
+
+.nav__menu-link:hover {
+  color: var(--text-dark-red);
 }
 
 .navbar__auth {
@@ -28,12 +27,12 @@
   text-transform: capitalize;
 }
 
-.navbar__auth:hover button {
-  background-color: var(--btn-secondary-color);
-  color           : var(--btn-primary-color);
+.navbar__auth button:hover {
+  background-color: var(--bg-dark-red);
+  color           : var(--text-white-color);
 }
 
-.navbar__auth--signin {
+.navbar__auth-signin {
   color      : var(--text-secondary-color);
   font-weight: var(--fw-medium);
   font-size  : var(--fs-small);

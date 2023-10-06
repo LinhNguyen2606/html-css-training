@@ -3,20 +3,26 @@
   --text-primary-color   : #4F5665;
   --text-secondary-color : #0B132A;
   --text-gray-light-color: #AFB5C0;
+  --text-dark-red        : #F53838;
+  --text-white-color     : #FFF;
   /* Text color end*/
 
   /* Button color begin*/
-  --btn-primary-color  : #FFFFFF;
+  --btn-primary-color  : #FFF;
   --btn-secondary-color: #F53838;
   /* Button color end*/
 
   /* Background color begin */
   --bg-gray-light-color: #F8F8F8;
+  --bg-dark-red        : #F53838;
+  --bg-white-color     : #FFF;
   /* Background color end */
 
   /* Border color begin*/
-  --border-gray-light-color  : #DDDDDD;
+  --border-gray-light-color  : #DDD;
   --border-gray-lighter-color: #EEEFF2;
+  --border-dark-red          : #F53838;
+  --border-white-light-color : #FFF;
   /* Border color end*/
 
   /* Font size begin*/

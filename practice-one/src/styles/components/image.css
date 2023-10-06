@@ -13,10 +13,9 @@
 
 /* Feature img begin */
 .feature__img {
-  width      : 100%;
-  max-width  : 508px;
-  height     : 415px;
-  margin-left: 33px;
+  width    : 100%;
+  max-width: 508px;
+  height   : 415px;
 }
 
 /* Feature img end */
@@ -24,26 +23,15 @@
 /* Plan img start */
 .plan__img {
   height: 165px;
-  margin: 0 auto 30px;
 }
 
-.card__img {
+.plan__card__img {
   width    : 100%;
   max-width: 145px;
   height   : 165px
 }
 
 /* Plan img end */
-
-/* Network img start */
-.network__map {
-  width      : 100%;
-  max-width  : 1060px;
-  height     : 538px;
-  margin-left: 40px;
-}
-
-/* Network img end */
 
 /* Customer img begin */
 .customer__avatar img {
@@ -66,7 +54,7 @@
   height   : 50px;
 }
 
-.transition__navigate img {
+.navigation__bar--transition img {
   width    : 100%;
   max-width: 135px;
   height   : 15px;
