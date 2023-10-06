@@ -11,37 +11,41 @@
               outgoing to make new connections."
     />
     <title>LalesVPN</title>
-    <link rel="stylesheet" href="./style/index.css" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/images/icons/fav-icon.svg"
+    />
+
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
     <!-- Start header -->
     <header class="header">
       <div class="container">
         <nav class="navbar">
-          <img
-            src="./assets/images/logo/logo.svg"
-            alt="logo"
-            class="header__logo"
-          />
+          <div class="navbar__logo">
+            <img src="./assets/images/logo/logo.svg" alt="logo" />
+          </div>
           <ul class="navbar__menu">
             <li class="navbar__menu--item">
-              <a href="#" class="menu__link">About</a>
+              <a href="#" class="nav__menu-link">About</a>
             </li>
             <li class="navbar__menu--item">
-              <a href="#" class="menu__link">Features</a>
+              <a href="#" class="nav__menu-link">Features</a>
             </li>
             <li class="navbar__menu--item">
-              <a href="#" class="menu__link">Pricing</a>
+              <a href="#" class="nav__menu-link">Pricing</a>
             </li>
             <li class="navbar__menu--item">
-              <a href="#" class="menu__link">Testimonials</a>
+              <a href="#" class="nav__menu-link">Testimonials</a>
             </li>
             <li class="navbar__menu--item">
-              <a href="#" class="menu__link">Help</a>
+              <a href="#" class="nav__menu-link">Help</a>
             </li>
           </ul>
           <div class="navbar__auth">
-            <a href="#" class="navbar__auth--signin">Sign in</a>
+            <a href="#" class="navbar__auth-signin">Sign in</a>
             <button class="btn btn--outline">Sign up</button>
           </div>
         </nav>
@@ -52,7 +56,7 @@
     <main>
       <!-- Start hero section -->
       <section class="hero">
-        <article class="container hero__container">
+        <div class="container hero__container">
           <div class="hero__content">
             <h1 class="text hero__heading">
               Want anything to be easy with
@@ -78,14 +82,14 @@
               alt="Want anything to be easy with LaslesVPN"
             />
           </div>
-        </article>
+        </div>
       </section>
       <!-- End hero section -->
 
       <!-- Start intro section -->
-      <section class="intro">
+      <div class="intro">
         <div class="container intro__container">
-          <div class="intro--item">
+          <div class="intro__item">
             <div class="intro__icon">
               <img src="./assets/images/icons/user.svg" alt="user" />
             </div>
@@ -95,7 +99,7 @@
             </div>
           </div>
 
-          <div class="intro--item">
+          <div class="intro__item">
             <div class="intro__icon">
               <img src="./assets/images/icons/location.svg" alt="location" />
             </div>
@@ -105,7 +109,7 @@
             </div>
           </div>
 
-          <div class="intro--item">
+          <div class="intro__item">
             <div class="intro__icon">
               <img src="./assets/images/icons/server.svg" alt="server" />
             </div>
@@ -115,11 +119,11 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
       <!-- End intro section -->
 
       <!-- Start feature section -->
-      <section class="feature">
+      <div class="feature">
         <article class="container feature__container">
           <div class="feature__img">
             <img
@@ -128,7 +132,7 @@
             />
           </div>
           <div class="feature__content">
-            <h2 class="text feature__heading">
+            <h2 class="heading feature__heading">
               We Provide Many Features You Can Use
             </h2>
             <p class="subtext feature__desc">
@@ -137,48 +141,28 @@
             </p>
             <ul class="feature__list">
               <li class="feature__item">
-                <img
-                  src="./assets/images/icons/check-circle.svg"
-                  alt="check circle"
-                  class="feature__icon"
-                />
                 <span class="subtext">Powerfull online protection.</span>
               </li>
               <li class="feature__item">
-                <img
-                  src="./assets/images/icons/check-circle.svg"
-                  alt="check circle"
-                  class="feature__icon"
-                />
                 <span class="subtext">Internet without borders.</span>
               </li>
               <li class="feature__item">
-                <img
-                  src="./assets/images/icons/check-circle.svg"
-                  alt="check circle"
-                  class="feature__icon"
-                />
                 <span class="subtext">Supercharged VPN</span>
               </li>
               <li class="feature__item">
-                <img
-                  src="./assets/images/icons/check-circle.svg"
-                  alt="check circle"
-                  class="feature__icon"
-                />
                 <span class="subtext">No specific time limits.</span>
               </li>
             </ul>
           </div>
         </article>
-      </section>
+      </div>
       <!-- End feature section -->
 
       <!-- Start plan section -->
-      <section class="plan">
+      <div class="plan">
         <article class="container">
           <div class="plan__header">
-            <h2 class="text plan__heading">Choose Your Plan</h2>
+            <h2 class="heading plan__heading">Choose Your Plan</h2>
             <p class="subtext">
               Let's choose the package that is best for you and explore it
               happily and cheerfully.
@@ -188,7 +172,7 @@
             <article class="plan__card">
               <div class="plan__img">
                 <img
-                  class="card__img"
+                  class="plan__card__img"
                   alt="free plan package"
                   src="./assets/images/products/free.jpg"
                 />
@@ -196,19 +180,15 @@
               <h3 class="plan__title">Free Plan</h3>
               <div class="plan__details plan__details--first">
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Unlimited Bandwitch</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Encrypted Connection</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>No Traffic Logs</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Works on All Devices</span>
                 </div>
               </div>
@@ -218,7 +198,7 @@
             <article class="plan__card">
               <div class="plan__img">
                 <img
-                  class="card__img"
+                  class="plan__card__img"
                   alt="Standard plan package"
                   src="./assets/images/products/standard.jpg"
                 />
@@ -226,23 +206,18 @@
               <h3 class="plan__title">Standard Plan</h3>
               <div class="plan__details plan__details--second">
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Unlimited Bandwitch</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Encrypted Connection</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Yes Traffic Logs</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Works on All Devices</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Connect Anyware</span>
                 </div>
               </div>
@@ -253,7 +228,7 @@
             <article class="plan__card">
               <div class="plan__img">
                 <img
-                  class="card__img"
+                  class="plan__card__img"
                   alt="Premium plan package"
                   src="./assets/images/products/premium.jpg"
                 />
@@ -261,27 +236,21 @@
               <h3 class="plan__title">Premium Plan</h3>
               <div class="plan__details">
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Unlimited Bandwitch</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Encrypted Connection</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Yes Traffic Logs</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Works on All Devices</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Connect Anyware</span>
                 </div>
                 <div class="plan__infor">
-                  <img src="./assets/images/icons/check.svg" alt="check" />
                   <span>Get New Features</span>
                 </div>
               </div>
@@ -290,14 +259,14 @@
             </article>
           </div>
         </article>
-      </section>
+      </div>
       <!-- End plan section -->
 
       <!-- Start network section -->
       <section class="network">
         <div class="container">
           <div class="network__header">
-            <h2 class="text network__heading">
+            <h2 class="heading network__heading">
               Huge Global Network of Fast VPN
             </h2>
             <p class="subtext">
@@ -313,34 +282,32 @@
       <!-- End network section -->
 
       <!-- Start sponsor section -->
-      <section class="sponsor">
-        <div class="container">
-          <div class="sponsor__container">
-            <div class="sponsor__item">
-              <img src="./assets/images/products/neftlix.png" alt="Neftlix" />
-            </div>
-            <div class="sponsor__item">
-              <img src="./assets/images/products/reddit.png" alt="Reddit" />
-            </div>
-            <div class="sponsor__item">
-              <img src="./assets/images/products/amazon.png" alt="Amazon" />
-            </div>
-            <div class="sponsor__item">
-              <img src="./assets/images/products/discord.png" alt="Discord" />
-            </div>
-            <div class="sponsor__item">
-              <img src="./assets/images/products/spotify.png" alt="Spotify" />
-            </div>
+      <div class="sponsor">
+        <div class="container sponsor__container">
+          <div class="sponsor__item">
+            <img src="./assets/images/products/neftlix.png" alt="Neftlix" />
+          </div>
+          <div class="sponsor__item">
+            <img src="./assets/images/products/reddit.png" alt="Reddit" />
+          </div>
+          <div class="sponsor__item">
+            <img src="./assets/images/products/amazon.png" alt="Amazon" />
+          </div>
+          <div class="sponsor__item">
+            <img src="./assets/images/products/discord.png" alt="Discord" />
+          </div>
+          <div class="sponsor__item">
+            <img src="./assets/images/products/spotify.png" alt="Spotify" />
           </div>
         </div>
-      </section>
+      </div>
       <!-- End sponsor section -->
 
       <!-- Start customer section -->
-      <section class="customer">
+      <div class="customer">
         <article class="container">
           <div class="customer__header">
-            <h2 class="text customer__title">
+            <h2 class="heading customer__title">
               Trusted by Thousands of Happy Customer
             </h2>
             <p class="subtext">
@@ -350,7 +317,7 @@
           </div>
           <div class="customer__list">
             <div class="customer__card">
-              <div class="customer__top">
+              <div class="customer__author">
                 <div class="customer__infor">
                   <div class="customer__avatar">
                     <img
@@ -377,7 +344,7 @@
               </div>
             </div>
             <div class="customer__card">
-              <div class="customer__top">
+              <div class="customer__author">
                 <div class="customer__infor">
                   <div class="customer__avatar">
                     <img
@@ -403,7 +370,7 @@
               </div>
             </div>
             <div class="customer__card">
-              <div class="customer__top">
+              <div class="customer__author">
                 <div class="customer__infor">
                   <div class="customer__avatar">
                     <img
@@ -430,24 +397,24 @@
             </div>
           </div>
 
-          <div class="customer__navigate">
-            <div class="transition__navigate">
+          <div class="navigation__bar">
+            <div class="navigation__bar--transition">
               <img
                 src="./assets/images/icons/transition.svg"
                 alt="transition"
               />
             </div>
             <div class="direction">
-              <div class="direction__backward">
-                <div class="arrow__backward">
+              <div class="direction__border--backward">
+                <div class="direction__arrow--backward">
                   <img
                     src="./assets/images/icons/arrow-back.svg"
                     alt="arrow back"
                   />
                 </div>
               </div>
-              <div class="direction__forward">
-                <div class="arrow__forward">
+              <div class="direction__border--forward">
+                <div class="direction__arrow--forward">
                   <img
                     src="./assets/images/icons/arrow-right.svg"
                     alt="arrow right"
@@ -457,28 +424,26 @@
             </div>
           </div>
         </article>
-      </section>
+      </div>
       <!-- End customer section -->
 
       <!-- Start subscribe section -->
       <section class="subscribe">
-        <div class="container">
-          <div class="subscribe-container">
-            <div class="subscribe__content">
-              <h2 class="text subscribe__title">
-                Subscribe Now for Get Special Features!
-              </h2>
-              <p class="subtext">Let's subscribe with us and find the fun.</p>
-            </div>
-            <a
-              aria-label="button subscribe now"
-              href="javascript:void(0)"
-              class="btn btn--primary btn--rounded"
-              rel="nofollow"
-              target="_blank"
-              >Subscribe now</a
-            >
+        <div class="container subscribe__container">
+          <div class="subscribe__content">
+            <h2 class="heading subscribe__title">
+              Subscribe Now for Get Special Features!
+            </h2>
+            <p class="subtext">Let's subscribe with us and find the fun.</p>
           </div>
+          <a
+            aria-label="button subscribe now"
+            href="javascript:void(0)"
+            class="btn btn--primary btn--rounded"
+            rel="nofollow"
+            target="_blank"
+            >Subscribe now</a
+          >
         </div>
       </section>
       <!-- End subscribe section -->
@@ -486,43 +451,44 @@
 
     <!-- Start footer section -->
     <footer class="footer">
-      <div class="container">
-        <div class="footer__container">
-          <div class="footer__col">
-            <a href="index.html" class="footer__logo">
-              <img src="./assets/images/logo/logo.svg" alt="logo" />
-            </a>
-            <p class="subtext footer__desc">
-              <span class="text--bold">LaslesVPN</span> is a private virtual
-              network that has unique features and has high security.
-            </p>
-            <div class="social">
-              <a
-                aria-label="facebook"
-                href="javascript:void(0)"
-                class="social__item social__fb"
-                rel="nofollow"
-                target="_blank"
-              ></a>
-              <a
-                aria-label="twitter"
-                href="javascript:void(0)"
-                class="social__item social__twt"
-                rel="nofollow"
-                target="_blank"
-              ></a>
-              <a
-                aria-label="instagram"
-                href="javascript:void(0)"
-                class="social__item social__insta"
-                rel="nofollow"
-                target="_blank"
-              ></a>
-            </div>
-            <p class="footer__copyright">
-              ©2020Lasles<span class="text--bold">VPN</span>
-            </p>
+      <div class="container footer__container">
+        <div class="footer__content--left">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/images/logo/logo.svg" alt="logo" />
+          </a>
+          <p class="subtext footer__desc">
+            <span class="text--bold">LaslesVPN</span> is a private virtual
+            network that has unique features and has high security.
+          </p>
+          <div class="social">
+            <a
+              aria-label="facebook"
+              href="javascript:void(0)"
+              class="social__item social__fb"
+              rel="nofollow"
+              target="_blank"
+            ></a>
+            <a
+              aria-label="twitter"
+              href="javascript:void(0)"
+              class="social__item social__twt"
+              rel="nofollow"
+              target="_blank"
+            ></a>
+            <a
+              aria-label="instagram"
+              href="javascript:void(0)"
+              class="social__item social__insta"
+              rel="nofollow"
+              target="_blank"
+            ></a>
           </div>
+          <p class="footer__copyright">
+            &copy;2020Lasles<span class="text--bold">VPN</span>
+          </p>
+        </div>
+
+        <div class="footer__content--right">
           <div class="footer__col">
             <h3 class="text footer__heading">Product</h3>
             <ul class="footer__links">
@@ -546,6 +512,7 @@
               </li>
             </ul>
           </div>
+
           <div class="footer__col">
             <h3 class="text footer__heading">Engage</h3>
             <ul class="footer__links">
@@ -569,14 +536,15 @@
               </li>
             </ul>
           </div>
+
           <div class="footer__col">
             <h3 class="text footer__heading">Earn Money</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a class="subtext footer-link" href="#">Affiliate</a>
+                <a class="subtext footer__link" href="#">Affiliate</a>
               </li>
               <li class="footer__item">
-                <a class="subtext footer-link" href="#">Become Partner</a>
+                <a class="subtext footer__link" href="#">Become Partner</a>
               </li>
             </ul>
           </div>

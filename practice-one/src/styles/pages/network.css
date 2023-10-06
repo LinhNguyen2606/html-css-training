@@ -12,12 +12,14 @@
 }
 
 .network__header .network__heading {
-  font-size    : var(--fs-large);
-  line-height  : var(--lh-xl-huge);
   margin-bottom: 20px;
   max-width    : 383px;
 }
 
 .network__header .subtext {
   margin-bottom: 156px;
+}
+
+.network__map {
+  margin-left: 40px;
 }

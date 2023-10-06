@@ -4,4 +4,6 @@
 
 @import './layout/index.css';
 
+@import './pages/index.css';
+
 @import './components/index.css';

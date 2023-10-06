@@ -5,6 +5,13 @@
   line-height: var(--lh-xxl-huge);
 }
 
+.heading {
+  color      : var(--text-secondary-color);
+  font-size  : var(--fs-large);
+  font-weight: var(--fw-medium);
+  line-height: var(--lh-xl-huge);
+}
+
 .subtext {
   color      : var(--text-primary-color);
   font-size  : var(--fs-small);

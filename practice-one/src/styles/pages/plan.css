@@ -13,13 +13,15 @@
 }
 
 .plan__header .plan__heading {
-  font-size    : var(--fs-large);
-  line-height  : var(--lh-xl-huge);
   margin-bottom: 21px;
 }
 
 .plan__header p {
   margin-bottom: 60px;
+}
+
+.plan__img {
+  margin: 0 auto 30px;
 }
 
 .plan__list {
@@ -38,15 +40,16 @@
 }
 
 .plan__infor {
-  display    : flex;
-  align-items: center;
-  gap        : 0 20px;
+  display          : flex;
+  background-image : url(../../assets/images/icons/check.svg);
+  background-repeat: no-repeat;
 }
 
 .plan__infor span {
   color      : var(--text-primary-color);
   font-size  : var(--fs-x-small);
   line-height: calc(30/14);
+  margin-left: 43px;
 }
 
 .plan__price {
