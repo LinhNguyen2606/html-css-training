@@ -1,18 +1,18 @@
-.text {
+.primary__text {
   color      : var(--text-secondary-color);
   font-size  : var(--fs-x-huge);
   font-weight: var(--fw-medium);
   line-height: var(--lh-xxl-huge);
 }
 
-.heading {
+.primary__heading {
   color      : var(--text-secondary-color);
   font-size  : var(--fs-large);
   font-weight: var(--fw-medium);
   line-height: var(--lh-xl-huge);
 }
 
-.subtext {
+.sub__text {
   color      : var(--text-primary-color);
   font-size  : var(--fs-small);
   font-weight: var(--fw-normal);
