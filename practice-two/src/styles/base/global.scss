@@ -1,7 +1,7 @@
 body {
-  color: $text-primary-color;
-  font-weight: $fw-normal;
-  background-color: $bg-white-color;
-  word-wrap: break-word;
-  font-family: $primary-font;
+  color: $text-primary-color !important;
+  font-weight: $fw-normal !important;
+  background-color: $bg-white-color !important;
+  word-wrap: break-word !important;
+  font-family: $primary-font !important;
 }

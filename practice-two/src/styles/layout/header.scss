@@ -1,0 +1,13 @@
+.header {
+  margin-top: 50px;
+  margin-bottom: 116px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+@media (min-width: 1440px) {
+  .header {
+    margin-top: 26px;
+  }
+}
