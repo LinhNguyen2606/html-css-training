@@ -1,15 +1,18 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 
+  .navbar__logo {
+    margin-right: 158px;
+  }
   .navbar__menu,
   .navbar__auth {
     display: flex;
     align-items: center;
+    flex-grow: 1;
     text-transform: capitalize;
   }
 
@@ -42,14 +45,16 @@
       color: $text-white-color;
       background-color: $bg-dark-red-color;
       box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
-      transform: translateX(0.25rem);
+      transform: translateY(-0.25rem);
     }
   }
 }
 
 @media (max-width: 1440px) {
   .navbar {
-    padding: 0 149px;
+    .navbar__auth {
+      flex-grow: 0;
+    }
   }
 }
 
@@ -63,26 +68,79 @@
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .navbar {
     box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
-    padding: 0 50px;
+    padding: 0 150px;
+    width: 1440px;
+
+    .navbar__logo {
+      width: 250px;
+    }
 
     .navbar__menu {
       gap: 20px;
+      flex-grow: 0;
       align-items: flex-start;
 
-      .navbar__menu--item:last-child {
-        margin-bottom: 14px;
+      .navbar__menu--item {
+        .navbar__menu-link {
+          font-size: $fs-large;
+        }
+        &:last-child {
+          margin-bottom: 14px;
+        }
       }
     }
 
     .navbar__auth {
       margin-top: 20px;
+
+      .navbar__auth-signin,
+      .navbar__auth-signup {
+        font-size: $fs-large;
+      }
     }
 
     .border-bottom {
       border-bottom: 1px solid #bec3d0 !important;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar {
+    .navbar__logo {
+      margin-right: 50px;
+    }
+
+    .navbar__auth {
+      width: 250px;
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .navbar {
+    .navbar__logo img {
+      width: 250px;
+    }
+
+    button.navbar-toggler {
+      font-size: $fs-large;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .navbar {
+    .navbar__logo img {
+      width: 250px;
+    }
+
+    button.navbar-toggler {
+      font-size: 40px;
     }
   }
 }

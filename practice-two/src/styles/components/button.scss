@@ -16,3 +16,16 @@
   border: 1px solid;
   font-weight: $fw-medium;
 }
+
+.btn--primary {
+  font-weight: $fw-bold;
+  background-color: $bg-dark-red-color;
+  color: $text-white-color;
+}
+
+.btn--rounded {
+  border-radius: 10px;
+  padding: 18px 78px;
+  line-height: $lh-x-small;
+  box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+}
