@@ -1,6 +1,6 @@
 .header {
   margin-top: 50px;
-  margin-bottom: 116px;
+  margin-bottom: 100px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -9,5 +9,18 @@
 @media (min-width: 1440px) {
   .header {
     margin-top: 26px;
+    margin-left: 300px;
+  }
+
+  .header__container {
+    margin-left: calc((100% - 1440px) / 2);
+    margin-right: calc((100% - 1440px) / 2);
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .header__container {
+    margin-left: 148px;
   }
 }

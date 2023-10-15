@@ -22,13 +22,14 @@
   <body>
     <!-- Header section begin -->
     <header class="header">
-      <div class="wrapper">
+      <div class="wrapper header__container">
         <nav
           class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-transition"
         >
           <div class="navbar-brand navbar__logo" href="#">
             <img src="./assets/images/logo/logo.svg" alt="logo" />
           </div>
+          <!-- Navbar menu -->
           <button
             class="navbar-toggler shadow-none"
             type="button"
@@ -38,6 +39,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
+            <!-- Toggle Btn -->
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-collapse collapse" id="navbarSupportedContent">
@@ -62,13 +64,48 @@
             </ul>
             <div class="navbar__auth">
               <a href="#" class="navbar__auth-signin">Sign in</a>
-              <button class="btn btn--outline">Sign up</button>
+              <button class="btn btn--outline navbar__auth-signup">
+                Sign up
+              </button>
             </div>
           </div>
         </nav>
       </div>
     </header>
     <!-- Header section end -->
+
+    <main>
+      <!-- Hero section begin -->
+      <section class="hero">
+        <div class="wrapper hero__container">
+          <div class="hero__content">
+            <h1 class="hero__heading">
+              Want anything to be easy with
+              <span class="text--bold">LaslesVPN</span>.
+            </h1>
+            <p class="sub__heading hero__description">
+              Provide a network for all your needs with ease and fun using
+              <span class="text--medium">LaslesVPN</span> discover interesting
+              features from us.
+            </p>
+            <a
+              aria-label="button get started"
+              href="javascript:void(0)"
+              class="btn btn--primary btn--rounded hero__btn"
+              rel="nofollow"
+              >Get started</a
+            >
+          </div>
+          <div class="hero__img">
+            <img
+              src="./assets/images/products/hero.jpg"
+              alt="Want anything to be easy with LaslesVPN"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Hero section end -->
+    </main>
     <script src="./index.js"></script>
   </body>
 </html>
