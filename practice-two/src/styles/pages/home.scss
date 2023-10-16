@@ -211,20 +211,11 @@
 }
 
 @media (max-width: 992px) {
-  // Intro section begin
-  .intro {
+  .intro,
+  .feature,
+  .plan {
     width: 1440px;
   }
-  // Intro section end
-
-  // Feature section begin
-  .feature {
-    margin-left: 122px;
-    &__container {
-      width: 1440px;
-    }
-  }
-  // Feature section end
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -348,9 +339,56 @@
     }
   }
   // Feature section end
+
+  // Plan section begin
+  .plan {
+    &__header {
+      max-width: 1440px;
+
+      .plan__heading {
+        font-size: $fs-huge;
+      }
+
+      .plan__desc {
+        font-size: $fs-xl-large;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      .plan__card {
+        .plan__img {
+          .plan__card__img {
+            width: 200px;
+          }
+        }
+
+        .plan__title {
+          font-size: $fs-large;
+        }
+
+        .plan__details {
+          .plan__infor {
+            background-size: 50px;
+            & span {
+              font-size: $fs-x-large;
+              margin-left: 60px;
+            }
+          }
+        }
+
+        .plan__price {
+          font-size: $fs-xl-large;
+        }
+      }
+    }
+  }
+  // Plan section end
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   // Intro section begin
   .intro {
     &__container {
@@ -392,4 +430,37 @@
     }
   }
   // Intro section end
+
+  // Plan section begin
+  .plan {
+    &__list {
+      max-width: 800px;
+      .plan__card {
+        .plan__img {
+          .plan__card__img {
+            width: 250px;
+          }
+        }
+
+        .plan__title {
+          font-size: $fs-x-huge;
+        }
+
+        .plan__details {
+          .plan__infor {
+            background-size: 76px;
+            & span {
+              font-size: $fs-large;
+              margin-left: 60px;
+            }
+          }
+        }
+
+        .plan__price {
+          font-size: $fs-x-huge;
+        }
+      }
+    }
+  }
+  // Plan section end
 }

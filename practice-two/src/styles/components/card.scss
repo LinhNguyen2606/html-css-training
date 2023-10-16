@@ -24,3 +24,21 @@
     transform: translateY(-0.25rem);
   }
 }
+
+@media (max-width: 768px) {
+  .plan__card {
+    & a {
+      font-size: $fs-x-large;
+      padding: 13px 100px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .plan__card {
+    & a {
+      font-size: $fs-xl-large;
+      padding: 20px 200px;
+    }
+  }
+}
