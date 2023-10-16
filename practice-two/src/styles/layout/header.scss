@@ -4,18 +4,16 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: $bg-white-color;
 }
 
 @media (min-width: 1440px) {
   .header {
     margin-top: 26px;
-    margin-left: 300px;
-  }
 
-  .header__container {
-    margin-left: calc((100% - 1440px) / 2);
-    margin-right: calc((100% - 1440px) / 2);
-    box-sizing: border-box;
+    &__container {
+      box-sizing: border-box;
+    }
   }
 }
 
