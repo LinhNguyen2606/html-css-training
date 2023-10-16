@@ -83,7 +83,7 @@
 
 // Start feature section
 .feature {
-  margin-bottom: 207px;
+  margin-bottom: 128px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -128,6 +128,80 @@
 }
 // End feature section
 
+// Start plan section
+.plan {
+  padding: 80px 0 150px;
+  background: linear-gradient(
+    180deg,
+    $bg-gray-light-color -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
+  &__header {
+    text-align: center;
+    max-width: 555px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .plan__desc {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .plan__card {
+      .plan__img {
+        margin-bottom: 30px;
+      }
+      .plan__title {
+        color: $text-secondary-color;
+        font-size: $fs-x-medium;
+        font-weight: $fw-medium;
+        line-height: $lh-xs-medium;
+        margin-bottom: 28px;
+      }
+
+      .plan__details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 48px;
+
+        &--first,
+        &--second {
+          min-height: 230px;
+        }
+
+        .plan__infor {
+          display: flex;
+          background-image: url(../assets/images/icons/check.svg);
+          background-repeat: no-repeat;
+
+          & span {
+            font-size: $fs-x-small;
+            line-height: $lh-xxl-medium;
+            margin-left: 43px;
+          }
+        }
+      }
+
+      .plan__price {
+        margin-bottom: 21px;
+        color: $text-secondary-color;
+        font-size: $fs-x-large;
+        font-weight: $fw-medium;
+        line-height: $lh-x-medium;
+      }
+    }
+  }
+}
+// End plan section
+
 @media (max-width: 1440px) {
   // Hero section begin
   .hero {
@@ -137,20 +211,11 @@
 }
 
 @media (max-width: 992px) {
-  // Intro section begin
-  .intro {
+  .intro,
+  .feature,
+  .plan {
     width: 1440px;
   }
-  // Intro section end
-
-  // Feature section begin
-  .feature {
-    margin-left: 122px;
-    &__container {
-      width: 1440px;
-    }
-  }
-  // Feature section end
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -274,9 +339,56 @@
     }
   }
   // Feature section end
+
+  // Plan section begin
+  .plan {
+    &__header {
+      max-width: 1440px;
+
+      .plan__heading {
+        font-size: $fs-huge;
+      }
+
+      .plan__desc {
+        font-size: $fs-xl-large;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      .plan__card {
+        .plan__img {
+          .plan__card__img {
+            width: 200px;
+          }
+        }
+
+        .plan__title {
+          font-size: $fs-large;
+        }
+
+        .plan__details {
+          .plan__infor {
+            background-size: 50px;
+            & span {
+              font-size: $fs-x-large;
+              margin-left: 60px;
+            }
+          }
+        }
+
+        .plan__price {
+          font-size: $fs-xl-large;
+        }
+      }
+    }
+  }
+  // Plan section end
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   // Intro section begin
   .intro {
     &__container {
@@ -318,4 +430,37 @@
     }
   }
   // Intro section end
+
+  // Plan section begin
+  .plan {
+    &__list {
+      max-width: 800px;
+      .plan__card {
+        .plan__img {
+          .plan__card__img {
+            width: 250px;
+          }
+        }
+
+        .plan__title {
+          font-size: $fs-x-huge;
+        }
+
+        .plan__details {
+          .plan__infor {
+            background-size: 76px;
+            & span {
+              font-size: $fs-large;
+              margin-left: 60px;
+            }
+          }
+        }
+
+        .plan__price {
+          font-size: $fs-x-huge;
+        }
+      }
+    }
+  }
+  // Plan section end
 }
