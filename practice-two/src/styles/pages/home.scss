@@ -1,7 +1,7 @@
 // Start hero section
 .hero {
   margin-bottom: 80px;
-  .hero__container {
+  &__container {
     display: grid;
     grid-template-columns: 555px 611px;
     column-gap: 41px;
@@ -20,7 +20,7 @@
 
       .hero__description {
         font-size: $fs-small;
-        margin-bottom: 50px;
+        margin-bottom: 59px;
       }
 
       .hero__btn:hover {
@@ -35,51 +35,98 @@
 
 // Start intro section
 .intro {
-  margin-bottom: 98px;
+  margin-bottom: 88px;
 
-  .intro__container {
+  &__container {
     display: flex;
     padding: 44px 91px;
     background-color: $bg-white-color;
     border-radius: 10px;
     box-shadow: 0 50px 114px rgba(13, 16, 37, 0.06);
     min-height: 200px;
-  }
 
-  .intro__item {
-    display: flex;
-    align-items: center;
-    gap: 36px;
+    .intro__item {
+      display: flex;
+      align-items: center;
+      gap: 36px;
 
-    &:nth-child(1) {
-      margin-right: 129px;
-    }
-
-    &:nth-child(2) {
-      border-left: 2px solid $border-gray-lighter-color;
-      border-right: 2px solid $border-gray-lighter-color;
-      padding: 0 134px 0 113px;
-    }
-
-    &:nth-child(3) {
-      margin-left: 91.5px;
-    }
-
-    .intro__item-general {
-      .intro__title {
-        color: $text-secondary-color;
-        font-size: $fs-x-large;
-        font-weight: $fw-bold;
-        line-height: $lh-x-medium;
+      &:nth-child(1) {
+        margin-right: 129px;
       }
-      .intro__text {
-        font-size: $fs-medium;
-        line-height: $lh-medium;
+
+      &:nth-child(2) {
+        border-left: 2px solid $border-gray-lighter-color;
+        border-right: 2px solid $border-gray-lighter-color;
+        padding: 0 134px 0 113px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 91.5px;
+      }
+
+      &-general {
+        .intro__title {
+          color: $text-secondary-color;
+          font-size: $fs-x-large;
+          font-weight: $fw-bold;
+          line-height: $lh-x-medium;
+        }
+        .intro__text {
+          font-size: $fs-medium;
+          line-height: $lh-medium;
+        }
       }
     }
   }
 }
 // End intro section
+
+// Start feature section
+.feature {
+  margin-bottom: 207px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    row-gap: 169.48px;
+
+    .feature__img {
+      margin-left: 33px;
+    }
+
+    .feature__content {
+      max-width: 430px;
+      width: 100%;
+
+      .feature__heading {
+        margin-bottom: 22px;
+      }
+
+      .feature__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+          background-image: url(../assets/images/icons/check-circle.svg);
+          background-repeat: no-repeat;
+          background-position: 0 3px;
+          display: flex;
+
+          & span {
+            font-size: $fs-x-small;
+            line-height: $lh-xxl-medium;
+            transform: translateY(3px);
+            margin-left: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+// End feature section
 
 @media (max-width: 1440px) {
   // Hero section begin
@@ -95,13 +142,22 @@
     width: 1440px;
   }
   // Intro section end
+
+  // Feature section begin
+  .feature {
+    margin-left: 122px;
+    &__container {
+      width: 1440px;
+    }
+  }
+  // Feature section end
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
   // Hero section begin
   .hero {
-    .hero__description,
-    .hero__btn {
+    &__description,
+    &__btn {
       font-size: $fs-x-large;
     }
   }
@@ -111,7 +167,7 @@
 @media (max-width: 768px) {
   // Hero section begin
   .hero {
-    .hero__container {
+    &__container {
       width: 1140px;
       grid-template-columns: 1fr;
 
@@ -125,9 +181,6 @@
 
         .hero__heading {
           max-width: 844px;
-        }
-
-        .hero__heading {
           font-size: $fs-huge;
         }
 
@@ -150,18 +203,18 @@
 
   // Intro section begin
   .intro {
-    .intro__container {
+    &__container {
       padding: 44px 30px;
       min-height: 300px;
 
       .intro__item {
         margin-top: 30px;
-        .intro__item-icon {
+        &-icon {
           & img {
             width: 100px;
           }
 
-          .intro__item-general {
+          &-general {
             .intro__title {
               font-size: $fs-large;
             }
@@ -176,16 +229,60 @@
 
     // Intro section end
   }
+
+  // Feature section begin
+  .feature {
+    &__container {
+      flex-direction: column;
+
+      .feature__img {
+        width: 1140px;
+        & img {
+          width: 100%;
+        }
+      }
+
+      .feature__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 1140px;
+        text-align: center;
+
+        .feature__heading {
+          max-width: 844px;
+          font-size: $fs-huge;
+        }
+
+        .feature__desc {
+          font-size: $fs-xl-large;
+        }
+
+        .feature__list {
+          width: 100%;
+          &-item {
+            background-position: 0 12px;
+            background-size: 50px;
+            & span {
+              transform: translateY(0);
+              margin-left: 62px;
+              font-size: $fs-large;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Feature section end
 }
 
 @media (max-width: 500px) {
   // Intro section begin
   .intro {
-    .intro__container {
+    &__container {
       flex-direction: column;
       align-items: center;
       gap: 40px;
-      box-shadow: none;
 
       .intro__item {
         gap: 61px;
@@ -202,13 +299,13 @@
           margin-left: 33px;
         }
 
-        .intro__item-icon {
+        &-icon {
           & img {
             width: 150px;
           }
         }
 
-        .intro__item-general {
+        &-general {
           .intro__title {
             font-size: $fs-x-huge;
           }
