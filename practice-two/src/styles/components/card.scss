@@ -1,0 +1,26 @@
+.plan__card {
+  background-color: $bg-white-color;
+  border-radius: 10px;
+  border: 2px solid $border-gray-light-color;
+  padding: 80px 69px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & a {
+    padding: 10px 63px;
+    font-weight: $fw-bold;
+  }
+
+  &:hover {
+    border-color: $border-dark-red-color;
+  }
+
+  &:hover a {
+    color: $text-white-color;
+    font-weight: $fw-bold;
+    background-color: $bg-dark-red-color;
+    box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+    transform: translateY(-0.25rem);
+  }
+}

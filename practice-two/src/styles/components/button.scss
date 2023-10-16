@@ -8,7 +8,7 @@
   text-transform: capitalize;
   transition: transform 0.4s;
 
-  &.btn--outline {
+  &--outline {
     background-color: transparent;
     border-radius: 50px;
     color: $text-dark-red-color;
