@@ -202,6 +202,29 @@
 }
 // End plan section
 
+// Start network section
+.network {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 555px;
+    text-align: center;
+    margin: 0 auto;
+
+    .network__heading {
+      max-width: 383px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__map {
+    margin-top: 137px;
+    margin-left: 40px;
+  }
+}
+// End network section
+
 @media (max-width: 1440px) {
   // Hero section begin
   .hero {
@@ -213,7 +236,8 @@
 @media (max-width: 992px) {
   .intro,
   .feature,
-  .plan {
+  .plan,
+  .network {
     width: 1440px;
   }
 }
@@ -386,6 +410,27 @@
     }
   }
   // Plan section end
+
+  // Network section begin
+  .network {
+    .network__header {
+      max-width: 1140px;
+      .network__heading {
+        max-width: 660px;
+        font-size: $fs-huge;
+      }
+      & p {
+        font-size: $fs-xl-large;
+      }
+    }
+
+    .network__map {
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  // Network section end
 }
 
 @media (max-width: 576px) {
