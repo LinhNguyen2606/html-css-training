@@ -451,7 +451,7 @@
             background-size: 76px;
             & span {
               font-size: $fs-large;
-              margin-left: 60px;
+              transform: translateX(40px);
             }
           }
         }
