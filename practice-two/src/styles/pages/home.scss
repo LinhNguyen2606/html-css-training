@@ -232,6 +232,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     .sponsor__image:nth-child(3) {
       margin: 0 -48px;
     }
@@ -251,20 +252,21 @@
   .intro,
   .feature,
   .plan,
-  .network {
-    width: 1440px;
+  .network,
+  .sponsor {
+    width: 1440px !important;
   }
-}
 
-@media (min-width: 768px) and (max-width: 992px) {
-  // Hero section begin
   .hero {
-    &__description,
-    &__btn {
-      font-size: $fs-x-large;
+    &__container {
+      .hero__content {
+        .hero__description,
+        .hero__btn {
+          font-size: $fs-x-large;
+        }
+      }
     }
   }
-  // Hero section end
 }
 
 @media (max-width: 768px) {
@@ -441,6 +443,18 @@
     }
   }
   // Network section end
+
+  // Sponsor section begin
+  .sponsor {
+    &__container {
+      .sponsor__image {
+        & img {
+          width: 250px;
+        }
+      }
+    }
+  }
+  // Sponsor section end
 }
 
 @media (max-width: 576px) {
@@ -518,4 +532,16 @@
     }
   }
   // Plan section end
+
+  // Sponsor section begin
+  .sponsor {
+    &__container {
+      .sponsor__image {
+        & img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  // Sponsor section end
 }
