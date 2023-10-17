@@ -255,7 +255,7 @@
 
 @media (max-width: 768px) {
   .hero__heading,
-  .feature__heading,
+  .feature__content .feature__heading,
   .plan__header .plan__heading,
   .network__header .network__heading {
     font-size: $fs-huge;
@@ -358,11 +358,11 @@
           width: 100%;
           &-item {
             background-position: 0 12px;
-            background-size: 50px;
+            background-size: 60px;
             & span {
               transform: translateY(0);
-              margin-left: 62px;
-              font-size: $fs-large;
+              margin-left: 70px;
+              font-size: $fs-xl-large;
             }
           }
         }
