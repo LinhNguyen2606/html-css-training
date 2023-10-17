@@ -204,6 +204,7 @@
 
 // Start network section
 .network {
+  margin-bottom: 36px;
   &__header {
     display: flex;
     flex-direction: column;
@@ -224,6 +225,19 @@
   }
 }
 // End network section
+
+// Start sponsor section
+.sponsor {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .sponsor__image:nth-child(3) {
+      margin: 0 -48px;
+    }
+  }
+}
+// End sponsor section
 
 @media (max-width: 1440px) {
   // Hero section begin
