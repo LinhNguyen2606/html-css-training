@@ -236,7 +236,8 @@
 @media (max-width: 992px) {
   .intro,
   .feature,
-  .plan {
+  .plan,
+  .network {
     width: 1440px;
   }
 }
@@ -409,6 +410,27 @@
     }
   }
   // Plan section end
+
+  // Network section begin
+  .network {
+    .network__header {
+      max-width: 1140px;
+      .network__heading {
+        max-width: 660px;
+        font-size: $fs-huge;
+      }
+      & p {
+        font-size: $fs-xl-large;
+      }
+    }
+
+    .network__map {
+      & img {
+        width: 100%;
+      }
+    }
+  }
+  // Network section end
 }
 
 @media (max-width: 576px) {
