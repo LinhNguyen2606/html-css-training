@@ -5,20 +5,20 @@
   position: sticky;
   top: 0;
 
-  .navbar__logo {
+  &__logo {
     margin-right: 158px;
   }
-  .navbar__menu,
-  .navbar__auth {
+  &__menu,
+  &__auth {
     display: flex;
     align-items: center;
     flex-grow: 1;
     text-transform: capitalize;
   }
 
-  .navbar__menu {
+  &__menu {
     gap: 40px;
-    .navbar__menu--item {
+    &-item {
       .navbar__menu-link {
         color: $text-primary-color;
         font-size: $fs-smail;
@@ -32,9 +32,9 @@
     }
   }
 
-  .navbar__auth {
+  &__auth {
     gap: 30px;
-    .navbar__auth-signin {
+    &-signin {
       color: $text-secondary-color;
       font-size: $fs-smail;
       font-weight: $fw-medium;
@@ -52,7 +52,7 @@
 
 @media (max-width: 1440px) {
   .navbar {
-    .navbar__auth {
+    &__auth {
       flex-grow: 0;
     }
   }
@@ -63,7 +63,7 @@
     border-bottom: none !important;
   }
 
-  .navbar__menu--item:last-child {
+  .navbar__menu-item:last-child {
     margin-bottom: 0;
   }
 }
@@ -74,16 +74,16 @@
     padding: 0 150px;
     width: 1440px;
 
-    .navbar__logo {
+    &__logo {
       width: 250px;
     }
 
-    .navbar__menu {
+    &__menu {
       gap: 20px;
       flex-grow: 0;
       align-items: flex-start;
 
-      .navbar__menu--item {
+      &-item {
         .navbar__menu-link {
           font-size: $fs-large;
         }
@@ -93,11 +93,11 @@
       }
     }
 
-    .navbar__auth {
+    &__auth {
       margin-top: 20px;
 
-      .navbar__auth-signin,
-      .navbar__auth-signup {
+      &-signin,
+      &-signup {
         font-size: $fs-large;
       }
     }
@@ -110,11 +110,11 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .navbar {
-    .navbar__logo {
+    &__logo {
       margin-right: 50px;
     }
 
-    .navbar__auth {
+    &__auth {
       width: 250px;
       margin-left: 50px;
     }
@@ -123,8 +123,10 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
   .navbar {
-    .navbar__logo img {
-      width: 250px;
+    &__logo {
+      & img {
+        width: 200px;
+      }
     }
 
     button.navbar-toggler {
@@ -135,8 +137,10 @@
 
 @media (max-width: 769px) {
   .navbar {
-    .navbar__logo img {
-      width: 250px;
+    &__logo {
+      & img {
+        width: 250px;
+      }
     }
 
     button.navbar-toggler {

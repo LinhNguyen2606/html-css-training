@@ -1,33 +1,244 @@
 // Start hero section
-.hero__container {
-  display: grid;
-  grid-template-columns: 555px 611px;
-  column-gap: 41px;
+.hero {
+  margin-bottom: 80px;
+  &__container {
+    display: grid;
+    grid-template-columns: 555px 611px;
+    column-gap: 41px;
 
-  .hero__content {
-    max-width: 555px;
-    width: 100%;
+    .hero__content {
+      max-width: 555px;
+      width: 100%;
 
-    .hero__heading {
-      color: $text-secondary-color;
-      font-size: $fs-x-huge;
-      font-weight: $fw-medium;
-      line-height: $lh-xxl-huge;
-      margin-bottom: 20px;
-    }
+      .hero__heading {
+        color: $text-secondary-color;
+        font-size: $fs-x-huge;
+        font-weight: $fw-medium;
+        line-height: $lh-xxl-huge;
+        margin-bottom: 20px;
+      }
 
-    .hero__description {
-      margin-bottom: 50px;
-    }
+      .hero__description {
+        font-size: $fs-small;
+        margin-bottom: 59px;
+      }
 
-    .hero__btn:hover {
-      color: $text-white-color;
-      background-color: $bg-dark-red-color;
-      transform: translateY(-0.25rem);
+      .hero__btn:hover {
+        color: $text-white-color;
+        background-color: $bg-dark-red-color;
+        transform: translateY(-0.25rem);
+      }
     }
   }
 }
 // End hero section
+
+// Start intro section
+.intro {
+  margin-bottom: 88px;
+
+  &__container {
+    display: flex;
+    padding: 44px 91px;
+    background-color: $bg-white-color;
+    border-radius: 10px;
+    box-shadow: 0 50px 114px rgba(13, 16, 37, 0.06);
+    min-height: 200px;
+
+    .intro__item {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+
+      &:nth-child(1) {
+        margin-right: 129px;
+      }
+
+      &:nth-child(2) {
+        border-left: 2px solid $border-gray-lighter-color;
+        border-right: 2px solid $border-gray-lighter-color;
+        padding: 0 134px 0 113px;
+      }
+
+      &:nth-child(3) {
+        margin-left: 91.5px;
+      }
+
+      &-general {
+        .intro__title {
+          color: $text-secondary-color;
+          font-size: $fs-x-large;
+          font-weight: $fw-bold;
+          line-height: $lh-x-medium;
+        }
+        .intro__text {
+          font-size: $fs-medium;
+          line-height: $lh-medium;
+        }
+      }
+    }
+  }
+}
+// End intro section
+
+// Start feature section
+.feature {
+  margin-bottom: 128px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    row-gap: 169.48px;
+
+    .feature__img {
+      margin-left: 33px;
+    }
+
+    .feature__content {
+      max-width: 430px;
+      width: 100%;
+
+      .feature__heading {
+        margin-bottom: 22px;
+      }
+
+      .feature__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+
+        &-item {
+          background-image: url(../assets/images/icons/check-circle.svg);
+          background-repeat: no-repeat;
+          background-position: 0 3px;
+          display: flex;
+
+          & span {
+            font-size: $fs-x-small;
+            line-height: $lh-xxl-medium;
+            transform: translateY(3px);
+            margin-left: 34px;
+          }
+        }
+      }
+    }
+  }
+}
+// End feature section
+
+// Start plan section
+.plan {
+  padding: 80px 0 150px;
+  background: linear-gradient(
+    180deg,
+    $bg-gray-light-color -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
+  &__header {
+    text-align: center;
+    max-width: 555px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    .plan__desc {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    .plan__card {
+      .plan__img {
+        margin-bottom: 30px;
+      }
+      .plan__title {
+        color: $text-secondary-color;
+        font-size: $fs-x-medium;
+        font-weight: $fw-medium;
+        line-height: $lh-xs-medium;
+        margin-bottom: 28px;
+      }
+
+      .plan__details {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 48px;
+
+        &--first,
+        &--second {
+          min-height: 230px;
+        }
+
+        .plan__infor {
+          display: flex;
+          background-image: url(../assets/images/icons/check.svg);
+          background-repeat: no-repeat;
+
+          & span {
+            font-size: $fs-x-small;
+            line-height: $lh-xxl-medium;
+            margin-left: 43px;
+          }
+        }
+      }
+
+      .plan__price {
+        margin-bottom: 21px;
+        color: $text-secondary-color;
+        font-size: $fs-x-large;
+        font-weight: $fw-medium;
+        line-height: $lh-x-medium;
+      }
+    }
+  }
+}
+// End plan section
+
+// Start network section
+.network {
+  margin-bottom: 36px;
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 555px;
+    text-align: center;
+    margin: 0 auto;
+
+    .network__heading {
+      max-width: 383px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__map {
+    margin-top: 137px;
+    margin-left: 40px;
+  }
+}
+// End network section
+
+// Start sponsor section
+.sponsor {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .sponsor__image:nth-child(3) {
+      margin: 0 -48px;
+    }
+  }
+}
+// End sponsor section
 
 @media (max-width: 1440px) {
   // Hero section begin
@@ -37,52 +248,300 @@
   // Hero section end
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-  // Hero section begin
+@media (max-width: 992px) {
+  .intro,
+  .feature,
+  .plan,
+  .network,
+  .sponsor {
+    width: 1440px !important;
+  }
+
   .hero {
-    .hero__description,
-    .hero__btn {
-      font-size: $fs-x-large;
+    &__container {
+      .hero__content {
+        .hero__description,
+        .hero__btn {
+          font-size: $fs-x-large;
+        }
+      }
     }
   }
-  // Hero section end
 }
 
 @media (max-width: 768px) {
-  // Hero section begin
-  .hero__container {
+  .hero__heading,
+  .feature__content .feature__heading,
+  .plan__header .plan__heading,
+  .network__header .network__heading {
+    font-size: $fs-huge;
+  }
+
+  .hero__img img,
+  .feature__img img,
+  .network__map img {
+    width: 100%;
+  }
+
+  .hero__container,
+  .feature__img {
     width: 1140px;
-    grid-template-columns: 1fr;
+  }
 
-    .hero__content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      max-width: 1140px;
-      text-align: center;
-      order: 1;
+  .hero__content,
+  .feature__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-      .hero__heading {
-        max-width: 844px;
+  // Hero section begin
+  .hero {
+    &__container {
+      grid-template-columns: 1fr;
+
+      .hero__content {
+        max-width: 1140px;
+        order: 1;
+
+        .hero__heading {
+          max-width: 844px;
+        }
+
+        .hero__btn {
+          font-size: $fs-large;
+        }
+
+        .hero__description {
+          font-size: $fs-large;
+        }
       }
 
-      .hero__heading {
-        font-size: $fs-huge;
-      }
-
-      .hero__description,
-      .hero__btn {
-        font-size: $fs-large;
-      }
-    }
-
-    .hero__img {
-      order: 0;
-
-      img {
-        width: 100%;
+      .hero__img {
+        order: 0;
       }
     }
   }
   // Hero section end
+
+  // Intro section begin
+  .intro {
+    &__container {
+      padding: 44px 30px;
+      min-height: 300px;
+
+      .intro__item {
+        margin-top: 30px;
+        &-icon {
+          & img {
+            width: 100px;
+          }
+        }
+
+        &-general {
+          .intro__title {
+            font-size: $fs-large;
+          }
+
+          .intro__text {
+            font-size: $fs-x-large;
+          }
+        }
+      }
+    }
+
+    // Intro section end
+  }
+
+  // Feature section begin
+  .feature {
+    &__container {
+      flex-direction: column;
+
+      .feature__content {
+        max-width: 1140px;
+
+        .feature__heading {
+          max-width: 844px;
+        }
+
+        .feature__desc {
+          font-size: $fs-xl-large;
+        }
+
+        .feature__list {
+          width: 100%;
+          &-item {
+            background-position: 0 12px;
+            background-size: 60px;
+            & span {
+              transform: translateY(0);
+              margin-left: 70px;
+              font-size: $fs-xl-large;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Feature section end
+
+  // Plan section begin
+  .plan {
+    &__header {
+      max-width: 1440px;
+
+      .plan__desc {
+        font-size: $fs-xl-large;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      .plan__card {
+        .plan__img {
+          .plan__card__img {
+            width: 200px;
+          }
+        }
+
+        .plan__title {
+          font-size: $fs-large;
+        }
+
+        .plan__details {
+          .plan__infor {
+            background-size: 50px;
+            & span {
+              font-size: $fs-x-large;
+              margin-left: 60px;
+            }
+          }
+        }
+
+        .plan__price {
+          font-size: $fs-xl-large;
+        }
+      }
+    }
+  }
+  // Plan section end
+
+  // Network section begin
+  .network {
+    .network__header {
+      max-width: 1140px;
+      .network__heading {
+        max-width: 660px;
+      }
+      & p {
+        font-size: $fs-xl-large;
+      }
+    }
+  }
+  // Network section end
+
+  // Sponsor section begin
+  .sponsor {
+    &__container {
+      .sponsor__image {
+        & img {
+          width: 250px;
+        }
+      }
+    }
+  }
+  // Sponsor section end
+}
+
+@media (max-width: 576px) {
+  // Intro section begin
+  .intro {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+
+      .intro__item {
+        gap: 61px;
+        &:first-child {
+          margin-right: 0;
+        }
+
+        &:nth-child(2) {
+          border: none;
+          margin-left: 95px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 33px;
+        }
+
+        &-icon {
+          & img {
+            width: 150px;
+          }
+        }
+
+        &-general {
+          .intro__title {
+            font-size: $fs-x-huge;
+          }
+
+          .intro__text {
+            font-size: $fs-xl-large;
+          }
+        }
+      }
+    }
+  }
+  // Intro section end
+
+  // Plan section begin
+  .plan {
+    &__list {
+      max-width: 800px;
+      .plan__card {
+        .plan__img {
+          .plan__card__img {
+            width: 250px;
+          }
+        }
+
+        .plan__title {
+          font-size: $fs-x-huge;
+        }
+
+        .plan__details {
+          .plan__infor {
+            background-size: 76px;
+            & span {
+              font-size: $fs-large;
+              transform: translateX(40px);
+            }
+          }
+        }
+
+        .plan__price {
+          font-size: $fs-x-huge;
+        }
+      }
+    }
+  }
+  // Plan section end
+
+  // Sponsor section begin
+  .sponsor {
+    &__container {
+      .sponsor__image {
+        & img {
+          width: 300px;
+        }
+      }
+    }
+  }
+  // Sponsor section end
 }

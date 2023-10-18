@@ -1,3 +1,10 @@
+.primary__heading {
+  color: $text-secondary-color;
+  font-size: $fs-large;
+  font-weight: $fw-medium;
+  line-height: $lh-xl-huge;
+}
+
 .sub__heading {
   font-size: $fs-smail;
   line-height: $lh-xl-medium;
@@ -9,4 +16,8 @@
 
 .text--medium {
   font-weight: $fw-medium;
+}
+
+.text-normal {
+  font-weight: $fw-normal;
 }
