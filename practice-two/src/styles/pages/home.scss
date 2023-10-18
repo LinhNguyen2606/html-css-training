@@ -364,16 +364,27 @@
 // End customer section
 
 @media (max-width: 1440px) {
-  // Hero section begin
   .hero,
+  .intro,
+  .feature,
+  .network,
+  .sponsor,
   .customer {
     padding: 0 150px;
   }
 
+  .header__container,
+  .intro__container,
+  .feature__container,
+  .network__container,
+  .sponsor__container,
   .customer__container {
-    width: 1440px;
+    width: 1140px;
   }
-  // Hero section end
+
+  .plan {
+    width: 1450px;
+  }
 }
 
 @media (max-width: 992px) {
