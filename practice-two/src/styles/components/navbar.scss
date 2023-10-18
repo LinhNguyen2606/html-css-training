@@ -21,7 +21,7 @@
     .navbar__menu--item {
       .navbar__menu-link {
         color: $text-primary-color;
-        font-size: $fs-small;
+        font-size: $fs-smail;
         font-weight: $fw-normal;
         text-decoration: none;
 
@@ -36,7 +36,7 @@
     gap: 30px;
     .navbar__auth-signin {
       color: $text-secondary-color;
-      font-size: $fs-small;
+      font-size: $fs-smail;
       font-weight: $fw-medium;
       text-decoration: none;
     }
@@ -123,28 +123,24 @@
 
 @media (min-width: 769px) and (max-width: 992px) {
   .navbar {
-    .navbar__logo {
-      & img {
-        width: 200px;
-      }
+    .navbar__logo img {
+      width: 250px;
     }
 
     button.navbar-toggler {
-      font-size: $fs-x-large;
+      font-size: $fs-large;
     }
   }
 }
 
 @media (max-width: 769px) {
   .navbar {
-    .navbar__logo {
-      & img {
-        width: 250px;
-      }
+    .navbar__logo img {
+      width: 250px;
     }
 
     button.navbar-toggler {
-      font-size: $fs-xl-large;
+      font-size: 40px;
     }
   }
 }
