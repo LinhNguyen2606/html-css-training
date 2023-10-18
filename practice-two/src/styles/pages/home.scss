@@ -228,6 +228,7 @@
 
 // Start sponsor section
 .sponsor {
+  margin-bottom: 45px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -239,6 +240,128 @@
   }
 }
 // End sponsor section
+
+// Start customer section
+
+// Start customer section
+.customer {
+  .customer__card {
+    margin-bottom: 61px;
+  }
+
+  &__header {
+    text-align: center;
+    max-width: 555px;
+    margin: 0px auto 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 12px;
+
+    .customer__title {
+      max-width: 448px;
+    }
+
+    & p {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+
+    .customer__author {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .customer__infor {
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        margin-bottom: 7px;
+
+        .customer__content {
+          .customer__name,
+          .customer__address {
+            line-height: 1;
+          }
+
+          .customer__name {
+            color: $text-secondary-color;
+            font-size: $fs-x-medium;
+            font-weight: $fw-medium;
+            width: 142px;
+            margin-bottom: 0;
+          }
+
+          .customer__address {
+            font-size: $fs-x-small;
+          }
+        }
+      }
+    }
+
+    .customer__rating {
+      background-image: url(../assets/images/icons/star.svg);
+      background-repeat: no-repeat;
+      background-position: 34px 1px;
+
+      & span {
+        display: inline-block;
+        color: $text-secondary-color;
+        line-height: $lh-xl-medium;
+        margin-right: 29px;
+        transform: translateY(-4px);
+      }
+    }
+
+    .customer__describe {
+      color: $text-secondary-color;
+      line-height: $lh-xl-medium;
+      width: 340px;
+      min-height: 100px;
+    }
+  }
+
+  .navigation__bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .direction {
+      display: flex;
+      gap: 20px;
+
+      &__border--backward,
+      &__border--forward {
+        border-color: $border-dark-red-color;
+        border-radius: 9999px;
+        border: 2px solid $border-dark-red-color;
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        position: relative;
+      }
+
+      &__border--forward {
+        background-color: $bg-dark-red-color;
+        color: $text-white-color;
+      }
+
+      &__arrow--backward,
+      &__arrow--forward {
+        position: absolute;
+        top: 25%;
+      }
+    }
+  }
+}
+
+// End customer section
 
 @media (max-width: 1440px) {
   // Hero section begin
