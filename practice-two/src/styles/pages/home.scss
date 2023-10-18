@@ -258,7 +258,7 @@
     align-items: center;
     row-gap: 12px;
 
-    .customer__title {
+    .customer__heading {
       max-width: 448px;
     }
 
@@ -365,8 +365,13 @@
 
 @media (max-width: 1440px) {
   // Hero section begin
-  .hero {
+  .hero,
+  .customer {
     padding: 0 150px;
+  }
+
+  .customer__container {
+    width: 1440px;
   }
   // Hero section end
 }
@@ -376,7 +381,8 @@
   .feature,
   .plan,
   .network,
-  .sponsor {
+  .sponsor,
+  .customer {
     width: 1440px !important;
   }
 
@@ -396,7 +402,8 @@
   .hero__heading,
   .feature__content .feature__heading,
   .plan__header .plan__heading,
-  .network__header .network__heading {
+  .network__header .network__heading,
+  .customer__header .customer__heading {
     font-size: $fs-huge;
   }
 
@@ -578,6 +585,93 @@
     }
   }
   // Sponsor section end
+
+  // Customer section begin
+  .customer {
+    margin-top: 150px;
+    &__header {
+      max-width: 1140px;
+      .customer__heading {
+        max-width: 900px;
+      }
+      & p {
+        font-size: $fs-xl-large;
+      }
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 0;
+      .customer__card {
+        max-width: 100%;
+        width: 1140px;
+        height: 100%;
+
+        .customer__author {
+          .customer__infor {
+            .customer__avatar {
+              & img {
+                width: 100px;
+              }
+            }
+
+            .customer__content {
+              .customer__name {
+                font-size: $fs-large;
+                width: 100%;
+                margin-bottom: 10px;
+              }
+
+              .customer__address {
+                font-size: $fs-x-large;
+              }
+            }
+          }
+
+          .customer__rating {
+            background-size: 35px;
+            background-position: 52px 5px;
+            & span {
+              font-size: $fs-large;
+              transform: translate(-20px, -6px);
+              margin-right: 45px;
+            }
+          }
+        }
+
+        .customer__describe {
+          width: 100%;
+          font-size: $fs-large;
+        }
+      }
+    }
+
+    .navigation__bar {
+      &--transition {
+        & img {
+          width: 230px;
+        }
+      }
+
+      .direction {
+        &__border--backward,
+        &__border--forward {
+          width: 100px;
+          height: 100px;
+
+          .direction__arrow--backward,
+          .direction__arrow--forward {
+            left: 25%;
+
+            & img {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Customer section end
 }
 
 @media (max-width: 576px) {
