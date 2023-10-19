@@ -35,3 +35,15 @@
   }
 }
 // Footer end
+
+@media (max-width: 768px) {
+  .footer {
+    .social__fb,
+    .social__twt,
+    .social__insta {
+      width: 60px;
+      height: 60px;
+      background-size: 108px;
+    }
+  }
+}
