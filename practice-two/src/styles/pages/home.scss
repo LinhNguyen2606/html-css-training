@@ -352,6 +352,7 @@
         height: 60px;
         position: relative;
         transition: transform 0.4s;
+        cursor: pointer;
       }
 
       &__border--backward:hover {
