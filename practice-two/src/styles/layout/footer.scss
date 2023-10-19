@@ -5,10 +5,9 @@
   &__container {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
-    column-gap: 126px;
 
     .footer__content--left {
-      margin-right: 104px;
+      margin-right: 225px;
       .footer__logo {
         margin-bottom: 17px;
       }
