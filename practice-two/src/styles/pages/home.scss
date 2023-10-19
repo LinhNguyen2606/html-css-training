@@ -472,8 +472,13 @@
     width: 1140px;
   }
 
-  .plan {
+  .plan,
+  .footer {
     width: 1450px;
+  }
+
+  .customer {
+    padding-left: 150px;
   }
 }
 
@@ -776,31 +781,82 @@
 
   // Subscribe section begin
   .subscribe {
+    bottom: -146px;
     &__container {
       flex-direction: column;
       align-items: flex-start;
+      padding: 14px 70px;
       .subscribe__content {
         max-width: 1140px;
 
         .subscribe__heading {
-          max-width: 530px;
-          font-size: $fs-x-huge;
+          max-width: 420px;
+          font-size: $fs-xl-large;
         }
 
         & p {
-          font-size: $fs-large;
+          font-size: 30px;
         }
       }
 
       & a {
-        padding: 30px 65px;
-        font-size: $fs-x-large;
-        width: 50%;
+        padding: 20px;
+        font-size: $fs-medium;
+        width: 35%;
         border-radius: 20px;
+        box-shadow: none;
       }
     }
   }
   // Subscribe section end
+
+  // Footer begin
+  .footer {
+    padding-top: 200px;
+    &__container {
+      grid-template-columns: 1fr;
+      .footer__content--left {
+        .footer__logo {
+          & img {
+            width: 250px;
+          }
+        }
+
+        .footer__desc {
+          width: 100%;
+          font-size: $fs-large;
+        }
+
+        .footer__copyright {
+          font-size: $fs-x-large;
+        }
+      }
+
+      .footer__content--right {
+        justify-content: space-between;
+        .footer__col {
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-left: 0;
+          }
+          .footer__heading {
+            font-size: $fs-large;
+            max-width: 250px;
+            width: 100%;
+          }
+
+          .footer__links {
+            .footer__item {
+              .footer__link {
+                font-size: $fs-x-large;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer end
 }
 
 @media (max-width: 576px) {
@@ -890,4 +946,65 @@
     }
   }
   // Sponsor section end
+
+  // Subscribe begin
+  .subscribe {
+    bottom: -170px;
+    .subscribe__container {
+      padding: 35px 70px;
+    }
+  }
+  // Subscribe end
+
+  // Footer begin
+  .footer {
+    padding-top: 230px;
+    &__container {
+      .footer__content--left {
+        .footer__logo {
+          & img {
+            width: 300px;
+          }
+        }
+
+        .footer__desc {
+          font-size: $fs-xl-large;
+        }
+
+        .footer__copyright {
+          font-size: $fs-large;
+        }
+      }
+
+      .footer__content--right {
+        flex-wrap: wrap;
+        .footer__col {
+          &:nth-child(1) {
+            width: 50%;
+          }
+          &:nth-child(2) {
+            width: 50%;
+          }
+
+          &:nth-child(3) {
+          }
+
+          .footer__heading {
+            font-size: $fs-x-huge;
+            max-width: 300px;
+          }
+
+          .footer__links {
+            grid-template-columns: 1fr;
+            .footer__item {
+              .footer__link {
+                font-size: $fs-large;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // Footer end
 }
