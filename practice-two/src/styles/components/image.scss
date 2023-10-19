@@ -1,3 +1,37 @@
+// Hero begin
 .hero__img {
   transform: translateY(-8%);
 }
+// Hero end
+
+// Footer begin
+.footer__social {
+  margin-bottom: 30px;
+  .social__fb {
+    background-image: url(../assets/images/icons/facebook.svg);
+  }
+
+  .social__twt {
+    background-image: url(../assets/images/icons/twitter.svg);
+  }
+
+  .social__insta {
+    background-image: url(../assets/images/icons/instagram.svg);
+  }
+
+  .social__fb,
+  .social__twt,
+  .social__insta {
+    display: inline-block;
+    width: 33.6px;
+    height: 33.6px;
+    background-size: 60px;
+    background-position: center top;
+  }
+
+  .social__twt,
+  .social__insta {
+    margin-left: 16px;
+  }
+}
+// Footer end
