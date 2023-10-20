@@ -17,6 +17,15 @@
 }
 // Plan end
 
+// Network begin
+.network__map {
+  & img {
+    width: 1060px;
+    height: 538px;
+  }
+}
+// Network end
+
 // Customer begin
 .customer__rating {
   background-image: url(../assets/images/icons/star.svg);
