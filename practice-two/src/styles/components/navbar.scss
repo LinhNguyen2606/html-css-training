@@ -16,7 +16,6 @@
         color: $text-primary-color;
         font-size: $fs-small;
         font-weight: $fw-normal;
-        text-decoration: none;
 
         &:hover {
           color: $text-dark-red-color;
@@ -31,7 +30,6 @@
       color: $text-secondary-color;
       font-size: $fs-small;
       font-weight: $fw-medium;
-      text-decoration: none;
     }
 
     & button:hover {
