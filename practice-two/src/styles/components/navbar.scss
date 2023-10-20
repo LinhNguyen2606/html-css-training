@@ -1,19 +1,12 @@
 .navbar {
-  display: flex;
-  align-items: center;
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 
   &__logo {
     margin-right: 158px;
   }
   &__menu,
   &__auth {
-    display: flex;
-    align-items: center;
     flex-grow: 1;
-    text-transform: capitalize;
   }
 
   &__menu {
@@ -23,7 +16,6 @@
         color: $text-primary-color;
         font-size: $fs-small;
         font-weight: $fw-normal;
-        text-decoration: none;
 
         &:hover {
           color: $text-dark-red-color;
@@ -38,7 +30,6 @@
       color: $text-secondary-color;
       font-size: $fs-small;
       font-weight: $fw-medium;
-      text-decoration: none;
     }
 
     & button:hover {
@@ -121,7 +112,7 @@
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .navbar {
     &__logo {
       & img {
@@ -135,7 +126,7 @@
   }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .navbar {
     &__logo {
       & img {

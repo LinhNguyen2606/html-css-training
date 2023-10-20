@@ -1,6 +1,7 @@
 // Start hero section
 .hero {
   margin-bottom: 80px;
+
   &__container {
     display: grid;
     grid-template-columns: 555px 611px;
@@ -29,6 +30,10 @@
         transform: translateY(-0.25rem);
       }
     }
+
+    .hero__img {
+      transform: translateY(-8%);
+    }
   }
 }
 // End hero section
@@ -36,9 +41,7 @@
 // Start intro section
 .intro {
   margin-bottom: 88px;
-
   &__container {
-    display: flex;
     padding: 44px 91px;
     background-color: $bg-white-color;
     border-radius: 10px;
@@ -46,8 +49,6 @@
     min-height: 200px;
 
     .intro__item {
-      display: flex;
-      align-items: center;
       gap: 36px;
 
       &:nth-child(1) {
@@ -84,10 +85,8 @@
 // Start feature section
 .feature {
   margin-bottom: 128px;
+
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     row-gap: 169.48px;
 
     .feature__img {
@@ -103,18 +102,11 @@
       }
 
       .feature__list {
-        display: flex;
-        flex-direction: column;
         gap: 15px;
         padding: 0;
         margin: 0;
 
         &-item {
-          background-image: url(../assets/images/icons/check-circle.svg);
-          background-repeat: no-repeat;
-          background-position: 0 3px;
-          display: flex;
-
           & span {
             font-size: $fs-x-small;
             line-height: $lh-xxl-medium;
@@ -136,12 +128,10 @@
     $bg-gray-light-color -45.04%,
     rgba(248, 248, 248, 0) 88.56%
   );
+
   &__header {
-    text-align: center;
     max-width: 555px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     gap: 14px;
 
     .plan__desc {
@@ -150,14 +140,13 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
     gap: 50px;
 
     .plan__card {
       .plan__img {
         margin-bottom: 30px;
       }
+
       .plan__title {
         color: $text-secondary-color;
         font-size: $fs-x-medium;
@@ -167,21 +156,14 @@
       }
 
       .plan__details {
-        display: flex;
-        flex-direction: column;
         gap: 10px;
         margin-bottom: 48px;
-
         &--first,
         &--second {
           min-height: 230px;
         }
 
         .plan__infor {
-          display: flex;
-          background-image: url(../assets/images/icons/check.svg);
-          background-repeat: no-repeat;
-
           & span {
             font-size: $fs-x-small;
             line-height: $lh-xxl-medium;
@@ -205,12 +187,9 @@
 // Start network section
 .network {
   margin-bottom: 36px;
+
   &__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 555px;
-    text-align: center;
     margin: 0 auto;
 
     .network__heading {
@@ -229,11 +208,8 @@
 // Start sponsor section
 .sponsor {
   margin-bottom: 45px;
+
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     .sponsor__image:nth-child(3) {
       margin: 0 -48px;
     }
@@ -242,26 +218,16 @@
 // End sponsor section
 
 // Start customer section
-
-// Start customer section
 .customer {
-  position: relative;
   padding-bottom: 176px;
+
   .customer__card {
     margin-bottom: 61px;
-
-    &:hover {
-      border-color: $border-dark-red-color;
-    }
   }
 
   &__header {
-    text-align: center;
     max-width: 555px;
     margin: 0px auto 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     row-gap: 12px;
 
     .customer__heading {
@@ -274,19 +240,10 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 45px;
 
     .customer__author {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
       .customer__infor {
-        display: flex;
-        align-items: center;
         gap: 19px;
         margin-bottom: 7px;
 
@@ -312,12 +269,7 @@
     }
 
     .customer__rating {
-      background-image: url(../assets/images/icons/star.svg);
-      background-repeat: no-repeat;
-      background-position: 34px 1px;
-
       & span {
-        display: inline-block;
         color: $text-secondary-color;
         line-height: $lh-xl-medium;
         margin-right: 29px;
@@ -334,12 +286,7 @@
   }
 
   .navigation__bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .direction {
-      display: flex;
       gap: 20px;
 
       &__border--backward,
@@ -350,7 +297,6 @@
         padding: 15px;
         width: 60px;
         height: 60px;
-        position: relative;
         transition: transform 0.4s;
         cursor: pointer;
       }
@@ -367,12 +313,6 @@
           transform: translateX(0.25rem);
         }
       }
-
-      &__arrow--backward,
-      &__arrow--forward {
-        position: absolute;
-        top: 25%;
-      }
     }
   }
 }
@@ -380,20 +320,13 @@
 
 // Start subscribe section
 .subscribe {
-  position: absolute;
   bottom: -137px;
-  right: 0;
-  left: 0;
-
   &__container {
     background-color: $bg-white-color;
     border: 2px solid $border-white-color;
     padding: 52px 70px;
     border-radius: 10px;
     box-shadow: 0 30px 114px 0 rgba(13, 16, 37, 0.06);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     .subscribe__content {
       max-width: 410px;
@@ -441,7 +374,6 @@
           .footer__item {
             .footer__link {
               color: $text-primary-color;
-              text-decoration: none;
               font-size: $fs-small;
               line-height: $lh-xl-medium;
             }
@@ -611,8 +543,6 @@
         .feature__list {
           width: 100%;
           &-item {
-            background-position: 0 12px;
-            background-size: 60px;
             & span {
               transform: translateY(0);
               margin-left: 70px;
@@ -652,7 +582,6 @@
 
         .plan__details {
           .plan__infor {
-            background-size: 50px;
             & span {
               font-size: $fs-x-large;
               margin-left: 60px;
@@ -737,8 +666,6 @@
           }
 
           .customer__rating {
-            background-size: 35px;
-            background-position: 52px 5px;
             & span {
               font-size: $fs-large;
               transform: translate(-20px, -6px);
@@ -814,18 +741,9 @@
 
   // Footer begin
   .footer {
-    padding-top: 200px;
     &__container {
-      grid-template-columns: 1fr;
       .footer__content--left {
-        .footer__logo {
-          & img {
-            width: 250px;
-          }
-        }
-
         .footer__desc {
-          width: 100%;
           font-size: $fs-large;
         }
 
@@ -835,16 +753,9 @@
       }
 
       .footer__content--right {
-        justify-content: space-between;
         .footer__col {
-          &:nth-child(2),
-          &:nth-child(3) {
-            margin-left: 0;
-          }
           .footer__heading {
             font-size: $fs-large;
-            max-width: 250px;
-            width: 100%;
           }
 
           .footer__links {
@@ -966,15 +877,8 @@
 
   // Footer begin
   .footer {
-    padding-top: 230px;
     &__container {
       .footer__content--left {
-        .footer__logo {
-          & img {
-            width: 300px;
-          }
-        }
-
         .footer__desc {
           font-size: $fs-xl-large;
         }
@@ -985,22 +889,12 @@
       }
 
       .footer__content--right {
-        flex-wrap: wrap;
         .footer__col {
-          &:nth-child(1) {
-            width: 50%;
-          }
-          &:nth-child(2) {
-            width: 50%;
-          }
-
           .footer__heading {
             font-size: $fs-x-huge;
-            max-width: 300px;
           }
 
           .footer__links {
-            grid-template-columns: 1fr;
             .footer__item {
               .footer__link {
                 font-size: $fs-large;

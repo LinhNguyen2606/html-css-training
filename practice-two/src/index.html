@@ -20,10 +20,10 @@
   </head>
   <body>
     <!-- Header section begin -->
-    <header class="header">
+    <header class="header position--sticky top--0">
       <div class="wrapper header__container">
         <nav
-          class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-transition"
+          class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-transition position--sticky top--0 d--flex align__items--center"
         >
           <div class="navbar-brand navbar__logo" href="#">
             <img src="./assets/images/logo/logo.svg" alt="logo" />
@@ -43,27 +43,43 @@
           </button>
           <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul
-              class="navbar__menu navbar-nav mx-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
+              class="navbar__menu navbar-nav mx-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0 d--flex align__items--center"
             >
               <li class="navbar__menu-item">
-                <a href="#" class="navbar__menu-link">About</a>
+                <a href="#" class="navbar__menu-link text__decoration-none"
+                  >About</a
+                >
               </li>
               <li class="navbar__menu-item">
-                <a href="#" class="navbar__menu-link">Features</a>
+                <a href="#" class="navbar__menu-link text__decoration-none"
+                  >Features</a
+                >
               </li>
               <li class="navbar__menu-item">
-                <a href="#" class="navbar__menu-link">Pricing</a>
+                <a href="#" class="navbar__menu-link text__decoration-none"
+                  >Pricing</a
+                >
               </li>
               <li class="navbar__menu-item">
-                <a href="#" class="navbar__menu-link">Testimonials</a>
+                <a href="#" class="navbar__menu-link text__decoration-none"
+                  >Testimonials</a
+                >
               </li>
               <li class="navbar__menu-item">
-                <a href="#" class="navbar__menu-link">Help</a>
+                <a href="#" class="navbar__menu-link text__decoration-none"
+                  >Help</a
+                >
               </li>
             </ul>
-            <div class="navbar__auth">
-              <a href="#" class="navbar__auth-signin">Sign in</a>
-              <button class="btn btn--outline navbar__auth-signup">
+            <div
+              class="navbar__auth d--flex align__items--center text--capitalize"
+            >
+              <a href="#" class="navbar__auth-signin text__decoration-none"
+                >Sign in</a
+              >
+              <button
+                class="btn btn--outline inline--block navbar__auth-signup"
+              >
                 Sign up
               </button>
             </div>
@@ -90,7 +106,7 @@
             <a
               aria-label="button get started"
               href="javascript:void(0)"
-              class="btn btn--primary btn--rounded hero__btn"
+              class="btn btn--primary btn--rounded inline--block hero__btn text--capitalize"
               rel="nofollow"
               >Get started</a
             >
@@ -107,8 +123,8 @@
 
       <!-- Intro section begin -->
       <article class="intro">
-        <div class="wrapper intro__container">
-          <div class="intro__item">
+        <div class="wrapper intro__container d--flex">
+          <div class="intro__item d--flex align__items--center">
             <div class="intro__item-icon">
               <img src="./assets/images/icons/user.svg" alt="user" />
             </div>
@@ -118,7 +134,7 @@
             </div>
           </div>
 
-          <div class="intro__item">
+          <div class="intro__item d--flex align__items--center">
             <div class="intro__item-icon">
               <img src="./assets/images/icons/location.svg" alt="location" />
             </div>
@@ -128,7 +144,7 @@
             </div>
           </div>
 
-          <div class="intro__item">
+          <div class="intro__item d--flex align__items--center">
             <div class="intro__item-icon">
               <img src="./assets/images/icons/server.svg" alt="server" />
             </div>
@@ -143,7 +159,9 @@
 
       <!-- Feature section begin -->
       <article class="feature">
-        <article class="wrapper feature__container">
+        <article
+          class="wrapper feature__container d--flex justify__content--between align__items--end"
+        >
           <div class="feature__img">
             <img
               src="./assets/images/products/hero-2.jpg"
@@ -158,17 +176,17 @@
               You can explore the features that we provide with fun and have
               their own functions each feature.
             </p>
-            <ul class="feature__list">
-              <li class="feature__list-item">
+            <ul class="feature__list d--flex flex--column">
+              <li class="feature__list-item d--flex">
                 <span>Powerfull online protection.</span>
               </li>
-              <li class="feature__list-item">
+              <li class="feature__list-item d--flex">
                 <span>Internet without borders.</span>
               </li>
-              <li class="feature__list-item">
+              <li class="feature__list-item d--flex">
                 <span>Supercharged VPN</span>
               </li>
-              <li class="feature__list-item">
+              <li class="feature__list-item d--flex">
                 <span>No specific time limits.</span>
               </li>
             </ul>
@@ -180,14 +198,14 @@
       <!-- Plan section begin -->
       <article class="plan">
         <div class="wrapper plan__container">
-          <div class="plan__header">
+          <div class="plan__header d--flex flex--column text--center">
             <h2 class="primary__heading plan__heading">Choose Your Plan</h2>
             <p class="sub__heading plan__desc">
               Let's choose the package that is best for you and explore it
               happily and cheerfully.
             </p>
           </div>
-          <div class="plan__list">
+          <div class="plan__list d--flex justify__content--center">
             <article class="plan__card">
               <div class="plan__img">
                 <img
@@ -197,22 +215,28 @@
                 />
               </div>
               <h3 class="plan__title">Free Plan</h3>
-              <div class="plan__details plan__details--first">
-                <div class="plan__infor">
+              <div
+                class="plan__details plan__details--first d--flex flex--column"
+              >
+                <div class="plan__infor d--flex">
                   <span>Unlimited Bandwitch</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Encrypted Connection</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>No Traffic Logs</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Works on All Devices</span>
                 </div>
               </div>
               <h4 class="plan__price">Free</h4>
-              <a href="#" class="btn btn--outline">Select</a>
+              <a
+                href="#"
+                class="btn btn--outline inline--block text--capitalize"
+                >Select</a
+              >
             </article>
 
             <article class="plan__card">
@@ -224,27 +248,33 @@
                 />
               </div>
               <h3 class="plan__title">Standard Plan</h3>
-              <div class="plan__details plan__details--second">
-                <div class="plan__infor">
+              <div
+                class="plan__details plan__details--second d--flex flex--column"
+              >
+                <div class="plan__infor d--flex">
                   <span>Unlimited Bandwitch</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Encrypted Connection</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Yes Traffic Logs</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Works on All Devices</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Connect Anyware</span>
                 </div>
               </div>
               <h4 class="plan__price">
                 $9 / <span class="text-normal">mo</span>
               </h4>
-              <a href="#" class="btn btn--outline">Select</a>
+              <a
+                href="#"
+                class="btn btn--outline inline--block text--capitalize"
+                >Select</a
+              >
             </article>
 
             <article class="plan__card">
@@ -256,30 +286,34 @@
                 />
               </div>
               <h3 class="plan__title">Premium Plan</h3>
-              <div class="plan__details">
-                <div class="plan__infor">
+              <div class="plan__details d--flex flex--column">
+                <div class="plan__infor d--flex">
                   <span>Unlimited Bandwitch</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Encrypted Connection</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Yes Traffic Logs</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Works on All Devices</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Connect Anyware</span>
                 </div>
-                <div class="plan__infor">
+                <div class="plan__infor d--flex">
                   <span>Get New Features</span>
                 </div>
               </div>
               <h4 class="plan__price">
                 $12 / <span class="text-normal">mo</span>
               </h4>
-              <a href="#" class="btn btn--outline">Select</a>
+              <a
+                href="#"
+                class="btn btn--outline inline--block text--capitalize"
+                >Select</a
+              >
             </article>
           </div>
         </div>
@@ -289,7 +323,9 @@
       <!-- Network section begin -->
       <section class="network">
         <div class="wrapper network__container">
-          <div class="network__header">
+          <div
+            class="network__header d--flex flex--column align__items--center text--center"
+          >
             <h2 class="primary__heading network__heading">
               Huge Global Network of Fast VPN
             </h2>
@@ -310,7 +346,9 @@
 
       <!-- Sponsor section begin -->
       <div class="sponsor">
-        <div class="wrapper sponsor__container">
+        <div
+          class="wrapper sponsor__container d--flex justify__content--between align__items--center flex--wrap"
+        >
           <div class="sponsor__image">
             <img src="./assets/images/products/neftlix.png" alt="Neftlix" />
           </div>
@@ -331,9 +369,11 @@
       <!-- Sponsor section end -->
 
       <!-- Customer section begin-->
-      <article class="customer">
+      <article class="customer position--relative">
         <div class="wrapper customer__container">
-          <div class="customer__header">
+          <div
+            class="customer__header d--flex flex--column align__items--center text--center"
+          >
             <h2 class="primary__heading customer__heading">
               Trusted by Thousands of Happy Customer
             </h2>
@@ -342,10 +382,14 @@
               great pleasure when using this crazy feature.
             </p>
           </div>
-          <div class="customer__list">
+          <div
+            class="customer__list d--flex justify__content--between align__items--center"
+          >
             <article class="customer__card">
-              <div class="customer__author">
-                <div class="customer__infor">
+              <div
+                class="customer__author d--flex justify__content--between align__items--center"
+              >
+                <div class="customer__infor d--flex align__items--center">
                   <div class="customer__avatar">
                     <img
                       src="./assets/images/avartars/avartar-1.jpg"
@@ -358,10 +402,7 @@
                   </div>
                 </div>
                 <div class="customer__rating">
-                  <span>4.5</span>
-                  <!-- <div>
-                    <img src="./assets/images/icons/star.svg" alt="star" />
-                  </div> -->
+                  <span class="inline--block">4.5</span>
                 </div>
               </div>
               <div class="customer__describe">
@@ -372,8 +413,10 @@
             </article>
 
             <article class="customer__card">
-              <div class="customer__author">
-                <div class="customer__infor">
+              <div
+                class="customer__author d--flex justify__content--between align__items--center"
+              >
+                <div class="customer__infor d--flex align__items--center">
                   <div class="customer__avatar">
                     <img
                       src="./assets/images/avartars/avartar-2.jpg"
@@ -386,7 +429,7 @@
                   </div>
                 </div>
                 <div class="customer__rating">
-                  <span>4.5</span>
+                  <span class="inline--block">4.5</span>
                 </div>
               </div>
               <div class="customer__describe">
@@ -396,8 +439,10 @@
             </article>
 
             <article class="customer__card">
-              <div class="customer__author">
-                <div class="customer__infor">
+              <div
+                class="customer__author d--flex justify__content--between align__items--center"
+              >
+                <div class="customer__infor d--flex align__items--center">
                   <div class="customer__avatar">
                     <img
                       src="./assets/images/avartars/avartar-3.jpg"
@@ -410,7 +455,7 @@
                   </div>
                 </div>
                 <div class="customer__rating">
-                  <span>4.5</span>
+                  <span class="inline--block">4.5</span>
                 </div>
               </div>
               <div class="customer__describe">
@@ -420,24 +465,30 @@
             </article>
           </div>
 
-          <div class="navigation__bar">
+          <div
+            class="navigation__bar d--flex justify__content--between align__items--center"
+          >
             <div class="navigation__bar--transition">
               <img
                 src="./assets/images/icons/transition.svg"
                 alt="transition"
               />
             </div>
-            <div class="direction">
-              <div class="direction__border--backward">
-                <div class="direction__arrow--backward">
+            <div class="direction d-flex">
+              <div class="direction__border--backward position--relative">
+                <div
+                  class="direction__arrow--backward position--absolute top--25"
+                >
                   <img
                     src="./assets/images/icons/arrow-back.svg"
                     alt="arrow back"
                   />
                 </div>
               </div>
-              <div class="direction__border--forward">
-                <div class="direction__arrow--forward">
+              <div class="direction__border--forward position--relative">
+                <div
+                  class="direction__arrow--forward position--absolute top--25"
+                >
                   <img
                     src="./assets/images/icons/arrow-right.svg"
                     alt="arrow right"
@@ -449,8 +500,10 @@
         </div>
 
         <!-- Start subscribe -->
-        <section class="subscribe">
-          <div class="wrapper subscribe__container">
+        <section class="subscribe position--absolute right--0 left--0">
+          <div
+            class="wrapper subscribe__container d--flex justify__content--between align__items--center"
+          >
             <div class="subscribe__content">
               <h2 class="primary__heading subscribe__heading">
                 Subscribe Now for Get Special Features!
@@ -462,7 +515,7 @@
             <a
               aria-label="button subscribe now"
               href="javascript:void(0)"
-              class="btn btn--primary btn--rounded"
+              class="btn btn--primary btn--rounded inline--block text--capitalize"
               rel="nofollow"
               >Subscribe now</a
             >
@@ -487,19 +540,19 @@
             <a
               aria-label="facebook"
               href="javascript:void(0)"
-              class="social__item social__fb"
+              class="inline--block social__item social__fb"
               rel="nofollow"
             ></a>
             <a
               aria-label="twitter"
               href="javascript:void(0)"
-              class="social__item social__twt"
+              class="inline--block social__item social__twt"
               rel="nofollow"
             ></a>
             <a
               aria-label="instagram"
               href="javascript:void(0)"
-              class="social__item social__insta"
+              class="inline--block social__item social__insta"
               rel="nofollow"
             ></a>
           </div>
@@ -508,27 +561,51 @@
           </p>
         </div>
 
-        <div class="footer__content--right">
+        <div class="footer__content--right d--flex">
           <div class="footer__col">
             <h3 class="footer__heading">Product</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Download</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Download</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Pricing</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Pricing</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Locations</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Locations</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Server</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Server</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Countries</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Countries</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Blog</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Blog</a
+                >
               </li>
             </ul>
           </div>
@@ -537,22 +614,44 @@
             <h3 class="footer__heading">Engage</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">LaslesVPN ?</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >LaslesVPN ?</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">FAQ</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >FAQ</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Tutorials</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Tutorials</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">About us</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >About us</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Privacy Policy</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Privacy Policy</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#"
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
                   >Terms of Service</a
                 >
               </li>
@@ -563,10 +662,18 @@
             <h3 class="footer__heading">Earn Money</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Affiliate</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Affiliate</a
+                >
               </li>
               <li class="footer__item">
-                <a class="sub__heading footer__link" href="#">Become Partner</a>
+                <a
+                  class="sub__heading footer__link text__decoration-none"
+                  href="#"
+                  >Become Partner</a
+                >
               </li>
             </ul>
           </div>
