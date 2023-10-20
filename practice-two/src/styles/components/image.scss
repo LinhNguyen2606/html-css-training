@@ -1,8 +1,29 @@
-// Hero begin
-.hero__img {
-  transform: translateY(-8%);
+// Feature begin
+.feature__list {
+  &-item {
+    background-image: url(../assets/images/icons/check-circle.svg);
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+  }
 }
-// Hero end
+// Feature end
+
+// Plan begin
+.plan__details {
+  .plan__infor {
+    background-image: url(../assets/images/icons/check.svg);
+    background-repeat: no-repeat;
+  }
+}
+// Plan end
+
+// Customer begin
+.customer__rating {
+  background-image: url(../assets/images/icons/star.svg);
+  background-repeat: no-repeat;
+  background-position: 34px 1px;
+}
+// Customer end
 
 // Footer begin
 .footer__social {
@@ -45,5 +66,23 @@
       height: 60px;
       background-size: 108px;
     }
+  }
+
+  .feature__list {
+    &-item {
+      background-position: 0 12px;
+      background-size: 60px;
+    }
+  }
+
+  .plan__details {
+    .plan__infor {
+      background-size: 50px;
+    }
+  }
+
+  .customer__rating {
+    background-size: 35px;
+    background-position: 52px 5px;
   }
 }

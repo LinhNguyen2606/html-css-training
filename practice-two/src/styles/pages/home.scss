@@ -1,6 +1,7 @@
 // Start hero section
 .hero {
   margin-bottom: 80px;
+
   &__container {
     display: grid;
     grid-template-columns: 555px 611px;
@@ -29,6 +30,10 @@
         transform: translateY(-0.25rem);
       }
     }
+
+    .hero__img {
+      transform: translateY(-8%);
+    }
   }
 }
 // End hero section
@@ -36,7 +41,6 @@
 // Start intro section
 .intro {
   margin-bottom: 88px;
-
   &__container {
     padding: 44px 91px;
     background-color: $bg-white-color;
@@ -81,8 +85,10 @@
 // Start feature section
 .feature {
   margin-bottom: 128px;
+
   &__container {
     row-gap: 169.48px;
+
     .feature__img {
       margin-left: 33px;
     }
@@ -101,10 +107,6 @@
         margin: 0;
 
         &-item {
-          background-image: url(../assets/images/icons/check-circle.svg);
-          background-repeat: no-repeat;
-          background-position: 0 3px;
-
           & span {
             font-size: $fs-x-small;
             line-height: $lh-xxl-medium;
@@ -126,6 +128,7 @@
     $bg-gray-light-color -45.04%,
     rgba(248, 248, 248, 0) 88.56%
   );
+
   &__header {
     max-width: 555px;
     margin: 0 auto;
@@ -138,10 +141,12 @@
 
   &__list {
     gap: 50px;
+
     .plan__card {
       .plan__img {
         margin-bottom: 30px;
       }
+
       .plan__title {
         color: $text-secondary-color;
         font-size: $fs-x-medium;
@@ -153,16 +158,12 @@
       .plan__details {
         gap: 10px;
         margin-bottom: 48px;
-
         &--first,
         &--second {
           min-height: 230px;
         }
 
         .plan__infor {
-          background-image: url(../assets/images/icons/check.svg);
-          background-repeat: no-repeat;
-
           & span {
             font-size: $fs-x-small;
             line-height: $lh-xxl-medium;
@@ -186,6 +187,7 @@
 // Start network section
 .network {
   margin-bottom: 36px;
+
   &__header {
     max-width: 555px;
     margin: 0 auto;
@@ -206,6 +208,7 @@
 // Start sponsor section
 .sponsor {
   margin-bottom: 45px;
+
   &__container {
     .sponsor__image:nth-child(3) {
       margin: 0 -48px;
@@ -219,6 +222,7 @@
 // Start customer section
 .customer {
   padding-bottom: 176px;
+
   .customer__card {
     margin-bottom: 61px;
 
@@ -271,10 +275,6 @@
     }
 
     .customer__rating {
-      background-image: url(../assets/images/icons/star.svg);
-      background-repeat: no-repeat;
-      background-position: 34px 1px;
-
       & span {
         display: inline-block;
         color: $text-secondary-color;
@@ -550,8 +550,6 @@
         .feature__list {
           width: 100%;
           &-item {
-            background-position: 0 12px;
-            background-size: 60px;
             & span {
               transform: translateY(0);
               margin-left: 70px;
@@ -591,7 +589,6 @@
 
         .plan__details {
           .plan__infor {
-            background-size: 50px;
             & span {
               font-size: $fs-x-large;
               margin-left: 60px;
@@ -676,8 +673,6 @@
           }
 
           .customer__rating {
-            background-size: 35px;
-            background-position: 52px 5px;
             & span {
               font-size: $fs-large;
               transform: translate(-20px, -6px);
