@@ -23,7 +23,7 @@
     <header class="header">
       <div class="wrapper header__container">
         <nav
-          class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-transition"
+          class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-transition position--sticky top--0 d--flex align__items-center"
         >
           <div class="navbar-brand navbar__logo" href="#">
             <img src="./assets/images/logo/logo.svg" alt="logo" />
@@ -43,7 +43,7 @@
           </button>
           <div class="navbar-collapse collapse" id="navbarSupportedContent">
             <ul
-              class="navbar__menu navbar-nav mx-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0"
+              class="navbar__menu navbar-nav mx-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0 d--flex align__items-center"
             >
               <li class="navbar__menu-item">
                 <a href="#" class="navbar__menu-link">About</a>
@@ -61,7 +61,7 @@
                 <a href="#" class="navbar__menu-link">Help</a>
               </li>
             </ul>
-            <div class="navbar__auth">
+            <div class="navbar__auth d--flex align__items-center">
               <a href="#" class="navbar__auth-signin">Sign in</a>
               <button class="btn btn--outline navbar__auth-signup">
                 Sign up
@@ -339,7 +339,7 @@
       <!-- Sponsor section end -->
 
       <!-- Customer section begin-->
-      <article class="customer">
+      <article class="customer position--relative">
         <div class="wrapper customer__container">
           <div
             class="customer__header d--flex flex--column align__items-center"
@@ -448,16 +448,20 @@
               />
             </div>
             <div class="direction d-flex">
-              <div class="direction__border--backward">
-                <div class="direction__arrow--backward">
+              <div class="direction__border--backward position--relative">
+                <div
+                  class="direction__arrow--backward position--absolute top--25"
+                >
                   <img
                     src="./assets/images/icons/arrow-back.svg"
                     alt="arrow back"
                   />
                 </div>
               </div>
-              <div class="direction__border--forward">
-                <div class="direction__arrow--forward">
+              <div class="direction__border--forward position--relative">
+                <div
+                  class="direction__arrow--forward position--absolute top--25"
+                >
                   <img
                     src="./assets/images/icons/arrow-right.svg"
                     alt="arrow right"
@@ -469,7 +473,7 @@
         </div>
 
         <!-- Start subscribe -->
-        <section class="subscribe">
+        <section class="subscribe position--absolute right--0 left--0">
           <div
             class="wrapper subscribe__container d--flex justify__content--between align__items-center"
           >

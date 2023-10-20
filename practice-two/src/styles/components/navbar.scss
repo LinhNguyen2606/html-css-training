@@ -1,17 +1,11 @@
 .navbar {
-  display: flex;
-  align-items: center;
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
 
   &__logo {
     margin-right: 158px;
   }
   &__menu,
   &__auth {
-    display: flex;
-    align-items: center;
     flex-grow: 1;
     text-transform: capitalize;
   }

@@ -220,7 +220,6 @@
 
 // Start customer section
 .customer {
-  position: relative;
   padding-bottom: 176px;
   .customer__card {
     margin-bottom: 61px;
@@ -308,7 +307,6 @@
         padding: 15px;
         width: 60px;
         height: 60px;
-        position: relative;
         transition: transform 0.4s;
         cursor: pointer;
       }
@@ -325,12 +323,6 @@
           transform: translateX(0.25rem);
         }
       }
-
-      &__arrow--backward,
-      &__arrow--forward {
-        position: absolute;
-        top: 25%;
-      }
     }
   }
 }
@@ -338,11 +330,7 @@
 
 // Start subscribe section
 .subscribe {
-  position: absolute;
   bottom: -137px;
-  right: 0;
-  left: 0;
-
   &__container {
     background-color: $bg-white-color;
     border: 2px solid $border-white-color;
