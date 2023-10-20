@@ -38,7 +38,6 @@
   margin-bottom: 88px;
 
   &__container {
-    display: flex;
     padding: 44px 91px;
     background-color: $bg-white-color;
     border-radius: 10px;
@@ -46,8 +45,6 @@
     min-height: 200px;
 
     .intro__item {
-      display: flex;
-      align-items: center;
       gap: 36px;
 
       &:nth-child(1) {
@@ -85,11 +82,7 @@
 .feature {
   margin-bottom: 128px;
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
     row-gap: 169.48px;
-
     .feature__img {
       margin-left: 33px;
     }
@@ -103,8 +96,6 @@
       }
 
       .feature__list {
-        display: flex;
-        flex-direction: column;
         gap: 15px;
         padding: 0;
         margin: 0;
@@ -113,7 +104,6 @@
           background-image: url(../assets/images/icons/check-circle.svg);
           background-repeat: no-repeat;
           background-position: 0 3px;
-          display: flex;
 
           & span {
             font-size: $fs-x-small;
@@ -140,8 +130,6 @@
     text-align: center;
     max-width: 555px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     gap: 14px;
 
     .plan__desc {
@@ -150,10 +138,7 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
     gap: 50px;
-
     .plan__card {
       .plan__img {
         margin-bottom: 30px;
@@ -167,8 +152,6 @@
       }
 
       .plan__details {
-        display: flex;
-        flex-direction: column;
         gap: 10px;
         margin-bottom: 48px;
 
@@ -178,7 +161,6 @@
         }
 
         .plan__infor {
-          display: flex;
           background-image: url(../assets/images/icons/check.svg);
           background-repeat: no-repeat;
 
@@ -206,9 +188,6 @@
 .network {
   margin-bottom: 36px;
   &__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 555px;
     text-align: center;
     margin: 0 auto;
@@ -230,10 +209,6 @@
 .sponsor {
   margin-bottom: 45px;
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
     .sponsor__image:nth-child(3) {
       margin: 0 -48px;
     }
@@ -259,9 +234,6 @@
     text-align: center;
     max-width: 555px;
     margin: 0px auto 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     row-gap: 12px;
 
     .customer__heading {
@@ -274,19 +246,10 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     gap: 45px;
 
     .customer__author {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
       .customer__infor {
-        display: flex;
-        align-items: center;
         gap: 19px;
         margin-bottom: 7px;
 
@@ -334,12 +297,7 @@
   }
 
   .navigation__bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     .direction {
-      display: flex;
       gap: 20px;
 
       &__border--backward,
@@ -391,9 +349,6 @@
     padding: 52px 70px;
     border-radius: 10px;
     box-shadow: 0 30px 114px 0 rgba(13, 16, 37, 0.06);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
     .subscribe__content {
       max-width: 410px;
