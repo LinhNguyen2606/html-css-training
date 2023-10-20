@@ -218,17 +218,11 @@
 // End sponsor section
 
 // Start customer section
-
-// Start customer section
 .customer {
   padding-bottom: 176px;
 
   .customer__card {
     margin-bottom: 61px;
-
-    &:hover {
-      border-color: $border-dark-red-color;
-    }
   }
 
   &__header {
@@ -747,18 +741,9 @@
 
   // Footer begin
   .footer {
-    padding-top: 200px;
     &__container {
-      grid-template-columns: 1fr;
       .footer__content--left {
-        .footer__logo {
-          & img {
-            width: 250px;
-          }
-        }
-
         .footer__desc {
-          width: 100%;
           font-size: $fs-large;
         }
 
@@ -768,16 +753,9 @@
       }
 
       .footer__content--right {
-        justify-content: space-between;
         .footer__col {
-          &:nth-child(2),
-          &:nth-child(3) {
-            margin-left: 0;
-          }
           .footer__heading {
             font-size: $fs-large;
-            max-width: 250px;
-            width: 100%;
           }
 
           .footer__links {
@@ -899,15 +877,8 @@
 
   // Footer begin
   .footer {
-    padding-top: 230px;
     &__container {
       .footer__content--left {
-        .footer__logo {
-          & img {
-            width: 300px;
-          }
-        }
-
         .footer__desc {
           font-size: $fs-xl-large;
         }
@@ -918,22 +889,12 @@
       }
 
       .footer__content--right {
-        flex-wrap: wrap;
         .footer__col {
-          &:nth-child(1) {
-            width: 50%;
-          }
-          &:nth-child(2) {
-            width: 50%;
-          }
-
           .footer__heading {
             font-size: $fs-x-huge;
-            max-width: 300px;
           }
 
           .footer__links {
-            grid-template-columns: 1fr;
             .footer__item {
               .footer__link {
                 font-size: $fs-large;
