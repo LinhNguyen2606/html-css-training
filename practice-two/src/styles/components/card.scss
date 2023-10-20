@@ -15,6 +15,7 @@
 
   &:hover {
     border-color: $border-dark-red-color;
+    cursor: pointer;
   }
 
   &:hover a {
@@ -34,6 +35,11 @@
   padding: 30px;
   max-width: 430px;
   height: 230px;
+
+  &:hover {
+    border-color: $border-dark-red-color;
+    cursor: pointer;
+  }
 }
 // Customer card end
 @media (max-width: 768px) {
