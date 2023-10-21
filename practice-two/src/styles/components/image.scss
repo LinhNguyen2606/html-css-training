@@ -17,15 +17,6 @@
 }
 // Plan end
 
-// Network begin
-.network__map {
-  & img {
-    width: 1060px;
-    height: 538px;
-  }
-}
-// Network end
-
 // Customer begin
 .customer__rating {
   background-image: url(../assets/images/icons/star.svg);
@@ -65,6 +56,109 @@
 }
 // Footer end
 
+@media (min-width: 1440px) {
+  // Header begin
+  .navbar__logo,
+  .footer__logo {
+    img {
+      width: 149px;
+      height: 36px;
+    }
+  }
+  // Header end
+
+  // Intro begin
+  .intro__item-icon {
+    img {
+      width: 55px;
+      height: 55px;
+    }
+  }
+  // Intro end
+
+  // Hero begin
+  .hero__img {
+    & img {
+      width: 611px;
+      height: 382px;
+    }
+  }
+  // Hero end
+
+  // Feature begin
+  .feature__img {
+    & img {
+      width: 508px;
+      height: 415px;
+    }
+  }
+  // Feature end
+
+  // Plan brgin
+  .plan__card__img {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      width: 144px;
+      height: 165px;
+    }
+  }
+  // Plan end
+  // Network begin
+  .network__map {
+    & img {
+      width: 1060px;
+      height: 538px;
+    }
+  }
+  // Network end
+
+  // Sponsor begin
+  .sponsor__image {
+    .neftlix__img {
+      width: 200px;
+      height: 112px;
+    }
+
+    .reddit__img,
+    .discord__img,
+    .spotify__img {
+      width: 190px;
+      height: 60px;
+    }
+
+    .amazon__img {
+      width: 278px;
+      height: 208px;
+    }
+  }
+  // Sponsor end
+
+  // Customer begin
+  .customer__avatar {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .navigation__bar--transition {
+    img {
+      width: 135px;
+      height: 15px;
+    }
+  }
+
+  .direction__arrow--backward,
+  .direction__arrow--forward {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  // Customer end
+}
+
 @media (max-width: 768px) {
   .footer {
     .social__fb,
@@ -83,10 +177,8 @@
     }
   }
 
-  .plan__details {
-    .plan__infor {
-      background-size: 50px;
-    }
+  .plan__infor {
+    background-size: 50px;
   }
 
   .customer__rating {

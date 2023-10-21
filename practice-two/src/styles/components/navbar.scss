@@ -11,15 +11,13 @@
 
   &__menu {
     gap: 40px;
-    &-item {
-      .navbar__menu-link {
-        color: $text-primary-color;
-        font-size: $fs-small;
-        font-weight: $fw-normal;
+    &-link {
+      color: $text-primary-color;
+      font-size: $fs-small;
+      font-weight: $fw-normal;
 
-        &:hover {
-          color: $text-dark-red-color;
-        }
+      &:hover {
+        color: $text-dark-red-color;
       }
     }
   }
