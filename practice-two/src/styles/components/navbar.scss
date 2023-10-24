@@ -69,9 +69,6 @@
       align-items: flex-start;
 
       &-item {
-        .navbar__menu-link {
-          font-size: $fs-large;
-        }
         &:last-child {
           margin-bottom: 14px;
         }
@@ -80,19 +77,10 @@
 
     &__auth {
       margin-top: 20px;
-
-      &-signin,
-      &-signup {
-        font-size: $fs-large;
-      }
     }
 
     .border-bottom {
       border-bottom: 1px solid #bec3d0 !important;
-    }
-
-    button.navbar-toggler {
-      font-size: $fs-medium;
     }
   }
 }
