@@ -24,6 +24,7 @@
 
   &__auth {
     gap: 30px;
+    margin-left: 148px;
     &-signin {
       color: $text-secondary-color;
       font-size: $fs-small;
@@ -39,10 +40,12 @@
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1399.9px) {
   .navbar {
+    padding: 0 20px;
     &__auth {
       flex-grow: 0;
+      margin-left: 0;
     }
   }
 }
@@ -60,13 +63,6 @@
 @media (max-width: 992px) {
   .navbar {
     box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
-    padding: 0 150px;
-    width: 1440px;
-
-    &__logo {
-      width: 250px;
-    }
-
     &__menu {
       gap: 20px;
       flex-grow: 0;
@@ -94,6 +90,10 @@
     .border-bottom {
       border-bottom: 1px solid #bec3d0 !important;
     }
+
+    button.navbar-toggler {
+      font-size: $fs-medium;
+    }
   }
 }
 
@@ -110,30 +110,10 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 576px) {
   .navbar {
     &__logo {
-      & img {
-        width: 200px;
-      }
-    }
-
-    button.navbar-toggler {
-      font-size: $fs-large;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    &__logo {
-      & img {
-        width: 250px;
-      }
-    }
-
-    button.navbar-toggler {
-      font-size: 40px;
+      margin-right: 0;
     }
   }
 }
