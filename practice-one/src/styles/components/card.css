@@ -1,0 +1,45 @@
+/* Customer card begin */
+.customer__card {
+  border       : 2px solid var(--border-gray-light-color);
+  border-radius: 10px;
+  padding      : 30px;
+  max-width    : 400px;
+  height       : 230px;
+}
+
+.customer__card:hover {
+  border-color : var(--border-dark-red);
+  border-radius: 10px;
+  box-shadow   : 0 50px 114px 0 rgba(13, 16, 37, 0.06);
+}
+
+/* Customer card end */
+
+/* Plan card begin */
+.plan__card {
+  background-color: var(--bg-white-color);
+  border-radius   : 10px;
+  border          : 2px solid var(--border-gray-light-color);
+  padding         : 80px 69px 50px;
+  display         : flex;
+  flex-direction  : column;
+  align-items     : center;
+}
+
+.plan__card a {
+  padding    : 13px 63px;
+  font-weight: var(--fw-bold);
+}
+
+.plan__card:hover {
+  border-color: var(--border-dark-red);
+}
+
+.plan__card:hover a {
+  background-color: var(--bg-dark-red);
+  font-weight     : var(--fw-bold);
+  box-shadow      : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+  color           : var(--text-white-color);
+}
+
+/* Plan card end */
