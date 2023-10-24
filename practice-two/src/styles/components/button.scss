@@ -1,0 +1,29 @@
+.btn {
+  padding: 13px 45px;
+  font-family: $primary-font;
+  font-size: $fs-small;
+  outline: none;
+  border: none;
+  transition: all 0.4s;
+
+  &--outline {
+    background-color: transparent;
+    border-radius: 50px;
+    color: $text-dark-red-color;
+    border: 1px solid;
+    font-weight: $fw-medium;
+  }
+
+  &--primary {
+    font-weight: $fw-bold;
+    background-color: $bg-dark-red-color;
+    color: $text-white-color;
+  }
+
+  &--rounded {
+    border-radius: 10px;
+    padding: 18px 78px;
+    line-height: $lh-x-small;
+    box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+  }
+}
