@@ -1,0 +1,119 @@
+.footer {
+  padding-top: 185px;
+  padding-bottom: 100px;
+  &__container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    .footer__content--left {
+      margin-right: 421px;
+      max-width: 340px;
+      width: 100%;
+      .footer__logo {
+        margin-bottom: 17px;
+      }
+      .footer__desc {
+        margin-bottom: 30px;
+      }
+    }
+    .footer__content--right {
+      .footer__col {
+        &:nth-child(2) {
+          margin-left: 75px;
+        }
+        &:nth-child(3) {
+          margin-left: 124px;
+        }
+        .footer__heading {
+          width: 103px;
+        }
+        .footer__links {
+          padding-left: 0;
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+          .footer__item {
+            margin: 6px 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1399.9px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    &__container {
+      .footer__content--right {
+        .footer__col {
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+
+      .footer__content--left {
+        margin-right: 0;
+        max-width: 345px;
+        .footer__logo {
+          img {
+            width: 50%;
+          }
+        }
+
+        .footer__desc,
+        .footer__social {
+          margin-bottom: 10px;
+        }
+      }
+
+      .footer__content--right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: flex-start;
+        margin-top: 20px;
+        .footer__col {
+          width: 33.33%;
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    &__container {
+      .footer__content--left {
+        .footer__desc {
+          max-width: 340px;
+        }
+      }
+      .footer__content--right {
+        grid-template-columns: repeat(2, 1fr);
+        .footer__col {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
