@@ -1,0 +1,15 @@
+/* Header logo start */
+.navbar__logo img {
+  width : 149px;
+  height: 36px;
+}
+
+/* Header logo end */
+
+/* Footer logo start */
+
+.footer__logo {
+  display: inline-block;
+}
+
+/* Footer logo end */
