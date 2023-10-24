@@ -5,12 +5,13 @@
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
     .footer__content--left {
-      margin-right: 225px;
+      margin-right: 421px;
+      max-width: 340px;
+      width: 100%;
       .footer__logo {
         margin-bottom: 17px;
       }
       .footer__desc {
-        width: 340px;
         margin-bottom: 30px;
       }
     }
@@ -37,63 +38,80 @@
     }
   }
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1399.9px) {
   .footer {
-    padding-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
     &__container {
-      .footer__content--left {
-        .footer__logo {
-          &img {
-            width: 250px;
-          }
-        }
-        .footer__desc {
-          width: 100%;
-        }
-      }
-      grid-template-columns: 1fr;
       .footer__content--right {
-        justify-content: space-between;
         .footer__col {
           &:nth-child(2),
           &:nth-child(3) {
             margin-left: 0;
-          }
-          .footer__heading {
-            max-width: 250px;
-            width: 100%;
           }
         }
       }
     }
   }
 }
-@media (max-width: 576px) {
+
+@media (max-width: 992px) {
   .footer {
-    padding-top: 230px;
     &__container {
+      grid-template-columns: 1fr;
+
       .footer__content--left {
+        margin-right: 0;
+        max-width: 345px;
         .footer__logo {
-          &img {
-            width: 300px;
+          img {
+            width: 50%;
+          }
+        }
+
+        .footer__desc,
+        .footer__social {
+          margin-bottom: 10px;
+        }
+      }
+
+      .footer__content--right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: flex-start;
+        margin-top: 20px;
+        .footer__col {
+          width: 33.33%;
+          &:nth-child(2),
+          &:nth-child(3) {
+            margin-left: 0;
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    &__container {
+      .footer__content--left {
+        .footer__desc {
+          max-width: 340px;
+        }
+      }
       .footer__content--right {
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
         .footer__col {
-          &:nth-child(1) {
-            width: 50%;
-          }
-          &:nth-child(2) {
-            width: 50%;
-          }
-          .footer__heading {
-            max-width: 300px;
-          }
-          .footer__links {
-            grid-template-columns: 1fr;
-          }
+          width: 50%;
         }
       }
     }

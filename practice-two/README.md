@@ -35,9 +35,9 @@
 practice-two
 
 ## Breakpoint ##
-- Mobile: min-width: 370px and max-width: 576px
+- Mobile: min-width: 335px and max-width: 576px
 - Tablet: max-width: 992px
-- PC: min-width: 1440px
+- Large screen: min-width: 992px
 
 ~~~
 |-- src
