@@ -4,6 +4,7 @@
   right: 0;
   left: 0;
   bottom: -123px;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -39,7 +40,7 @@
 
 @include responsive("large") {
   .subscribe {
-    padding: 0 20px;
+    margin: 0 20px;
   }
 }
 

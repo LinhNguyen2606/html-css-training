@@ -51,7 +51,6 @@
       font-size: $fs-x-medium;
       font-weight: $fw-medium;
       width: 142px;
-      margin-bottom: 0;
     }
 
     &-address {
@@ -126,10 +125,9 @@
 
 @include responsive("large") {
   .customer {
-    padding-left: 50px;
-    padding-right: 50px;
+    margin: 0 50px;
 
-    &__container {
+    .customer__container {
       overflow: hidden;
     }
   }
@@ -180,8 +178,8 @@
 
 @include responsive("extra-small") {
   .customer {
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     &-avatar {
       width: 50px;
@@ -190,7 +188,7 @@
   }
 
   .navigation__bar {
-    padding: 0 10px;
+    margin: 0 10px;
     &--transition {
       width: 70%;
     }
