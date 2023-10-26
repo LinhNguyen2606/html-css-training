@@ -18,20 +18,13 @@
     <link rel="stylesheet" href="./styles/index.scss" />
     <title>LaLesVPN</title>
   </head>
-  <body>
+  <body class="custom__body">
     <!-- Header section begin -->
-    <header class="header position--sticky top--0">
+    <header class="header">
       <div class="wrapper header__container">
-        <nav
-          class="navbar navbar-expand-lg navbar-light py-3 bg-white shadow-transition position--sticky top--0 d--flex align__items--center"
-        >
+        <nav class="navbar navbar-expand-lg navbar-light py-3 bg-white">
           <div class="navbar-brand navbar__logo">
-            <img
-              src="./assets/images/logo/logo.svg"
-              alt="logo"
-              width="149px"
-              height="36.2px"
-            />
+            <img src="./assets/images/logo/logo.svg" alt="logo" />
           </div>
           <!-- Navbar menu -->
           <button
@@ -47,9 +40,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-collapse collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar__menu navbar-nav mx-auto border-bottom border-lg-bottom-0 pt-2 pt-lg-0 d--flex align__items--center"
-            >
+            <ul class="navbar__menu navbar-nav mx-auto pt-2 pt-lg-0">
               <li class="navbar__menu-item">
                 <a href="#" class="navbar__menu-link text__decoration-none"
                   >About</a
@@ -96,491 +87,400 @@
 
     <main>
       <!-- Hero section begin -->
-      <div class="hero">
-        <div class="wrapper hero__container">
-          <article class="hero__content">
-            <h1 class="hero__heading">
-              Want anything to be easy with
-              <span class="text--bold">LaslesVPN</span>.
-            </h1>
-            <p class="sub__heading hero__description">
-              Provide a network for all your needs with ease and fun using
-              <span class="text--medium">LaslesVPN</span> discover interesting
-              features from us.
-            </p>
-            <a
-              aria-label="button get started"
-              href="javascript:void(0)"
-              class="btn btn--primary btn--rounded inline--block hero__btn text--capitalize"
-              rel="nofollow"
-              >Get started</a
-            >
-          </article>
-          <div class="hero__img">
-            <img
-              src="./assets/images/products/hero.webp"
-              alt="Want anything to be easy with LaslesVPN"
-            />
-          </div>
+      <div class="hero wrapper hero__container">
+        <section class="hero__content">
+          <h1 class="hero__content-heading">
+            Want anything to be easy with
+            <span class="text--bold">LaslesVPN</span>.
+          </h1>
+          <p class="sub__heading hero__content-description">
+            Provide a network for all your needs with ease and fun using
+            <span class="text--medium">LaslesVPN</span> discover interesting
+            features from us.
+          </p>
+          <a
+            aria-label="button get started"
+            href="javascript:void(0)"
+            class="btn btn--primary btn--rounded hero__content-btn"
+            rel="nofollow"
+            >Get started</a
+          >
+        </section>
+        <div class="hero__img">
+          <img
+            src="./assets/images/products/hero.webp"
+            alt="Want anything to be easy with LaslesVPN"
+          />
         </div>
       </div>
       <!-- Hero section end -->
 
       <!-- Intro section begin -->
-      <div class="intro">
-        <div class="wrapper intro__container d--flex">
-          <div class="intro__item d--flex align__items--center">
-            <div class="intro__item-icon">
-              <img
-                src="./assets/images/icons/user.svg"
-                alt="user"
-                width="55px"
-                height="55px"
-              />
-            </div>
-            <div class="intro__item-general">
-              <span class="intro__title">90+</span>
-              <p class="intro__text">Users</p>
-            </div>
+      <div class="intro wrapper intro__container">
+        <div class="intro__item">
+          <div class="intro__item-icon">
+            <img src="./assets/images/icons/user.svg" alt="user" />
           </div>
-
-          <div class="intro__item d--flex align__items--center">
-            <div class="intro__item-icon">
-              <img
-                src="./assets/images/icons/location.svg"
-                alt="location"
-                width="55px"
-                height="55px"
-              />
-            </div>
-            <div class="intro__item-general">
-              <span class="intro__title">30+</span>
-              <p class="intro__text">Locations</p>
-            </div>
+          <div>
+            <span class="intro__title">90+</span>
+            <p class="intro__text">Users</p>
           </div>
+        </div>
 
-          <div class="intro__item d--flex align__items--center">
-            <div class="intro__item-icon">
-              <img
-                src="./assets/images/icons/server.svg"
-                alt="server"
-                width="55px"
-                height="55px"
-              />
-            </div>
-            <div class="intro__item-general">
-              <span class="intro__title">50+</span>
-              <p class="intro__text">Servers</p>
-            </div>
+        <div class="intro__item">
+          <div class="intro__item-icon">
+            <img src="./assets/images/icons/location.svg" alt="location" />
+          </div>
+          <div>
+            <span class="intro__title">30+</span>
+            <p class="intro__text">Locations</p>
+          </div>
+        </div>
+
+        <div class="intro__item">
+          <div class="intro__item-icon">
+            <img src="./assets/images/icons/server.svg" alt="server" />
+          </div>
+          <div>
+            <span class="intro__title">50+</span>
+            <p class="intro__text">Servers</p>
           </div>
         </div>
       </div>
       <!-- Intro section end -->
 
       <!-- Feature section begin -->
-      <div class="feature">
-        <article
-          class="wrapper feature__container d--flex justify__content--between align__items--end"
-        >
-          <div class="feature__img">
-            <img
-              src="./assets/images/products/hero-2.webp"
-              alt="Provide Many Features You Can Use"
-            />
-          </div>
-          <div class="feature__content">
-            <h2 class="primary__heading feature__heading">
-              We Provide Many Features You Can Use
-            </h2>
-            <p class="sub__heading feature__desc">
-              You can explore the features that we provide with fun and have
-              their own functions each feature.
-            </p>
-            <ul class="feature__list d--flex flex--column">
-              <li class="feature__list-item d--flex">
-                <span>Powerfull online protection.</span>
-              </li>
-              <li class="feature__list-item d--flex">
-                <span>Internet without borders.</span>
-              </li>
-              <li class="feature__list-item d--flex">
-                <span>Supercharged VPN</span>
-              </li>
-              <li class="feature__list-item d--flex">
-                <span>No specific time limits.</span>
-              </li>
-            </ul>
-          </div>
-        </article>
+      <div class="feature wrapper feature__container">
+        <div class="feature__img">
+          <img
+            src="./assets/images/products/hero-2.webp"
+            alt="Provide Many Features You Can Use"
+          />
+        </div>
+        <section class="feature__content">
+          <h2 class="primary__heading feature__content-heading">
+            We Provide Many Features You Can Use
+          </h2>
+          <p class="sub__heading feature__content-desc">
+            You can explore the features that we provide with fun and have their
+            own functions each feature.
+          </p>
+          <ul class="feature__list">
+            <li class="feature__list-item">
+              <span>Powerfull online protection.</span>
+            </li>
+            <li class="feature__list-item">
+              <span>Internet without borders.</span>
+            </li>
+            <li class="feature__list-item">
+              <span>Supercharged VPN</span>
+            </li>
+            <li class="feature__list-item">
+              <span>No specific time limits.</span>
+            </li>
+          </ul>
+        </section>
       </div>
       <!-- Feature section end -->
 
       <!-- Plan section begin -->
-      <article class="plan">
-        <div class="wrapper plan__container">
-          <div class="plan__header d--flex flex--column text--center">
-            <h2 class="primary__heading plan__heading">Choose Your Plan</h2>
-            <p class="sub__heading plan__desc">
-              Let's choose the package that is best for you and explore it
-              happily and cheerfully.
-            </p>
-          </div>
-          <div class="plan__list d--flex justify__content--center">
-            <article class="plan__card">
-              <div class="plan__img">
-                <img
-                  class="plan__card__img"
-                  alt="free plan package"
-                  src="./assets/images/products/free_1.webp"
-                  width="144px"
-                  height="165px"
-                />
+      <div class="plan wrapper">
+        <section class="plan__header">
+          <h2 class="primary__heading plan__header-title">Choose Your Plan</h2>
+          <p class="sub__heading plan__header-desc">
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+        </section>
+        <div class="plan__list">
+          <article class="plan__card">
+            <div class="plan__card__img">
+              <img
+                alt="free plan package"
+                src="./assets/images/products/free_1.webp"
+              />
+            </div>
+            <h3 class="plan__card-title">Free Plan</h3>
+            <div class="plan__card-details">
+              <div class="plan__card-infor">
+                <span>Unlimited Bandwitch</span>
               </div>
-              <h3 class="plan__title">Free Plan</h3>
-              <div
-                class="plan__details plan__details--first d--flex flex--column"
-              >
-                <div class="plan__infor d--flex">
-                  <span>Unlimited Bandwitch</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Encrypted Connection</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>No Traffic Logs</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Works on All Devices</span>
-                </div>
+              <div class="plan__card-infor">
+                <span>Encrypted Connection</span>
               </div>
-              <h4 class="plan__price">Free</h4>
-              <a
-                href="#"
-                class="btn btn--outline inline--block text--capitalize"
-                >Select</a
-              >
-            </article>
+              <div class="plan__card-infor">
+                <span>No Traffic Logs</span>
+              </div>
+              <div class="plan__card-infor">
+                <span>Works on All Devices</span>
+              </div>
+            </div>
+            <h4 class="plan__card-price">Free</h4>
+            <a href="#" class="btn btn--outline">Select</a>
+          </article>
 
-            <article class="plan__card">
-              <div class="plan__img">
-                <img
-                  class="plan__card__img"
-                  alt="Standard plan package"
-                  src="./assets/images/products/standard.webp"
-                  width="144px"
-                  height="165px"
-                />
+          <article class="plan__card">
+            <div class="plan__card__img">
+              <img
+                alt="Standard plan package"
+                src="./assets/images/products/standard.webp"
+              />
+            </div>
+            <h3 class="plan__card-title">Standard Plan</h3>
+            <div class="plan__card-details">
+              <div class="plan__card-infor">
+                <span>Unlimited Bandwitch</span>
               </div>
-              <h3 class="plan__title">Standard Plan</h3>
-              <div
-                class="plan__details plan__details--second d--flex flex--column"
-              >
-                <div class="plan__infor d--flex">
-                  <span>Unlimited Bandwitch</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Encrypted Connection</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Yes Traffic Logs</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Works on All Devices</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Connect Anyware</span>
-                </div>
+              <div class="plan__card-infor">
+                <span>Encrypted Connection</span>
               </div>
-              <h4 class="plan__price">
-                $9 / <span class="text-normal">mo</span>
-              </h4>
-              <a
-                href="#"
-                class="btn btn--outline inline--block text--capitalize"
-                >Select</a
-              >
-            </article>
+              <div class="plan__card-infor">
+                <span>Yes Traffic Logs</span>
+              </div>
+              <div class="plan__card-infor">
+                <span>Works on All Devices</span>
+              </div>
+              <div class="plan__card-infor">
+                <span>Connect Anyware</span>
+              </div>
+            </div>
+            <h4 class="plan__card-price">
+              $9 / <span class="text-normal">mo</span>
+            </h4>
+            <a href="#" class="btn btn--outline">Select</a>
+          </article>
 
-            <article class="plan__card">
-              <div class="plan__img">
-                <img
-                  class="plan__card__img"
-                  alt="Premium plan package"
-                  src="./assets/images/products/premium.webp"
-                  width="144px"
-                  height="165px"
-                />
+          <article class="plan__card">
+            <div class="plan__card__img">
+              <img
+                alt="Premium plan package"
+                src="./assets/images/products/premium.webp"
+              />
+            </div>
+            <h3 class="plan__card-title">Premium Plan</h3>
+            <div class="plan__card-details">
+              <div class="plan__card-infor">
+                <span>Unlimited Bandwitch</span>
               </div>
-              <h3 class="plan__title">Premium Plan</h3>
-              <div class="plan__details d--flex flex--column">
-                <div class="plan__infor d--flex">
-                  <span>Unlimited Bandwitch</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Encrypted Connection</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Yes Traffic Logs</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Works on All Devices</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Connect Anyware</span>
-                </div>
-                <div class="plan__infor d--flex">
-                  <span>Get New Features</span>
-                </div>
+              <div class="plan__card-infor">
+                <span>Encrypted Connection</span>
               </div>
-              <h4 class="plan__price">
-                $12 / <span class="text-normal">mo</span>
-              </h4>
-              <a
-                href="#"
-                class="btn btn--outline inline--block text--capitalize"
-                >Select</a
-              >
-            </article>
-          </div>
+              <div class="plan__card-infor">
+                <span>Yes Traffic Logs</span>
+              </div>
+              <div class="plan__card-infor">
+                <span>Works on All Devices</span>
+              </div>
+              <div class="plan__card-infor">
+                <span>Connect Anyware</span>
+              </div>
+              <div class="plan__card-infor">
+                <span>Get New Features</span>
+              </div>
+            </div>
+            <h4 class="plan__card-price">
+              $12 / <span class="text-normal">mo</span>
+            </h4>
+            <a href="#" class="btn btn--outline">Select</a>
+          </article>
         </div>
-      </article>
+      </div>
       <!-- Plan section end -->
 
       <!-- Network section begin -->
-      <section class="network">
-        <div class="wrapper network__container">
-          <div
-            class="network__header d--flex flex--column align__items--center text--center"
-          >
-            <h2 class="primary__heading network__heading">
-              Huge Global Network of Fast VPN
-            </h2>
-            <p class="sub__heading">
-              See <span class="text--medium">LaslesVPN</span> everywhere to make
-              it easier for you when you move locations.
-            </p>
-          </div>
-          <div class="network__map">
-            <img
-              src="./assets/images/products/map.webp"
-              alt="Huge Global Network of Fast VPN"
-            />
-          </div>
+      <div class="network wrapper">
+        <section class="network__header">
+          <h2 class="primary__heading network__header-title">
+            Huge Global Network of Fast VPN
+          </h2>
+          <p class="sub__heading">
+            See <span class="text--medium">LaslesVPN</span> everywhere to make
+            it easier for you when you move locations.
+          </p>
+        </section>
+        <div class="network__map">
+          <img
+            src="./assets/images/products/map.webp"
+            alt="Huge Global Network of Fast VPN"
+          />
         </div>
-      </section>
+      </div>
       <!-- Network section end -->
 
       <!-- Sponsor section begin -->
-      <div class="sponsor">
-        <div
-          class="wrapper sponsor__container d--flex justify__content--between align__items--center"
-        >
-          <div class="sponsor__image">
-            <img
-              src="./assets/images/products/netflix.png"
-              alt="Neftlix"
-              class="neftlix__img"
-            />
-          </div>
-          <div class="sponsor__image">
-            <img
-              src="./assets/images/products/reddit.png"
-              alt="Reddit"
-              class="reddit__img"
-            />
-          </div>
-          <div class="sponsor__image">
-            <img
-              src="./assets/images/products/amazon.png"
-              alt="Amazon"
-              class="amazon__img"
-            />
-          </div>
-          <div class="sponsor__image">
-            <img
-              src="./assets/images/products/discord.png"
-              alt="Discord"
-              class="discord__img"
-            />
-          </div>
-          <div class="sponsor__image">
-            <img
-              src="./assets/images/products/spotify.png"
-              alt="Spotify"
-              class="spotify__img"
-            />
-          </div>
+      <div class="sponsor wrapper sponsor__container">
+        <div class="sponsor__image">
+          <img
+            src="./assets/images/products/netflix.png"
+            alt="Neftlix"
+            class="neftlix__img"
+          />
+        </div>
+        <div class="sponsor__image">
+          <img
+            src="./assets/images/products/reddit.png"
+            alt="Reddit"
+            class="reddit__img"
+          />
+        </div>
+        <div class="sponsor__image">
+          <img
+            src="./assets/images/products/amazon.png"
+            alt="Amazon"
+            class="amazon__img"
+          />
+        </div>
+        <div class="sponsor__image">
+          <img
+            src="./assets/images/products/discord.png"
+            alt="Discord"
+            class="discord__img"
+          />
+        </div>
+        <div class="sponsor__image">
+          <img
+            src="./assets/images/products/spotify.png"
+            alt="Spotify"
+            class="spotify__img"
+          />
         </div>
       </div>
       <!-- Sponsor section end -->
 
       <!-- Customer section begin-->
-      <article class="customer position--relative">
-        <div class="wrapper customer__container">
-          <div
-            class="customer__header d--flex flex--column align__items--center text--center"
-          >
-            <h2 class="primary__heading customer__heading">
-              Trusted by Thousands of Happy Customer
-            </h2>
-            <p class="sub__heading">
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
-            </p>
-          </div>
-          <div
-            class="customer__list d--flex justify__content--between align__items--center"
-          >
-            <article class="customer__card">
-              <div
-                class="customer__author d--flex justify__content--between align__items--center"
-              >
-                <div class="customer__infor d--flex align__items--center">
-                  <div class="customer__avatar">
-                    <img
-                      src="./assets/images/avartars/avartar-1.jpg"
-                      alt="Viezh Robert"
-                      width="50px"
-                      height="50px"
-                    />
-                  </div>
-                  <div class="customer__content">
-                    <h3 class="customer__name">Viezh Robert</h3>
-                    <span class="customer__address">Warsaw, Poland</span>
-                  </div>
+      <div class="customer wrapper customer__container">
+        <section class="customer__header">
+          <h2 class="primary__heading customer__header-title">
+            Trusted by Thousands of Happy Customer
+          </h2>
+          <p class="sub__heading">
+            These are the stories of our customers who have joined us with great
+            pleasure when using this crazy feature.
+          </p>
+        </section>
+        <div class="customer__list">
+          <article class="customer__card">
+            <div class="customer__card-author">
+              <div class="customer__card-infor">
+                <div class="customer__card-avatar">
+                  <img
+                    src="./assets/images/avartars/avartar-1.jpg"
+                    alt="Viezh Robert"
+                  />
                 </div>
-                <div class="customer__rating">
-                  <span class="inline--block">4.5</span>
+                <div>
+                  <h3 class="customer__card-name">Viezh Robert</h3>
+                  <span class="customer__card-address">Warsaw, Poland</span>
                 </div>
               </div>
-              <div class="customer__describe">
-                “Wow... I am very happy to use this VPN, it turned out to be
-                more than my expectations and so far there have been no
-                problems. LaslesVPN always the best”.
+              <div class="customer__card-rating">
+                <span>4.5</span>
               </div>
-            </article>
-
-            <article class="customer__card">
-              <div
-                class="customer__author d--flex justify__content--between align__items--center"
-              >
-                <div class="customer__infor d--flex align__items--center">
-                  <div class="customer__avatar">
-                    <img
-                      src="./assets/images/avartars/avartar-2.jpg"
-                      alt="Yessica Christy"
-                      width="50px"
-                      height="50px"
-                    />
-                  </div>
-                  <div class="customer__content">
-                    <h3 class="customer__name">Yessica Christy</h3>
-                    <span class="customer__address">Shanxi, China</span>
-                  </div>
-                </div>
-                <div class="customer__rating">
-                  <span class="inline--block">4.5</span>
-                </div>
-              </div>
-              <div class="customer__describe">
-                “I like it because I like to travel far and still can connect
-                with high speed.”.
-              </div>
-            </article>
-
-            <article class="customer__card">
-              <div
-                class="customer__author d--flex justify__content--between align__items--center"
-              >
-                <div class="customer__infor d--flex align__items--center">
-                  <div class="customer__avatar">
-                    <img
-                      src="./assets/images/avartars/avartar-3.jpg"
-                      alt="Kim Young Jou"
-                      width="50px"
-                      height="50px"
-                    />
-                  </div>
-                  <div class="customer__content">
-                    <h3 class="customer__name">Kim Young Jou</h3>
-                    <span class="customer__address">Seoul, South Korea</span>
-                  </div>
-                </div>
-                <div class="customer__rating">
-                  <span class="inline--block">4.5</span>
-                </div>
-              </div>
-              <div class="customer__describe">
-                “This is very unusual for my business that currently requires a
-                virtual private network that has high security.”.
-              </div>
-            </article>
-          </div>
-
-          <div
-            class="navigation__bar d--flex justify__content--between align__items--center"
-          >
-            <div class="navigation__bar--transition">
-              <img
-                src="./assets/images/icons/transition.svg"
-                alt="transition"
-                width="135px"
-                height="15px"
-              />
             </div>
-            <div class="direction d-flex">
-              <div class="direction__border--backward position--relative">
-                <div
-                  class="direction__arrow--backward position--absolute top--25"
-                >
+            <div class="customer__card-describe">
+              “Wow... I am very happy to use this VPN, it turned out to be more
+              than my expectations and so far there have been no problems.
+              LaslesVPN always the best”.
+            </div>
+          </article>
+
+          <article class="customer__card">
+            <div class="customer__card-author">
+              <div class="customer__card-infor">
+                <div class="customer__card-avatar">
                   <img
-                    src="./assets/images/icons/arrow-back.svg"
-                    alt="arrow back"
-                    width="30px"
-                    height="30px"
+                    src="./assets/images/avartars/avartar-2.jpg"
+                    alt="Yessica Christy"
                   />
+                </div>
+                <div>
+                  <h3 class="customer__card-name">Yessica Christy</h3>
+                  <span class="customer__card-address">Shanxi, China</span>
                 </div>
               </div>
-              <div class="direction__border--forward position--relative">
-                <div
-                  class="direction__arrow--forward position--absolute top--25"
-                >
+              <div class="customer__card-rating">
+                <span>4.5</span>
+              </div>
+            </div>
+            <div class="customer__card-describe">
+              “I like it because I like to travel far and still can connect with
+              high speed.”.
+            </div>
+          </article>
+
+          <article class="customer__card">
+            <div class="customer__card-author">
+              <div class="customer__card-infor">
+                <div class="customer__card-avatar">
                   <img
-                    src="./assets/images/icons/arrow-right.svg"
-                    alt="arrow right"
-                    width="30px"
-                    height="30px"
+                    src="./assets/images/avartars/avartar-3.jpg"
+                    alt="Kim Young Jou"
                   />
                 </div>
+                <div>
+                  <h3 class="customer__card-name">Kim Young Jou</h3>
+                  <span class="customer__card-address">Seoul, South Korea</span>
+                </div>
+              </div>
+              <div class="customer__card-rating">
+                <span>4.5</span>
+              </div>
+            </div>
+            <div class="customer__card-describe">
+              “This is very unusual for my business that currently requires a
+              virtual private network that has high security.”.
+            </div>
+          </article>
+        </div>
+
+        <div class="navigation__bar">
+          <div>
+            <img
+              src="./assets/images/icons/transition.svg"
+              alt="transition"
+              class="navigation__bar--transition"
+            />
+          </div>
+          <div class="direction">
+            <div class="direction__border--backward">
+              <div class="direction__arrow--backward position--absolute">
+                <img
+                  src="./assets/images/icons/arrow-back.svg"
+                  alt="arrow back"
+                />
+              </div>
+            </div>
+            <div class="direction__border--forward">
+              <div class="direction__arrow--forward">
+                <img
+                  src="./assets/images/icons/arrow-right.svg"
+                  alt="arrow right"
+                />
               </div>
             </div>
           </div>
         </div>
 
         <!-- Start subscribe -->
-        <section class="subscribe position--absolute right--0 left--0">
-          <div
-            class="wrapper subscribe__container d--flex justify__content--between align__items--center"
+        <div class="subscribe wrapper subscribe__container">
+          <section class="subscribe__content">
+            <h2 class="primary__heading subscribe__content-title">
+              Subscribe Now for Get Special Features!
+            </h2>
+            <p class="sub__heading">
+              Let's subscribe with us and find the fun.
+            </p>
+          </section>
+          <a
+            aria-label="button subscribe now"
+            href="javascript:void(0)"
+            class="btn btn--primary btn--rounded inline--block text--capitalize"
+            rel="nofollow"
+            >Subscribe now</a
           >
-            <div class="subscribe__content">
-              <h2 class="primary__heading subscribe__heading">
-                Subscribe Now for Get Special Features!
-              </h2>
-              <p class="sub__heading">
-                Let's subscribe with us and find the fun.
-              </p>
-            </div>
-            <a
-              aria-label="button subscribe now"
-              href="javascript:void(0)"
-              class="btn btn--primary btn--rounded inline--block text--capitalize"
-              rel="nofollow"
-              >Subscribe now</a
-            >
-          </div>
-        </section>
+        </div>
         <!-- End subscribe -->
-      </article>
+      </div>
     </main>
 
     <!-- Start footer -->
@@ -588,12 +488,7 @@
       <div class="wrapper footer__container">
         <div class="footer__content--left">
           <div class="footer__logo">
-            <img
-              src="./assets/images/logo/logo.svg"
-              alt="logo"
-              width="149px"
-              height="36.2px"
-            />
+            <img src="./assets/images/logo/logo.svg" alt="logo" />
           </div>
           <div class="sub__heading footer__desc">
             <span class="text--medium">LaslesVPN</span> is a private virtual
@@ -603,19 +498,19 @@
             <a
               aria-label="facebook"
               href="javascript:void(0)"
-              class="inline--block social__item social__fb"
+              class="footer__social-fb"
               rel="nofollow"
             ></a>
             <a
               aria-label="twitter"
               href="javascript:void(0)"
-              class="inline--block social__item social__twt"
+              class="footer__social-twt"
               rel="nofollow"
             ></a>
             <a
               aria-label="instagram"
               href="javascript:void(0)"
-              class="inline--block social__item social__insta"
+              class="footer__social-insta"
               rel="nofollow"
             ></a>
           </div>
@@ -624,51 +519,27 @@
           </p>
         </div>
 
-        <div class="footer__content--right d--flex">
+        <div class="footer__content--right">
           <div class="footer__col">
             <h3 class="footer__heading">Product</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Download</a
-                >
+                <a class="sub__heading footer__link" href="#">Download</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Pricing</a
-                >
+                <a class="sub__heading footer__link" href="#">Pricing</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Locations</a
-                >
+                <a class="sub__heading footer__link" href="#">Locations</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Server</a
-                >
+                <a class="sub__heading footer__link" href="#">Server</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Countries</a
-                >
+                <a class="sub__heading footer__link" href="#">Countries</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Blog</a
-                >
+                <a class="sub__heading footer__link" href="#">Blog</a>
               </li>
             </ul>
           </div>
@@ -677,44 +548,22 @@
             <h3 class="footer__heading">Engage</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >LaslesVPN ?</a
-                >
+                <a class="sub__heading footer__link" href="#">LaslesVPN ?</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >FAQ</a
-                >
+                <a class="sub__heading footer__link" href="#">FAQ</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Tutorials</a
-                >
+                <a class="sub__heading footer__link" href="#">Tutorials</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >About us</a
-                >
+                <a class="sub__heading footer__link" href="#">About us</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Privacy Policy</a
-                >
+                <a class="sub__heading footer__link" href="#">Privacy Policy</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
+                <a class="sub__heading footer__link" href="#"
                   >Terms of Service</a
                 >
               </li>
@@ -725,18 +574,10 @@
             <h3 class="footer__heading">Earn Money</h3>
             <ul class="footer__links">
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Affiliate</a
-                >
+                <a class="sub__heading footer__link" href="#">Affiliate</a>
               </li>
               <li class="footer__item">
-                <a
-                  class="sub__heading footer__link text__decoration-none"
-                  href="#"
-                  >Become Partner</a
-                >
+                <a class="sub__heading footer__link" href="#">Become Partner</a>
               </li>
             </ul>
           </div>

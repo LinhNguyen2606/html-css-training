@@ -1,0 +1,85 @@
+// Start feature section
+.feature {
+  margin-bottom: 136px;
+
+  &__container {
+    @extend %d-flex;
+    @include flex-layout(
+      $justify: space-between,
+      $align: flex-end,
+      $gap: 169.48px
+    );
+  }
+
+  &__img {
+    margin-left: 33px;
+  }
+
+  &__content {
+    max-width: 430px;
+    width: 100%;
+
+    &-heading {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__list {
+    @extend %d-flex;
+    @include flex-layout($direction: column, $gap: 15px);
+
+    &-item {
+      @extend %d-flex;
+      background-image: url(../assets/images/icons/check-circle.svg);
+      background-repeat: no-repeat;
+      background-position: 0 3px;
+      span {
+        font-size: $fs-x-small;
+        line-height: $lh-xxl-medium;
+        transform: translateY(3px);
+        margin-left: 34px;
+      }
+    }
+  }
+}
+// End feature section
+
+@include responsive("medium") {
+  .feature__img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@include responsive("small") {
+  .feature {
+    &__container {
+      @include flex-layout($direction: column, $align: center, $gap: 20px);
+    }
+
+    &__content {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__list {
+      &-item {
+        background-position: 0px 2px;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@include responsive("extra-small") {
+  .feature__list-item {
+    background-position: 0px 2px;
+    background-size: 24px 24px;
+
+    span {
+      margin-left: 0;
+      transform: translateX(30px);
+    }
+  }
+}

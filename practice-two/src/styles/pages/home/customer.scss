@@ -1,0 +1,214 @@
+// Start customer section
+.customer {
+  @include set-position($relative: relative);
+  padding-bottom: 176px;
+
+  &__header {
+    @extend %common-header;
+
+    &-title {
+      max-width: 448px;
+      margin: 130px auto 21px;
+    }
+
+    p {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__list {
+    @extend %d-flex;
+    @include flex-layout($justify: space-between, $align: center, $gap: 45px);
+  }
+
+  &__card {
+    border: 2px solid $border-primary-color;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 430px;
+    height: 230px;
+    margin-bottom: 61px;
+
+    &:hover {
+      border-color: $primary-color;
+      cursor: pointer;
+    }
+
+    &-author {
+      @extend %d-flex;
+      @include flex-layout($justify: space-between, $align: center);
+    }
+
+    &-infor {
+      @extend %d-flex;
+      @include flex-layout($align: center, $gap: 19px);
+      margin-bottom: 7px;
+    }
+
+    &-name,
+    &-address {
+      line-height: 1;
+    }
+
+    &-name {
+      color: $text-secondary;
+      font-size: $fs-x-medium;
+      font-weight: $fw-medium;
+      width: 142px;
+    }
+
+    &-address {
+      font-size: $fs-x-small;
+    }
+
+    &-rating {
+      background-image: url(../assets/images/icons/star.svg);
+      background-repeat: no-repeat;
+      background-position: 34px 1px;
+      span {
+        @extend %inline-block;
+        color: $text-secondary;
+        line-height: $lh-xl-medium;
+        margin-right: 29px;
+        transform: translateY(-4px);
+      }
+    }
+
+    &-describe {
+      color: $text-secondary;
+      line-height: $lh-xl-medium;
+      width: 340px;
+      min-height: 100px;
+    }
+  }
+}
+
+.navigation__bar {
+  @extend %d-flex;
+  @include flex-layout($justify: space-between, $align: center);
+}
+
+.direction {
+  @extend %d-flex;
+  @include flex-layout($gap: 20px);
+
+  &__border--backward,
+  &__border--forward {
+    @include set-position($relative: relative);
+    border-color: $primary-color;
+    border-radius: 9999px;
+    border: 2px solid $primary-color;
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    transition: transform 0.4s;
+    cursor: pointer;
+  }
+
+  &__border--backward:hover {
+    transform: translateX(-0.25rem);
+  }
+
+  &__border--forward {
+    background-color: $primary-color;
+    color: $secondary-color;
+
+    &:hover {
+      transform: translateX(0.25rem);
+    }
+  }
+
+  &__arrow--backward,
+  &__arrow--forward {
+    @include set-position($absolute: absolute);
+    @include set-location($top: 25%);
+  }
+}
+// End customer section
+
+@include responsive("large") {
+  .customer {
+    margin: 0 50px;
+
+    .customer__container {
+      overflow: hidden;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .customer__list {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .customer__card {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    &-avartar {
+      img {
+        width: 100%;
+      }
+    }
+
+    &-describe {
+      width: 100%;
+    }
+  }
+}
+
+@include responsive("small") {
+  .customer__list {
+    @include flex-layout($direction: column);
+  }
+
+  .customer__card {
+    width: 100%;
+    max-width: 555px;
+
+    &-rating {
+      background-position: top right;
+      background-size: 18px;
+    }
+
+    &-describe {
+      width: 100%;
+    }
+  }
+}
+
+@include responsive("extra-small") {
+  .customer {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    &-avatar {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .navigation__bar {
+    margin: 0 10px;
+    &--transition {
+      width: 70%;
+    }
+  }
+
+  .direction__border--backward,
+  .direction__border--forward {
+    width: 40px;
+    height: 40px;
+  }
+
+  .direction__arrow--backward,
+  .direction__arrow--forward {
+    top: 10%;
+    right: 0;
+    img {
+      width: 80%;
+    }
+  }
+}

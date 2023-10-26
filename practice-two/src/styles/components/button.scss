@@ -1,23 +1,25 @@
 .btn {
+  @extend %inline-block;
   padding: 13px 45px;
   font-family: $primary-font;
   font-size: $fs-small;
   outline: none;
   border: none;
   transition: all 0.4s;
+  text-transform: capitalize;
 
   &--outline {
     background-color: transparent;
     border-radius: 50px;
-    color: $text-dark-red-color;
+    color: $primary-color;
     border: 1px solid;
     font-weight: $fw-medium;
   }
 
   &--primary {
     font-weight: $fw-bold;
-    background-color: $bg-dark-red-color;
-    color: $text-white-color;
+    background-color: $primary-color;
+    color: $secondary-color;
   }
 
   &--rounded {

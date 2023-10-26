@@ -1,0 +1,67 @@
+// Start subscribe section
+.subscribe {
+  @include set-position($absolute: absolute);
+  @include set-location($right: 0, $left: 0, $bottom: -123px);
+
+  &__container {
+    @extend %d-flex;
+    @include flex-layout($justify: space-between, $align: center);
+    background-color: $secondary-color;
+    border: 2px solid $secondary-color;
+    padding: 52px 70px;
+    border-radius: 10px;
+    box-shadow: 0 30px 114px 0 rgba(13, 16, 37, 0.06);
+
+    .subscribe__content {
+      max-width: 410px;
+      width: 100%;
+
+      &-title {
+        max-width: 372px;
+      }
+    }
+
+    & a {
+      padding: 18px 65px;
+
+      &:hover {
+        color: $secondary-color;
+        background-color: $primary-color;
+        box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+        transform: translateY(-0.25rem);
+      }
+    }
+  }
+}
+// End subscribe section
+
+@include responsive("large") {
+  .subscribe {
+    margin: 0 20px;
+  }
+}
+
+@include responsive("medium") {
+  .subscribe__container {
+    padding: 25px;
+    width: 80%;
+    @include flex-layout($direction: column, $align: flex-start);
+  }
+}
+
+@include responsive("extra-small") {
+  .subscribe {
+    &__container {
+      width: 100%;
+      padding: 15px 25px;
+    }
+
+    &__heading {
+      font-size: $fs-x-large;
+    }
+
+    a {
+      padding: 10px 25px;
+    }
+  }
+}
