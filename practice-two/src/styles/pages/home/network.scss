@@ -3,9 +3,7 @@
   margin-bottom: 106px;
 
   &__header {
-    max-width: 555px;
-    margin: 0 auto;
-    text-align: center;
+    @extend %common-header;
 
     &-title {
       max-width: 383px;

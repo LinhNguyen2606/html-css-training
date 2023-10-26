@@ -42,7 +42,7 @@
     &-fb,
     &-twt,
     &-insta {
-      display: inline-block;
+      @extend %inline-block;
       width: 33.6px;
       height: 33.6px;
       background-size: 60px;
@@ -94,8 +94,10 @@
 
     &__content--right {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: flex-start;
+      @include grid-layout(
+        $grid-template-columns: repeat(3, 1fr),
+        $justify: flex-start
+      );
       margin-top: 20px;
     }
 
