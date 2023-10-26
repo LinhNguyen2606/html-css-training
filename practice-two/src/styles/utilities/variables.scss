@@ -1,27 +1,19 @@
+/* Common color begin*/
+$primary-color: #f53838;
+$secondary-color: #fff;
+/* Common color end*/
+
 /* Text color begin*/
-$text-primary-color: #4f5665;
-$text-secondary-color: #0b132a;
-$text-gray-light-color: #afb5c0;
-$text-dark-red-color: #f53838;
-$text-white-color: #fff;
+$text-primary: #4f5665;
+$text-secondary: #0b132a;
 /* Text color end*/
 
-/* Button color begin*/
-$btn-primary-color: #fff;
-$btn-secondary-color: #f53838;
-/* Button color end*/
-
 /* Background color begin */
-$bg-gray-light-color: #f8f8f8;
-$bg-dark-red-color: #f53838;
-$bg-white-color: #fff;
+$bg-primary-color: #f8f8f8;
 /* Background color end */
 
 /* Border color begin*/
-$border-gray-light-color: #ddd;
-$border-gray-lighter-color: #eeeff2;
-$border-dark-red-color: #f53838;
-$border-white-color: #fff;
+$border-primary-color: #ddd;
 /* Border color end*/
 
 /* Font size begin*/
@@ -57,3 +49,9 @@ $lh-x-large: calc(45 / 35);
 $lh-xl-huge: calc(50 / 35);
 $lh-xxl-huge: calc(70 / 50);
 /* Line height end*/
+
+// Devices
+$max-width-large: 1439px;
+$max-width-medium: 992px;
+$max-width-small: 768px;
+$max-width-extra-small: 576px;

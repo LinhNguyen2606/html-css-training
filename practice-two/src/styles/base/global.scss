@@ -1,7 +1,7 @@
-body {
-  color: $text-primary-color !important;
-  font-weight: $fw-normal !important;
-  background-color: $bg-white-color !important;
-  word-wrap: break-word !important;
-  font-family: $primary-font !important;
+.custom__body {
+  color: $text-primary;
+  font-weight: $fw-normal;
+  background-color: $secondary-color;
+  word-wrap: break-word;
+  font-family: $primary-font;
 }

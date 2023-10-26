@@ -1,0 +1,139 @@
+// Start footer section
+.footer {
+  background: $bg-primary-color;
+
+  &__desc {
+    line-height: $lh-xl-medium;
+  }
+
+  &__heading {
+    color: $text-secondary;
+    font-size: $fs-x-medium;
+    font-weight: $fw-medium;
+    line-height: $lh-xs-medium;
+  }
+
+  &__link {
+    color: $text-primary;
+    font-size: $fs-small;
+    line-height: $lh-xl-medium;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  &__social {
+    margin-bottom: 30px;
+
+    &-fb {
+      background-image: url(../assets/images/icons/facebook.svg);
+    }
+
+    &-twt {
+      background-image: url(../assets/images/icons/twitter.svg);
+    }
+
+    &-insta {
+      background-image: url(../assets/images/icons/instagram.svg);
+    }
+
+    &-fb,
+    &-twt,
+    &-insta {
+      display: inline-block;
+      width: 33.6px;
+      height: 33.6px;
+      background-size: 60px;
+      background-position: center top;
+    }
+
+    &-twt,
+    &-insta {
+      margin-left: 16px;
+    }
+  }
+}
+// End footer section
+
+@include responsive("large") {
+  .footer {
+    margin: 0 20px;
+
+    &__col {
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include responsive("medium") {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__content--left {
+      margin-right: 0;
+      max-width: 345px;
+    }
+
+    &__logo {
+      img {
+        width: 50%;
+      }
+    }
+
+    &__desc,
+    &__social {
+      margin-bottom: 10px;
+    }
+
+    &__content--right {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
+
+    &__col {
+      width: 33.33%;
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@include responsive("small") {
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .social__fb,
+  .social__twt,
+  .social__insta {
+    width: 30px;
+    height: 35px;
+  }
+}
+
+@include responsive("extra-small") {
+  .footer {
+    &__desc {
+      max-width: 340px;
+    }
+
+    &__content--right {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__col {
+      width: 50%;
+    }
+  }
+}
