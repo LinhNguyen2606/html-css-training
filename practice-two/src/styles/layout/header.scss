@@ -1,0 +1,24 @@
+.header {
+  margin-top: 26px;
+  margin-bottom: 100px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: $secondary-color;
+}
+
+@include responsive("large") {
+  .header {
+    margin-top: 26px;
+
+    &__container {
+      box-sizing: border-box;
+    }
+  }
+}
+
+@include responsive("medium") {
+  .header {
+    margin-top: 0;
+  }
+}

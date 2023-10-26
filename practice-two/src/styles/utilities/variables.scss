@@ -1,0 +1,57 @@
+/* Common color begin*/
+$primary-color: #f53838;
+$secondary-color: #fff;
+/* Common color end*/
+
+/* Text color begin*/
+$text-primary: #4f5665;
+$text-secondary: #0b132a;
+/* Text color end*/
+
+/* Background color begin */
+$bg-primary-color: #f8f8f8;
+/* Background color end */
+
+/* Border color begin*/
+$border-primary-color: #ddd;
+/* Border color end*/
+
+/* Font size begin*/
+$fs-x-small: 14px;
+$fs-small: 16px;
+$fs-x-medium: 18px;
+$fs-medium: 20px;
+$fs-x-large: 25px;
+$fs-large: 35px;
+$fs-xl-large: 40px;
+$fs-x-huge: 50px;
+$fs-huge: 60px;
+/* Font size end*/
+
+/* Font weight begin*/
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+/* Font weight end*/
+
+/* Font family begin*/
+$primary-font: "Rubik";
+/* Font family end*/
+
+/* Line height begin*/
+$lh-x-small: calc(25 / 16);
+$lh-x-medium: calc(30 / 25);
+$lh-medium: calc(30 / 20);
+$lh-xs-medium: calc(30 / 18);
+$lh-xl-medium: calc(30 / 16);
+$lh-xxl-medium: calc(30 / 14);
+$lh-x-large: calc(45 / 35);
+$lh-xl-huge: calc(50 / 35);
+$lh-xxl-huge: calc(70 / 50);
+/* Line height end*/
+
+// Devices
+$max-width-large: 1439px;
+$max-width-medium: 992px;
+$max-width-small: 768px;
+$max-width-extra-small: 576px;

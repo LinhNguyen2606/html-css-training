@@ -1,0 +1,26 @@
+// Start network section
+.network {
+  margin-bottom: 106px;
+
+  &__header {
+    @extend %common-header;
+
+    &-title {
+      max-width: 383px;
+      margin: 0 auto 20px;
+    }
+  }
+
+  &__map {
+    margin: 137px 0 0 40px;
+  }
+}
+// End network section
+
+@include responsive("large") {
+  .network__map {
+    img {
+      width: 100%;
+    }
+  }
+}

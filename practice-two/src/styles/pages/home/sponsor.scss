@@ -1,0 +1,41 @@
+// Start sponsor section
+.sponsor {
+  &__container {
+    @extend %d-flex;
+    @include flex-layout($justify: space-between, $align: center);
+  }
+
+  &__image:nth-child(3) {
+    margin: 0 -48px;
+  }
+}
+// End sponsor section
+
+@include responsive("large") {
+  .sponsor__container {
+    padding: 0 20px;
+  }
+}
+
+@include responsive("medium") {
+  .sponsor__image {
+    margin: 0;
+
+    img {
+      width: 70%;
+    }
+  }
+}
+
+@include responsive("extra-small") {
+  .sponsor__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sponsor__image {
+    img {
+      width: 100%;
+    }
+  }
+}

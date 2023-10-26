@@ -1,0 +1,59 @@
+:root {
+  /* Text color begin*/
+  --text-primary-color   : #4F5665;
+  --text-secondary-color : #0B132A;
+  --text-gray-light-color: #AFB5C0;
+  --text-dark-red        : #F53838;
+  --text-white-color     : #FFF;
+  /* Text color end*/
+
+  /* Button color begin*/
+  --btn-primary-color  : #FFF;
+  --btn-secondary-color: #F53838;
+  /* Button color end*/
+
+  /* Background color begin */
+  --bg-gray-light-color: #F8F8F8;
+  --bg-dark-red        : #F53838;
+  --bg-white-color     : #FFF;
+  /* Background color end */
+
+  /* Border color begin*/
+  --border-gray-light-color  : #DDD;
+  --border-gray-lighter-color: #EEEFF2;
+  --border-dark-red          : #F53838;
+  --border-white-light-color : #FFF;
+  /* Border color end*/
+
+  /* Font size begin*/
+  --fs-x-small : 14px;
+  --fs-small   : 16px;
+  --fs-x-medium: 18px;
+  --fs-medium  : 20px;
+  --fs-x-large : 25px;
+  --fs-large   : 35px;
+  --fs-x-huge  : 50px;
+  /* Font size end*/
+
+  /* Font weight begin*/
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-bold  : 700;
+  /* Font weight end*/
+
+  /* Font family begin*/
+  --primary-font: "Rubik";
+  /* Font family end*/
+
+  /* Line height begin*/
+  --lh-x-small   : calc(25/16);
+  --lh-x-medium  : calc(30/25);
+  --lh-medium    : calc(30/20);
+  --lh-xs-medium : calc(30/18);
+  --lh-xl-medium : calc(30/16);
+  --lh-xxl-medium: calc(30/14);
+  --lh-x-large   : calc(45/35);
+  --lh-xl-huge   : calc(50/35);
+  --lh-xxl-huge  : calc(70/50);
+  /* Line height end*/
+}
