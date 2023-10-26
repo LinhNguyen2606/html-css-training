@@ -26,7 +26,17 @@
   }
 
   &__card {
+    border: 2px solid $border-primary-color;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 430px;
+    height: 230px;
     margin-bottom: 61px;
+
+    &:hover {
+      border-color: $primary-color;
+      cursor: pointer;
+    }
 
     &-author {
       display: flex;

@@ -18,6 +18,10 @@
     font-size: $fs-small;
     line-height: $lh-xl-medium;
     text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
   }
 
   &__social {
