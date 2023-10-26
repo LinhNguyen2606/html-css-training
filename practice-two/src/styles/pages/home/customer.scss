@@ -1,12 +1,10 @@
 // Start customer section
 .customer {
-  position: relative;
+  @include set-position($relative: relative);
   padding-bottom: 176px;
 
   &__header {
-    max-width: 555px;
-    margin: 0px auto 60px;
-    text-align: center;
+    @extend %common-header;
 
     &-title {
       max-width: 448px;
@@ -19,10 +17,8 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 45px;
+    @extend %d-flex;
+    @include flex-layout($justify: space-between, $align: center, $gap: 45px);
   }
 
   &__card {
@@ -39,15 +35,13 @@
     }
 
     &-author {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @extend %d-flex;
+      @include flex-layout($justify: space-between, $align: center);
     }
 
     &-infor {
-      display: flex;
-      align-items: center;
-      gap: 19px;
+      @extend %d-flex;
+      @include flex-layout($align: center, $gap: 19px);
       margin-bottom: 7px;
     }
 
@@ -72,7 +66,7 @@
       background-repeat: no-repeat;
       background-position: 34px 1px;
       span {
-        display: inline-block;
+        @extend %inline-block;
         color: $text-secondary;
         line-height: $lh-xl-medium;
         margin-right: 29px;
@@ -90,18 +84,17 @@
 }
 
 .navigation__bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @extend %d-flex;
+  @include flex-layout($justify: space-between, $align: center);
 }
 
 .direction {
-  display: flex;
-  gap: 20px;
+  @extend %d-flex;
+  @include flex-layout($gap: 20px);
 
   &__border--backward,
   &__border--forward {
-    position: relative;
+    @include set-position($relative: relative);
     border-color: $primary-color;
     border-radius: 9999px;
     border: 2px solid $primary-color;
@@ -127,8 +120,8 @@
 
   &__arrow--backward,
   &__arrow--forward {
-    position: absolute;
-    top: 25%;
+    @include set-position($absolute: absolute);
+    @include set-location($top: 25%);
   }
 }
 // End customer section
@@ -168,7 +161,7 @@
 
 @include responsive("small") {
   .customer__list {
-    flex-direction: column;
+    @include flex-layout($direction: column);
   }
 
   .customer__card {

@@ -1,9 +1,7 @@
 .navbar {
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  display: flex;
-  align-items: center;
+  @include set-position($sticky: sticky);
+  @include set-location($top: 0);
 
   &__logo {
     margin-right: 158px;
@@ -11,13 +9,12 @@
 
   &__menu,
   &__auth {
-    flex-grow: 1;
+    @include flex-layout($grow: 1);
   }
 
   &__menu {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    @extend %d-flex;
+    @include flex-layout($align: center, $gap: 40px);
 
     &-link {
       color: $text-primary;
@@ -31,9 +28,8 @@
   }
 
   &__auth {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    @extend %d-flex;
+    @include flex-layout($align: center, $gap: 30px);
     margin-left: 148px;
 
     &-signin {
@@ -56,7 +52,7 @@
     padding: 0 20px;
 
     &__auth {
-      flex-grow: 0;
+      @include flex-layout($grow: 0);
       margin-left: 0;
 
       &-signup {
@@ -77,9 +73,7 @@
     }
 
     &__menu {
-      gap: 20px;
-      flex-grow: 0;
-      align-items: flex-start;
+      @include flex-layout($align: flex-start, $gap: 20px);
 
       &-item:last-child {
         margin-bottom: 14px;

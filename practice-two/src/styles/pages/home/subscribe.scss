@@ -1,14 +1,11 @@
 // Start subscribe section
 .subscribe {
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: -123px;
+  @include set-position($absolute: absolute);
+  @include set-location($right: 0, $left: 0, $bottom: -123px);
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %d-flex;
+    @include flex-layout($justify: space-between, $align: center);
     background-color: $secondary-color;
     border: 2px solid $secondary-color;
     padding: 52px 70px;
@@ -48,8 +45,7 @@
   .subscribe__container {
     padding: 25px;
     width: 80%;
-    flex-direction: column;
-    align-items: flex-start;
+    @include flex-layout($direction: column, $align: flex-start);
   }
 }
 

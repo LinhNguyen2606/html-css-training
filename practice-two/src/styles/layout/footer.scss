@@ -3,8 +3,8 @@
   padding-bottom: 100px;
 
   &__container {
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr;
+    @extend %d-grid;
+    @include grid-layout($grid-template-columns: 3fr 1fr 1fr 1fr);
   }
 
   &__content--left {
@@ -22,7 +22,7 @@
   }
 
   &__content--right {
-    display: flex;
+    @extend %d-flex;
   }
 
   &__col {
@@ -39,8 +39,10 @@
   }
 
   &__links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    @extend %d-grid;
+    @include grid-layout(
+      $grid-template-columns: repeat(auto-fit, minmax(125px, 1fr))
+    );
   }
 
   &__item {

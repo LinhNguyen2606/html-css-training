@@ -3,7 +3,7 @@
   margin-bottom: 88px;
 
   &__container {
-    display: flex;
+    @extend %d-flex;
     padding: 44px 91px;
     background-color: $secondary-color;
     border-radius: 10px;
@@ -12,9 +12,8 @@
   }
 
   &__item {
-    display: flex;
-    gap: 36px;
-    align-items: center;
+    @extend %d-flex;
+    @include flex-layout($gap: 36px, $align: center);
 
     &:nth-child(1) {
       margin-right: 129px;
@@ -69,9 +68,7 @@
 @include responsive("medium") {
   .intro__container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
+    @include flex-layout($direction: column, $gap: 20px, $align: center);
   }
 
   .intro__item {

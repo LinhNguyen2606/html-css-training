@@ -17,7 +17,7 @@
 
 ***Timeline:*** 7 days (13/10/2023 - 23/10/2023)
 
-***Actual:*** 7 days
+***Actual:*** 8 days
 
 ***Target:***
 
@@ -54,25 +54,29 @@ practice-two
             |-- typography.scss
         |-- components
             |-- button.scss
-            |-- card.scss
-            |-- heading.scss
-            |-- image.scss
             |-- index.scss
             |-- navbar.scss
+            |-- typography.scss
         |-- layout
             |-- container.scss
             |-- footer.scss
             |-- header.scss
             |-- index.scss
         |-- pages
-            |-- home.scss
+            |-- home
+                |--customer.scss
+                |--feature.scss
+                |--footer.scss
+                |--hero.scss
+                |--intro.scss
+                |--network.scss
+                |--plan.scss
+                |--sponsor.scss
+                |--subscribe.scss
             |-- index.scss
-        |-- utilites
-            |-- display.scss
-            |-- flex.scss
+        |-- utilities
             |-- index.scss
-            |-- position.scss
-            |-- text.scss
+            |-- mixin.scss
             |-- variables.scss
         |-- vendors
             |-- custom.scss
@@ -91,17 +95,17 @@ practice-two
 ## Getting started:
 - Step 01: Clone repository with HTTPS:
 ~~~
-git clone https://github.com/LinhNguyen2606/html-scss-training.git
+git clone https://github.com/LinhNguyen2606/html-css-training.git
 ~~~
 
 - Step 02: Move to the folder that just cloned in your computer:
 ~~~
-cd html-scss-training
+cd html-css-training
 ~~~
 
 - Step 03: Checkout branch:
 ~~~
-git checkout <feature/practice-two> 
+git checkout feature/practice-two
 ~~~
 
 - Step 04: Next open the folder practice-two

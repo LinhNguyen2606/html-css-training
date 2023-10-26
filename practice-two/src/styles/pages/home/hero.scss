@@ -3,9 +3,8 @@
   margin-bottom: 70px;
 
   &__container {
-    display: grid;
-    grid-template-columns: 555px 611px;
-    column-gap: 41px;
+    @extend %d-grid;
+    @include grid-layout($grid-template-columns: 555px 611px, $gap: 41px);
   }
 
   &__content {

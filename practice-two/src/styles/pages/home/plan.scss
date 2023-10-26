@@ -8,9 +8,7 @@
   );
 
   &__header {
-    max-width: 555px;
-    margin: 0 auto;
-    text-align: center;
+    @extend %common-header;
 
     &-desc {
       margin: 20px 0 60px;
@@ -18,15 +16,13 @@
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+    @extend %d-flex;
+    @include flex-layout($justify: center, $gap: 50px);
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend %d-flex;
+    @include flex-layout($direction: column, $align: center);
     background-color: $secondary-color;
     border-radius: 10px;
     border: 2px solid $border-primary-color;
@@ -63,15 +59,13 @@
     }
 
     &-details {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
+      @extend %d-flex;
+      @include flex-layout($direction: column, $gap: 10px);
       margin-bottom: 48px;
       min-height: 230px;
     }
 
     &-infor {
-      // display: flex;
       background-image: url(../assets/images/icons/check.svg);
       background-repeat: no-repeat;
       & span {

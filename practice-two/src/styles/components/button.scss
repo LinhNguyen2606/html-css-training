@@ -1,11 +1,11 @@
 .btn {
+  @extend %inline-block;
   padding: 13px 45px;
   font-family: $primary-font;
   font-size: $fs-small;
   outline: none;
   border: none;
   transition: all 0.4s;
-  display: inline-block;
   text-transform: capitalize;
 
   &--outline {
