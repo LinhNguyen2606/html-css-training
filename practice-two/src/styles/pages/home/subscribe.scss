@@ -17,14 +17,13 @@
 
     .subscribe__content {
       max-width: 410px;
-      width: 100%;
 
       &-title {
         max-width: 372px;
       }
     }
 
-    & a {
+    a {
       padding: 18px 65px;
 
       &:hover {
@@ -39,7 +38,6 @@
   @include tablet {
     &__container {
       padding: 25px;
-      width: 80%;
       flex-direction: column;
       align-items: flex-start;
     }
@@ -47,7 +45,6 @@
 
   @include portraitPhone {
     &__container {
-      width: 100%;
       padding: 15px 25px;
     }
 

@@ -15,7 +15,6 @@
 
   &__content {
     max-width: 430px;
-    width: 100%;
 
     &-heading {
       margin-bottom: 22px;
@@ -29,9 +28,8 @@
 
     &-item {
       display: flex;
-      background-image: url(../assets/images/icons/check-circle.svg);
-      background-repeat: no-repeat;
-      background-position: 0 3px;
+      background: url(../assets/images/icons/check-circle.svg) no-repeat 0 3px;
+
       span {
         font-size: $fs-x-small;
         line-height: $lh-xxl-medium;
@@ -63,7 +61,6 @@
     }
 
     &__content {
-      margin: 0 auto;
       text-align: center;
     }
 

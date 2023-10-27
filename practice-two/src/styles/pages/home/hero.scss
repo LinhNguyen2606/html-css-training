@@ -10,7 +10,6 @@
 
   &__content {
     max-width: 555px;
-    width: 100%;
 
     &-heading {
       color: $text-secondary;
@@ -73,10 +72,6 @@
     &__content-description,
     &__content-btn {
       font-size: $fs-small;
-    }
-
-    &__img {
-      transform: translateY(0);
     }
   }
 
