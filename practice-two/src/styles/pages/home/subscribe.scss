@@ -35,12 +35,6 @@
 }
 // End subscribe section
 
-@include responsive("large") {
-  .subscribe {
-    margin: 0 20px;
-  }
-}
-
 @include responsive("medium") {
   .subscribe__container {
     padding: 25px;

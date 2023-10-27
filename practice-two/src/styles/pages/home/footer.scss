@@ -59,7 +59,9 @@
 
 @include responsive("large") {
   .footer {
-    padding: 185px 20px 100px;
+    &__container {
+      margin: 0 20px;
+    }
 
     &__col {
       &:nth-child(2),
