@@ -3,7 +3,7 @@
   margin-bottom: 88px;
 
   &__container {
-    @extend %d-flex;
+    display: flex;
     padding: 44px 91px;
     background-color: $secondary-color;
     border-radius: 10px;
@@ -12,8 +12,9 @@
   }
 
   &__item {
-    @extend %d-flex;
-    @include flex-layout($gap: 36px, $align: center);
+    display: flex;
+    align-items: center;
+    gap: 36px;
 
     &:nth-child(1) {
       margin-right: 129px;
@@ -40,11 +41,8 @@
     font-size: $fs-medium;
     line-height: $lh-medium;
   }
-}
-// End intro section
 
-@include responsive("large") {
-  .intro {
+  @include largeDesktop {
     margin-top: 130px;
 
     &__container {
@@ -63,39 +61,42 @@
       }
     }
   }
-}
 
-@include responsive("medium") {
-  .intro__container {
-    display: flex;
-    @include flex-layout($direction: column, $gap: 20px, $align: center);
-  }
-
-  .intro__item {
-    &:first-child {
-      margin-right: 0;
-    }
-    &:nth-child(2) {
-      border: none;
-      padding: 0;
-      margin-left: 36px;
-    }
-    &:nth-child(3) {
-      margin-left: 18px;
+  @include tablet {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
     }
 
-    &-icon {
-      width: 55px;
-      height: 55px;
-      img {
-        width: 100%;
+    &__item {
+      &:first-child {
+        margin-right: 0;
+      }
+      &:nth-child(2) {
+        border: none;
+        padding: 0;
+        margin-left: 36px;
+      }
+      &:nth-child(3) {
+        margin-left: 18px;
+      }
+
+      &-icon {
+        width: 55px;
+        height: 55px;
+        img {
+          width: 100%;
+        }
       }
     }
   }
-}
 
-@include responsive("extra-small") {
-  .intro__container {
-    padding: 44px 120px;
+  @include portraitPhone {
+    &__container {
+      padding: 44px 120px;
+    }
   }
 }
+// End intro section
