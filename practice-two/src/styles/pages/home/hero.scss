@@ -3,8 +3,9 @@
   margin-bottom: 70px;
 
   &__container {
-    @extend %d-grid;
-    @include grid-layout($grid-template-columns: 555px 611px, $gap: 41px);
+    display: grid;
+    grid-template-columns: 555px 611px;
+    gap: 41px;
   }
 
   &__content {
@@ -34,30 +35,31 @@
   &__img {
     transform: translateY(-8%);
   }
-}
-// End hero section
 
-@include responsive("large") {
-  .hero {
-    margin: 0 20px;
-
+  @include largeDesktop {
     &__container {
       grid-template-columns: 2fr 1fr;
+      gap: 0;
+    }
+
+    &__content {
+      margin-left: 20px;
     }
 
     &__img {
       transform: translateY(0);
+      margin-right: 20px;
       img {
         width: 100%;
       }
     }
   }
-}
 
-@include responsive("medium") {
-  .hero {
+  @include tablet {
     &__container {
       grid-template-columns: 56% 39%;
+      margin: 0 20px;
+      gap: 40px;
     }
 
     &__content-heading {
@@ -77,10 +79,8 @@
       transform: translateY(0);
     }
   }
-}
 
-@include responsive("small") {
-  .hero {
+  @include landscapePhone {
     &__container {
       grid-template-columns: 1fr;
     }
@@ -105,3 +105,4 @@
     }
   }
 }
+// End hero section

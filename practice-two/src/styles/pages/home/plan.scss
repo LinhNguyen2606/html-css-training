@@ -16,13 +16,15 @@
   }
 
   &__list {
-    @extend %d-flex;
-    @include flex-layout($justify: center, $gap: 50px);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
   }
 
   &__card {
-    @extend %d-flex;
-    @include flex-layout($direction: column, $align: center);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $secondary-color;
     border-radius: 10px;
     border: 2px solid $border-primary-color;
@@ -59,8 +61,9 @@
     }
 
     &-details {
-      @extend %d-flex;
-      @include flex-layout($direction: column, $gap: 10px);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
       margin-bottom: 48px;
       min-height: 230px;
     }
@@ -83,23 +86,22 @@
       line-height: $lh-x-medium;
     }
   }
-}
-// End plan section
 
-@include responsive("large") {
-  .plan__list {
-    gap: 10px;
-  }
-}
+  @include largeDesktop {
+    &__list {
+      gap: 20px;
+    }
 
-@include responsive("medium") {
-  .plan__list {
-    gap: 15px;
-    flex-wrap: wrap;
+    &__card {
+      padding: 80px 50px 50px;
+    }
   }
 
-  .plan__card {
-    padding: 80px 50px 50px;
+  @include tablet {
+    &__list {
+      gap: 15px;
+      flex-wrap: wrap;
+    }
 
     &__img {
       img {
@@ -107,39 +109,41 @@
       }
     }
   }
-}
 
-@include responsive("small") {
-  .plan__list {
-    flex-direction: column;
+  @include landscapePhone {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__card {
+      padding: 80px 50px 50px;
+      width: 50%;
+      margin: 0 auto;
+
+      &-infor {
+        background-position: 4px;
+        background-size: 40px;
+      }
+
+      a {
+        padding: 13px 100px;
+        font-size: $fs-small;
+      }
+    }
   }
 
-  .plan__card {
-    padding: 80px 50px 50px;
-    width: 50%;
-    margin: 0 auto;
+  @include portraitPhone {
+    &__card {
+      width: 90%;
 
-    &-infor {
-      background-position: 4px;
-      background-size: 40px;
-    }
-    a {
-      padding: 13px 100px;
-      font-size: $fs-small;
-    }
-  }
-}
-
-@include responsive("extra-small") {
-  .plan__card {
-    width: 90%;
-
-    &-infor {
-      background-size: 35px;
-      background-position: 0;
-      span {
-        margin-left: 36px;
+      &-infor {
+        background-size: 35px;
+        background-position: 0;
+        span {
+          margin-left: 36px;
+        }
       }
     }
   }
 }
+// End plan section

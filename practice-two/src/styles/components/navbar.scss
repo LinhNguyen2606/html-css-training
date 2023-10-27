@@ -1,7 +1,7 @@
 .navbar {
   position: -webkit-sticky;
-  @include set-position($sticky: sticky);
-  @include set-location($top: 0);
+  position: sticky;
+  top: 0;
 
   &__logo {
     margin-right: 158px;
@@ -9,12 +9,13 @@
 
   &__menu,
   &__auth {
-    @include flex-layout($grow: 1);
+    flex-grow: 1;
   }
 
   &__menu {
-    @extend %d-flex;
-    @include flex-layout($align: center, $gap: 40px);
+    display: flex;
+    align-items: center;
+    gap: 40px;
 
     &-link {
       color: $text-primary;
@@ -28,8 +29,9 @@
   }
 
   &__auth {
-    @extend %d-flex;
-    @include flex-layout($align: center, $gap: 30px);
+    display: flex;
+    align-items: center;
+    gap: 30px;
     margin-left: 148px;
 
     &-signin {
@@ -45,25 +47,29 @@
       transform: translateY(-0.25rem);
     }
   }
-}
 
-@include responsive("large") {
-  .navbar {
-    padding: 0 20px;
+  @include largeDesktop {
+    &__logo {
+      margin-left: 20px;
+      margin-right: 80px;
+    }
+
+    &__menu {
+      gap: 30px;
+    }
 
     &__auth {
-      @include flex-layout($grow: 0);
+      flex-grow: 0;
       margin-left: 0;
 
       &-signup {
         margin-left: 30px;
+        margin-right: 20px;
       }
     }
   }
-}
 
-@include responsive("medium") {
-  .navbar {
+  @include tablet {
     box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
 
     &__logo {
@@ -72,18 +78,31 @@
       }
     }
 
+    &-toggler {
+      margin-right: 20px;
+    }
+
+    &-collapse {
+      margin-left: 20px;
+    }
+
     &__menu {
-      @include flex-layout($align: flex-start, $gap: 20px);
+      align-items: flex-start;
+      gap: 20px;
 
       &-item:last-child {
         margin-bottom: 14px;
       }
     }
-  }
-}
 
-@include responsive("extra-small") {
-  .navbar__logo {
-    margin-right: 0;
+    &__auth {
+      gap: 0;
+    }
+  }
+
+  @include portraitPhone {
+    &__logo {
+      margin-right: 0;
+    }
   }
 }

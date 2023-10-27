@@ -42,7 +42,7 @@
     &-fb,
     &-twt,
     &-insta {
-      @extend %inline-block;
+      display: inline-block;
       width: 33.6px;
       height: 33.6px;
       background-size: 60px;
@@ -54,15 +54,8 @@
       margin-left: 16px;
     }
   }
-}
-// End footer section
 
-@include responsive("large") {
-  .footer {
-    &__container {
-      margin: 0 20px;
-    }
-
+  @include largeDesktop {
     &__col {
       &:nth-child(2),
       &:nth-child(3) {
@@ -70,17 +63,23 @@
       }
     }
   }
-}
 
-@include responsive("medium") {
-  .footer {
-    &__container {
+  @include tablet {
+    &__content {
       grid-template-columns: 1fr;
-    }
+      margin: 0 20px;
 
-    &__content--left {
-      margin-right: 0;
-      max-width: 345px;
+      &--left {
+        margin-right: 0;
+        max-width: 345px;
+      }
+
+      &--right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
     }
 
     &__logo {
@@ -94,15 +93,6 @@
       margin-bottom: 10px;
     }
 
-    &__content--right {
-      display: grid;
-      @include grid-layout(
-        $grid-template-columns: repeat(3, 1fr),
-        $justify: flex-start
-      );
-      margin-top: 20px;
-    }
-
     &__col {
       width: 33.33%;
       &:nth-child(2),
@@ -111,29 +101,29 @@
       }
     }
   }
-}
 
-@include responsive("small") {
-  .footer__container {
-    grid-template-columns: 1fr;
+  @include landscapePhone {
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    .social__fb,
+    .social__twt,
+    .social__insta {
+      width: 30px;
+      height: 35px;
+    }
   }
 
-  .social__fb,
-  .social__twt,
-  .social__insta {
-    width: 30px;
-    height: 35px;
-  }
-}
-
-@include responsive("extra-small") {
-  .footer {
+  @include portraitPhone {
     &__desc {
       max-width: 340px;
     }
 
-    &__content--right {
-      grid-template-columns: repeat(2, 1fr);
+    &__content {
+      &--right {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     &__col {
@@ -141,3 +131,4 @@
     }
   }
 }
+// End footer section
