@@ -106,28 +106,13 @@
     &__content {
       grid-template-columns: 1fr;
     }
-
-    .social__fb,
-    .social__twt,
-    .social__insta {
-      width: 30px;
-      height: 35px;
-    }
   }
 
   @include portraitPhone {
-    &__desc {
-      max-width: 340px;
-    }
-
     &__content {
       &--right {
         grid-template-columns: repeat(2, 1fr);
       }
-    }
-
-    &__col {
-      width: 50%;
     }
   }
 }
