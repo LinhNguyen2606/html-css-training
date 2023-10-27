@@ -14,13 +14,13 @@
   &__map {
     margin: 137px 0 0 40px;
   }
-}
-// End network section
 
-@include responsive("large") {
-  .network__map {
-    img {
-      width: 100%;
+  @include largeDesktop {
+    &__map {
+      img {
+        width: 100%;
+      }
     }
   }
 }
+// End network section

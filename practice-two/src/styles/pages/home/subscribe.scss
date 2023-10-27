@@ -35,20 +35,17 @@
       }
     }
   }
-}
-// End subscribe section
 
-@include responsive("medium") {
-  .subscribe__container {
-    padding: 25px;
-    width: 80%;
-    flex-direction: column;
-    align-items: flex-start;
+  @include tablet {
+    &__container {
+      padding: 25px;
+      width: 80%;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
-}
 
-@include responsive("extra-small") {
-  .subscribe {
+  @include portraitPhone {
     &__container {
       width: 100%;
       padding: 15px 25px;
@@ -63,3 +60,4 @@
     }
   }
 }
+// End subscribe section

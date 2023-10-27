@@ -54,15 +54,8 @@
       margin-left: 16px;
     }
   }
-}
-// End footer section
 
-@include responsive("large") {
-  .footer {
-    &__content {
-      margin: 0 20px;
-    }
-
+  @include largeDesktop {
     &__col {
       &:nth-child(2),
       &:nth-child(3) {
@@ -70,12 +63,11 @@
       }
     }
   }
-}
 
-@include responsive("medium") {
-  .footer {
+  @include tablet {
     &__content {
       grid-template-columns: 1fr;
+      margin: 0 20px;
 
       &--left {
         margin-right: 0;
@@ -109,28 +101,26 @@
       }
     }
   }
-}
 
-@include responsive("small") {
-  .footer__content {
-    grid-template-columns: 1fr;
+  @include landscapePhone {
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    .social__fb,
+    .social__twt,
+    .social__insta {
+      width: 30px;
+      height: 35px;
+    }
   }
 
-  .social__fb,
-  .social__twt,
-  .social__insta {
-    width: 30px;
-    height: 35px;
-  }
-}
-
-@include responsive("extra-small") {
-  .footer {
+  @include portraitPhone {
     &__desc {
       max-width: 340px;
     }
 
-    .footer__content {
+    &__content {
       &--right {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -141,3 +131,4 @@
     }
   }
 }
+// End footer section

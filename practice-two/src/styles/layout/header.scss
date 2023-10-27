@@ -5,20 +5,16 @@
   top: 0;
   z-index: 1000;
   background: $secondary-color;
-}
 
-@include responsive("large") {
-  .header {
+  @include largeDesktop {
     margin-top: 26px;
 
     &__container {
       box-sizing: border-box;
     }
   }
-}
 
-@include responsive("medium") {
-  .header {
+  @include tablet {
     margin-top: 0;
   }
 }

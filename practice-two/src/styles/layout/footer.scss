@@ -4,9 +4,9 @@
 
   &__content {
     display: grid;
-    grid-template-columns:
-      3fr 1fr 1fr 1fr
-      &--left {
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+
+    &--left {
       margin-right: 421px;
       max-width: 340px;
       width: 100%;

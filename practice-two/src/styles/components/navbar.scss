@@ -47,11 +47,16 @@
       transform: translateY(-0.25rem);
     }
   }
-}
 
-@include responsive("large") {
-  .navbar {
-    padding: 0 20px;
+  @include largeDesktop {
+    &__logo {
+      margin-left: 20px;
+      margin-right: 80px;
+    }
+
+    &__menu {
+      gap: 30px;
+    }
 
     &__auth {
       flex-grow: 0;
@@ -59,19 +64,26 @@
 
       &-signup {
         margin-left: 30px;
+        margin-right: 20px;
       }
     }
   }
-}
 
-@include responsive("medium") {
-  .navbar {
+  @include tablet {
     box-shadow: 0 25px 45px rgba(79, 86, 101, 0.075);
 
     &__logo {
       img {
         width: 100%;
       }
+    }
+
+    &-toggler {
+      margin-right: 20px;
+    }
+
+    &-collapse {
+      margin-left: 20px;
     }
 
     &__menu {
@@ -82,11 +94,15 @@
         margin-bottom: 14px;
       }
     }
-  }
-}
 
-@include responsive("extra-small") {
-  .navbar__logo {
-    margin-right: 0;
+    &__auth {
+      gap: 0;
+    }
+  }
+
+  @include portraitPhone {
+    &__logo {
+      margin-right: 0;
+    }
   }
 }

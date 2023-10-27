@@ -1,20 +1,23 @@
-@mixin responsive($breakpoint) {
-  @if $breakpoint == "large" {
-    @media (max-width: $max-width-large) {
-      @content;
-    }
-  } @else if $breakpoint == "medium" {
-    @media (max-width: $max-width-medium) {
-      @content;
-    }
-  } @else if $breakpoint == "small" {
-    @media (max-width: $max-width-small) {
-      @content;
-    }
-  } @else if $breakpoint == "extra-small" {
-    @media (max-width: $max-width-extra-small) {
-      @content;
-    }
+@mixin largeDesktop {
+  @media (max-width: $max-width-large-desktop) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: $max-width-tablet) {
+    @content;
+  }
+}
+
+@mixin landscapePhone {
+  @media (max-width: $max-width-landscape-phone) {
+    @content;
+  }
+}
+
+@mixin portraitPhone {
+  @media (max-width: $max-width-portrait-phone) {
+    @content;
   }
 }
 
