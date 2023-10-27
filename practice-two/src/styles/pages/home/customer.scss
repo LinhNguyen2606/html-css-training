@@ -1,6 +1,6 @@
 // Start customer section
 .customer {
-  @include set-position($relative: relative);
+  position: relative;
   padding-bottom: 176px;
 
   &__header {
@@ -17,8 +17,10 @@
   }
 
   &__list {
-    @extend %d-flex;
-    @include flex-layout($justify: space-between, $align: center, $gap: 45px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
   }
 
   &__card {
@@ -35,13 +37,15 @@
     }
 
     &-author {
-      @extend %d-flex;
-      @include flex-layout($justify: space-between, $align: center);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     &-infor {
-      @extend %d-flex;
-      @include flex-layout($align: center, $gap: 19px);
+      display: flex;
+      align-items: center;
+      gap: 19px;
       margin-bottom: 7px;
     }
 
@@ -66,7 +70,7 @@
       background-repeat: no-repeat;
       background-position: 34px 1px;
       span {
-        @extend %inline-block;
+        display: inline-block;
         color: $text-secondary;
         line-height: $lh-xl-medium;
         margin-right: 29px;
@@ -84,17 +88,18 @@
 }
 
 .navigation__bar {
-  @extend %d-flex;
-  @include flex-layout($justify: space-between, $align: center);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .direction {
-  @extend %d-flex;
-  @include flex-layout($gap: 20px);
+  display: flex;
+  gap: 20px;
 
   &__border--backward,
   &__border--forward {
-    @include set-position($relative: relative);
+    position: relative;
     border-color: $primary-color;
     border-radius: 9999px;
     border: 2px solid $primary-color;
@@ -120,8 +125,8 @@
 
   &__arrow--backward,
   &__arrow--forward {
-    @include set-position($absolute: absolute);
-    @include set-location($top: 25%);
+    position: absolute;
+    top: 25%;
   }
 }
 // End customer section
@@ -161,7 +166,7 @@
 
 @include responsive("small") {
   .customer__list {
-    @include flex-layout($direction: column);
+    flex-direction: column;
   }
 
   .customer__card {

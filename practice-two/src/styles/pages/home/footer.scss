@@ -42,7 +42,7 @@
     &-fb,
     &-twt,
     &-insta {
-      @extend %inline-block;
+      display: inline-block;
       width: 33.6px;
       height: 33.6px;
       background-size: 60px;
@@ -59,7 +59,7 @@
 
 @include responsive("large") {
   .footer {
-    &__container {
+    &__content {
       margin: 0 20px;
     }
 
@@ -74,13 +74,20 @@
 
 @include responsive("medium") {
   .footer {
-    &__container {
+    &__content {
       grid-template-columns: 1fr;
-    }
 
-    &__content--left {
-      margin-right: 0;
-      max-width: 345px;
+      &--left {
+        margin-right: 0;
+        max-width: 345px;
+      }
+
+      &--right {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
     }
 
     &__logo {
@@ -94,15 +101,6 @@
       margin-bottom: 10px;
     }
 
-    &__content--right {
-      display: grid;
-      @include grid-layout(
-        $grid-template-columns: repeat(3, 1fr),
-        $justify: flex-start
-      );
-      margin-top: 20px;
-    }
-
     &__col {
       width: 33.33%;
       &:nth-child(2),
@@ -114,7 +112,7 @@
 }
 
 @include responsive("small") {
-  .footer__container {
+  .footer__content {
     grid-template-columns: 1fr;
   }
 
@@ -132,8 +130,10 @@
       max-width: 340px;
     }
 
-    &__content--right {
-      grid-template-columns: repeat(2, 1fr);
+    .footer__content {
+      &--right {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
 
     &__col {

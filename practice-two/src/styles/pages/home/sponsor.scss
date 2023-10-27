@@ -1,8 +1,9 @@
 // Start sponsor section
 .sponsor {
   &__container {
-    @extend %d-flex;
-    @include flex-layout($justify: space-between, $align: center);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__image:nth-child(3) {
