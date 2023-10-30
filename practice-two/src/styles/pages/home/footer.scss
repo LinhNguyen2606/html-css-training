@@ -7,16 +7,16 @@
   }
 
   &__heading {
-    color: $text-secondary;
-    font-size: $fs-x-medium;
+    color      : $text-secondary;
+    font-size  : $fs-x-medium;
     font-weight: $fw-medium;
     line-height: $lh-xs-medium;
   }
 
   &__link {
-    color: $text-primary;
-    font-size: $fs-small;
-    line-height: $lh-xl-medium;
+    color          : $text-primary;
+    font-size      : $fs-small;
+    line-height    : $lh-xl-medium;
     text-decoration: none;
 
     &:hover {
@@ -27,36 +27,37 @@
   &__social {
     margin-bottom: 30px;
 
-    &-fb {
+    &__fb {
       background-image: url(../assets/images/icons/facebook.svg);
     }
 
-    &-twt {
+    &__twt {
       background-image: url(../assets/images/icons/twitter.svg);
     }
 
-    &-insta {
+    &__insta {
       background-image: url(../assets/images/icons/instagram.svg);
     }
 
-    &-fb,
-    &-twt,
-    &-insta {
-      display: inline-block;
-      width: 33.6px;
-      height: 33.6px;
-      background-size: 60px;
+    &__fb,
+    &__twt,
+    &__insta {
+      display            : inline-block;
+      width              : 33.6px;
+      height             : 33.6px;
+      background-size    : 60px;
       background-position: center top;
     }
 
-    &-twt,
-    &-insta {
+    &__twt,
+    &__insta {
       margin-left: 16px;
     }
   }
 
   @include largeDesktop {
     &__col {
+
       &:nth-child(2),
       &:nth-child(3) {
         margin-left: 0;
@@ -67,18 +68,18 @@
   @include tablet {
     &__content {
       grid-template-columns: 1fr;
-      margin: 0 20px;
+      margin               : 0 20px;
 
       &--left {
         margin-right: 0;
-        max-width: 345px;
+        max-width   : 345px;
       }
 
       &--right {
-        display: grid;
+        display              : grid;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: flex-start;
-        margin-top: 20px;
+        justify-content      : flex-start;
+        margin-top           : 20px;
       }
     }
 
@@ -95,6 +96,7 @@
 
     &__col {
       width: 33.33%;
+
       &:nth-child(2),
       &:nth-child(3) {
         margin-left: 0;
@@ -116,4 +118,5 @@
     }
   }
 }
+
 // End footer section
