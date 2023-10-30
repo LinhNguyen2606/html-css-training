@@ -1,24 +1,24 @@
 // Start subscribe section
 .subscribe {
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: -123px;
+  right   : 0;
+  left    : 0;
+  bottom  : -123px;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
     background-color: $secondary-color;
-    border: 2px solid $secondary-color;
-    padding: 52px 70px;
-    border-radius: 10px;
-    box-shadow: 0 30px 114px 0 rgba(13, 16, 37, 0.06);
+    border          : 2px solid $secondary-color;
+    padding         : 52px 70px;
+    border-radius   : 10px;
+    box-shadow      : 0 30px 114px 0 rgba(13, 16, 37, 0.06);
 
     .subscribe__content {
       max-width: 410px;
 
-      &-title {
+      &__title {
         max-width: 372px;
       }
     }
@@ -27,19 +27,19 @@
       padding: 18px 65px;
 
       &:hover {
-        color: $secondary-color;
+        color           : $secondary-color;
         background-color: $primary-color;
-        box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
-        transform: translateY(-0.25rem);
+        box-shadow      : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+        transform       : translateY(-0.25rem);
       }
     }
   }
 
   @include tablet {
     &__container {
-      padding: 25px;
+      padding       : 25px;
       flex-direction: column;
-      align-items: flex-start;
+      align-items   : flex-start;
     }
   }
 
@@ -57,4 +57,5 @@
     }
   }
 }
+
 // End subscribe section

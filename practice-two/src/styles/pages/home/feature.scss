@@ -3,10 +3,10 @@
   margin-bottom: 136px;
 
   &__container {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: flex-end;
-    gap: 169.48px;
+    align-items    : flex-end;
+    gap            : 169.48px;
   }
 
   &__img {
@@ -16,24 +16,24 @@
   &__content {
     max-width: 430px;
 
-    &-heading {
+    &__heading {
       margin-bottom: 22px;
     }
   }
 
   &__list {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    gap: 15px;
+    gap           : 15px;
 
-    &-item {
-      display: flex;
+    &__item {
+      display   : flex;
       background: url(../assets/images/icons/check-circle.svg) no-repeat 0 3px;
 
       span {
-        font-size: $fs-x-small;
+        font-size  : $fs-x-small;
         line-height: $lh-xxl-medium;
-        transform: translateY(3px);
+        transform  : translateY(3px);
         margin-left: 34px;
       }
     }
@@ -56,8 +56,8 @@
   @include landscapePhone {
     &__container {
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      align-items   : center;
+      gap           : 20px;
     }
 
     &__content {
@@ -66,20 +66,21 @@
 
     &__list-item {
       background-position: 0px 2px;
-      background-size: contain;
+      background-size    : contain;
     }
   }
 
   @include portraitPhone {
     &__list-item {
       background-position: 0px 2px;
-      background-size: 24px 24px;
+      background-size    : 24px 24px;
 
       span {
         margin-left: 0;
-        transform: translateX(30px);
+        transform  : translateX(30px);
       }
     }
   }
 }
+
 // End feature section

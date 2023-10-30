@@ -1,14 +1,14 @@
 // Start customer section
 .customer {
-  position: relative;
+  position      : relative;
   padding-bottom: 176px;
 
   &__header {
     @extend %common-header;
 
-    &-title {
+    &__title {
       max-width: 448px;
-      margin: 130px auto 21px;
+      margin   : 130px auto 21px;
     }
 
     p {
@@ -17,94 +17,95 @@
   }
 
   &__list {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    gap: 45px;
+    align-items    : center;
+    gap            : 45px;
   }
 
   &__card {
-    border: 2px solid $border-primary-color;
+    border       : 2px solid $border-primary-color;
     border-radius: 10px;
-    padding: 30px;
-    max-width: 430px;
-    height: 230px;
+    padding      : 30px;
+    max-width    : 430px;
+    height       : 230px;
     margin-bottom: 61px;
 
     &:hover {
       border-color: $primary-color;
-      cursor: pointer;
+      cursor      : pointer;
     }
 
-    &-author {
-      display: flex;
+    &__author {
+      display        : flex;
       justify-content: space-between;
-      align-items: center;
+      align-items    : center;
     }
 
-    &-infor {
-      display: flex;
-      align-items: center;
-      gap: 19px;
+    &__infor {
+      display      : flex;
+      align-items  : center;
+      gap          : 19px;
       margin-bottom: 7px;
     }
 
-    &-name,
-    &-address {
+    &__name,
+    &__address {
       line-height: 1;
     }
 
-    &-name {
-      color: $text-secondary;
-      font-size: $fs-x-medium;
+    &__name {
+      color      : $text-secondary;
+      font-size  : $fs-x-medium;
       font-weight: $fw-medium;
-      width: 142px;
+      width      : 142px;
     }
 
-    &-address {
+    &__address {
       font-size: $fs-x-small;
     }
 
-    &-rating {
+    &__rating {
       background: url(../assets/images/icons/star.svg) no-repeat 34px 1px;
+
       span {
-        display: inline-block;
-        color: $text-secondary;
-        line-height: $lh-xl-medium;
+        display     : inline-block;
+        color       : $text-secondary;
+        line-height : $lh-xl-medium;
         margin-right: 29px;
-        transform: translateY(-4px);
+        transform   : translateY(-4px);
       }
     }
 
-    &-describe {
-      color: $text-secondary;
+    &__describe {
+      color      : $text-secondary;
       line-height: $lh-xl-medium;
-      width: 340px;
-      min-height: 100px;
+      width      : 340px;
+      min-height : 100px;
     }
   }
 
   .navigation__bar {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
+    align-items    : center;
   }
 
   .direction {
     display: flex;
-    gap: 20px;
+    gap    : 20px;
 
     &__border--backward,
     &__border--forward {
-      position: relative;
-      border-color: $primary-color;
+      position     : relative;
+      border-color : $primary-color;
       border-radius: 9999px;
-      border: 2px solid $primary-color;
-      padding: 15px;
-      width: 60px;
-      height: 60px;
-      transition: transform 0.4s;
-      cursor: pointer;
+      border       : 2px solid $primary-color;
+      padding      : 15px;
+      width        : 60px;
+      height       : 60px;
+      transition   : transform 0.4s;
+      cursor       : pointer;
     }
 
     &__border--backward:hover {
@@ -113,7 +114,7 @@
 
     &__border--forward {
       background-color: $primary-color;
-      color: $secondary-color;
+      color           : $secondary-color;
 
       &:hover {
         transform: translateX(0.25rem);
@@ -123,7 +124,7 @@
     &__arrow--backward,
     &__arrow--forward {
       position: absolute;
-      top: 25%;
+      top     : 25%;
     }
   }
 
@@ -138,21 +139,21 @@
   @include tablet {
     &__list {
       flex-direction: column;
-      gap: 0;
+      gap           : 0;
     }
 
     &__card {
-      max-width: 555px;
-      padding: 10px;
+      max-width    : 555px;
+      padding      : 10px;
       margin-bottom: 20px;
 
-      &-avartar {
+      &__avartar {
         img {
           width: 100%;
         }
       }
 
-      &-describe {
+      &__describe {
         width: 100%;
       }
     }
@@ -163,9 +164,9 @@
       flex-direction: column;
     }
 
-    &__card-rating {
+    &__card__rating {
       background-position: top right;
-      background-size: 18px;
+      background-size    : 18px;
     }
   }
 
@@ -174,6 +175,7 @@
 
     .navigation__bar {
       margin: 0 10px;
+
       &--transition {
         width: 70%;
       }
@@ -181,18 +183,20 @@
 
     .direction__border--backward,
     .direction__border--forward {
-      width: 40px;
+      width : 40px;
       height: 40px;
     }
 
     .direction__arrow--backward,
     .direction__arrow--forward {
-      top: 10%;
+      top  : 10%;
       right: 0;
+
       img {
         width: 80%;
       }
     }
   }
 }
+
 // End customer section

@@ -1,89 +1,88 @@
 // Start plan section
 .plan {
   padding: 80px 0 150px;
-  background: linear-gradient(
-    180deg,
-    $bg-primary-color -45.04%,
-    rgba(248, 248, 248, 0) 88.56%
-  );
+  background: linear-gradient(180deg,
+      $bg-primary-color -45.04%,
+      rgba(248, 248, 248, 0) 88.56%);
 
   &__header {
     @extend %common-header;
 
-    &-desc {
+    &__desc {
       margin: 20px 0 60px;
     }
   }
 
   &__list {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    gap: 50px;
+    gap            : 50px;
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
     background-color: $secondary-color;
-    border-radius: 10px;
-    border: 2px solid $border-primary-color;
-    padding: 80px 69px 50px;
+    border-radius   : 10px;
+    border          : 2px solid $border-primary-color;
+    padding         : 80px 69px 50px;
 
     & a {
-      padding: 10px 63px;
+      padding    : 10px 63px;
       font-weight: $fw-bold;
     }
 
     &:hover {
       border-color: $primary-color;
-      cursor: pointer;
+      cursor      : pointer;
     }
 
     &:hover a {
-      color: $secondary-color;
-      font-weight: $fw-bold;
+      color           : $secondary-color;
+      font-weight     : $fw-bold;
       background-color: $primary-color;
-      box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
-      transform: translateY(-0.25rem);
+      box-shadow      : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+      transform       : translateY(-0.25rem);
     }
 
     &__img {
       margin-bottom: 30px;
     }
 
-    &-title {
-      color: $text-secondary;
-      font-size: $fs-x-medium;
-      font-weight: $fw-medium;
-      line-height: $lh-xs-medium;
+    &__title {
+      color        : $text-secondary;
+      font-size    : $fs-x-medium;
+      font-weight  : $fw-medium;
+      line-height  : $lh-xs-medium;
       margin-bottom: 28px;
     }
 
-    &-details {
-      display: flex;
+    &__details {
+      display       : flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 48px;
-      min-height: 230px;
+      gap           : 10px;
+      margin-bottom : 48px;
+      min-height    : 230px;
     }
 
-    &-infor {
-      background-image: url(../assets/images/icons/check.svg);
+    &__infor {
+      background-image : url(../assets/images/icons/check.svg);
       background-repeat: no-repeat;
-      & span {
-        font-size: $fs-x-small;
+
+      span {
+        font-size  : $fs-x-small;
         line-height: $lh-xxl-medium;
         margin-left: 43px;
       }
     }
 
-    &-price {
+    &__price {
       margin-bottom: 21px;
-      color: $text-secondary;
-      font-size: $fs-x-large;
-      font-weight: $fw-medium;
-      line-height: $lh-x-medium;
+      color        : $text-secondary;
+      font-size    : $fs-x-large;
+      font-weight  : $fw-medium;
+      line-height  : $lh-x-medium;
     }
   }
 
@@ -99,7 +98,7 @@
 
   @include tablet {
     &__list {
-      gap: 15px;
+      gap      : 15px;
       flex-wrap: wrap;
     }
 
@@ -117,16 +116,20 @@
 
     &__card {
       padding: 80px 50px 50px;
-      width: 50%;
-      margin: 0 auto;
+      width  : 50%;
+      margin : 0 auto;
 
-      &-infor {
-        background-position: 4px;
-        background-size: 40px;
+      &__infor {
+        background-position: 0;
+        background-size    : 30px;
+
+        span {
+          margin-left: 30px;
+        }
       }
 
       a {
-        padding: 13px 100px;
+        padding  : 13px 100px;
         font-size: $fs-small;
       }
     }
@@ -135,15 +138,8 @@
   @include portraitPhone {
     &__card {
       width: 90%;
-
-      &-infor {
-        background-size: 35px;
-        background-position: 0;
-        span {
-          margin-left: 36px;
-        }
-      }
     }
   }
 }
+
 // End plan section

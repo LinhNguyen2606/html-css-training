@@ -3,31 +3,31 @@
   margin-bottom: 70px;
 
   &__container {
-    display: grid;
+    display              : grid;
     grid-template-columns: 555px 611px;
-    gap: 41px;
+    gap                  : 41px;
   }
 
   &__content {
     max-width: 555px;
 
-    &-heading {
-      color: $text-secondary;
-      font-size: $fs-x-huge;
-      font-weight: $fw-medium;
-      line-height: $lh-xxl-huge;
+    &__heading {
+      color        : $text-secondary;
+      font-size    : $fs-x-huge;
+      font-weight  : $fw-medium;
+      line-height  : $lh-xxl-huge;
       margin-bottom: 20px;
     }
 
-    &-description {
-      font-size: $fs-small;
+    &__description {
+      font-size    : $fs-small;
       margin-bottom: 46px;
     }
 
-    &-btn:hover {
-      color: $secondary-color;
+    &__btn:hover {
+      color           : $secondary-color;
       background-color: $primary-color;
-      transform: translateY(-0.25rem);
+      transform       : translateY(-0.25rem);
     }
   }
 
@@ -38,7 +38,7 @@
   @include largeDesktop {
     &__container {
       grid-template-columns: 2fr 1fr;
-      gap: 0;
+      gap                  : 0;
     }
 
     &__content {
@@ -46,8 +46,9 @@
     }
 
     &__img {
-      transform: translateY(0);
+      transform   : translateY(0);
       margin-right: 20px;
+
       img {
         width: 100%;
       }
@@ -57,20 +58,20 @@
   @include tablet {
     &__container {
       grid-template-columns: 56% 39%;
-      margin: 0 20px;
-      gap: 40px;
+      margin               : 0 20px;
+      gap                  : 40px;
     }
 
-    &__content-heading {
+    &__content__heading {
       font-size: $fs-large;
     }
 
-    &__content-description {
+    &__content__description {
       margin-bottom: 20px;
     }
 
-    &__content-description,
-    &__content-btn {
+    &__content__description,
+    &__content__btn {
       font-size: $fs-small;
     }
   }
@@ -81,23 +82,24 @@
     }
 
     &__content {
-      order: 1;
-      margin: 30px auto 0;
+      order     : 1;
+      margin    : 30px auto 0;
       text-align: center;
 
-      &-heading {
+      &__heading {
         font-size: $fs-large;
       }
 
-      &-description,
-      &-btn {
+      &__description,
+      &__btn {
         font-size: $fs-small;
       }
     }
 
-    &-img {
+    &__img {
       order: 0;
     }
   }
 }
+
 // End hero section

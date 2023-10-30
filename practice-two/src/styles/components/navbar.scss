@@ -1,7 +1,7 @@
 .navbar {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top     : 0;
 
   &__logo {
     margin-right: 158px;
@@ -13,13 +13,13 @@
   }
 
   &__menu {
-    display: flex;
+    display    : flex;
     align-items: center;
-    gap: 40px;
+    gap        : 40px;
 
-    &-link {
-      color: $text-primary;
-      font-size: $fs-small;
+    &__link {
+      color      : $text-primary;
+      font-size  : $fs-small;
       font-weight: $fw-normal;
 
       &:hover {
@@ -29,28 +29,28 @@
   }
 
   &__auth {
-    display: flex;
+    display    : flex;
     align-items: center;
-    gap: 30px;
+    gap        : 30px;
     margin-left: 148px;
 
-    &-signin {
-      color: $text-secondary;
-      font-size: $fs-small;
+    &__signin {
+      color      : $text-secondary;
+      font-size  : $fs-small;
       font-weight: $fw-medium;
     }
 
     & button:hover {
-      color: $secondary-color;
+      color           : $secondary-color;
       background-color: $primary-color;
-      box-shadow: 0 30px 54px -5px rgba(245, 56, 56, 0.35);
-      transform: translateY(-0.25rem);
+      box-shadow      : 0 30px 54px -5px rgba(245, 56, 56, 0.35);
+      transform       : translateY(-0.25rem);
     }
   }
 
   @include largeDesktop {
     &__logo {
-      margin-left: 20px;
+      margin-left : 20px;
       margin-right: 80px;
     }
 
@@ -59,11 +59,11 @@
     }
 
     &__auth {
-      flex-grow: 0;
+      flex-grow  : 0;
       margin-left: 0;
 
-      &-signup {
-        margin-left: 30px;
+      &__signup {
+        margin-left : 30px;
         margin-right: 20px;
       }
     }
@@ -88,7 +88,7 @@
 
     &__menu {
       align-items: flex-start;
-      gap: 20px;
+      gap        : 20px;
 
       &-item:last-child {
         margin-bottom: 14px;
