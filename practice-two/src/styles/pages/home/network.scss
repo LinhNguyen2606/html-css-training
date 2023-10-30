@@ -5,9 +5,9 @@
   &__header {
     @extend %common-header;
 
-    &-title {
+    &__title {
       max-width: 383px;
-      margin: 0 auto 20px;
+      margin   : 0 auto 20px;
     }
   }
 
@@ -23,4 +23,5 @@
     }
   }
 }
+
 // End network section
